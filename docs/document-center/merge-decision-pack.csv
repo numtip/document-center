@@ -1,0 +1,8 @@
+sourceDocumentId,sourceTitle,mergeGroupId,recommendedCanonicalId,canonicalTitle,mergeReason,humanDecisionRequired
+RAE-DC-0027,ตัวอย่างหนังสือราชการ หนังสือภายใน,MERGE-GROUP-001,RAE-DC-0027,ตัวอย่างหนังสือราชการ (ฉบับรวม),All 5 documents are sample letter types under the same theme 'ตัวอย่างหนังสือราชการ' - could be consolidated into a single reference document with sub-sections,true
+RAE-DC-0028,ตัวอย่างหนังสือราชการ หนังสือภายนอก,MERGE-GROUP-001,RAE-DC-0027,ตัวอย่างหนังสือราชการ (ฉบับรวม),Same theme - external letter sample is a variant of the sample letters group,true
+RAE-DC-0029,ตัวอย่างหนังสือราชการ คำสั่ง,MERGE-GROUP-001,RAE-DC-0027,ตัวอย่างหนังสือราชการ (ฉบับรวม),Same theme - order sample is a variant of the sample letters group,true
+RAE-DC-0030,ตัวอย่างหนังสือราชการ ประกาศ,MERGE-GROUP-001,RAE-DC-0027,ตัวอย่างหนังสือราชการ (ฉบับรวม),Same theme - announcement sample is a variant of the sample letters group,true
+RAE-DC-0031,ตัวอย่างหนังสือราชการ หนังสือประทับตรา,MERGE-GROUP-001,RAE-DC-0027,ตัวอย่างหนังสือราชการ (ฉบับรวม),Same theme - sealed letter sample is a variant of the sample letters group,true
+RAE-DC-0004,แบบแจ้งการลงเวลาปฏิบัติงาน (เข้า ออก เข้าและออก เข้าสาย ออกก่อน),MERGE-GROUP-002,RAE-DC-0004,แบบฟอร์มลงเวลาปฏิบัติงาน (ฉบับรวม),RAE-DC-0004 and RAE-DC-0013 are both attendance/timekeeping forms - notes indicate potential merge; RAE-DC-0004 has more detailed title so recommended as canonical,true
+RAE-DC-0013,แบบฟอร์มลงเวลาปฏิบัติราชการ,MERGE-GROUP-002,RAE-DC-0004,แบบฟอร์มลงเวลาปฏิบัติงาน (ฉบับรวม),Companion to RAE-DC-0004 - both are attendance forms; merge into single entry with both PDF and WORD versions,true

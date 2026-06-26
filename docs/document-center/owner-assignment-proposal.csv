@@ -1,0 +1,41 @@
+documentId,title,proposedOwner,confidence,reason
+RAE-DC-0001,แบบฟอร์มขออนุญาตเข้าร่วมอบรม ปี2569,rae-dc-admin-owners,high,Training permission form — HR/Admin unit typically manages training approvals
+RAE-DC-0002,แบบฟอร์มรายงานผลการเข้าร่วมอบรม ปี2569,rae-dc-admin-owners,high,Training report form — same unit as training permission
+RAE-DC-0003,แบบฟอร์มรายงานผลการนำความรู้ไปใช้ประโยชน์ในการปฏิบัติงาน ปี2569,rae-dc-admin-owners,high,Knowledge application report — HR/Admin training follow-up
+RAE-DC-0004,แบบแจ้งการลงเวลาปฏิบัติงาน (เข้า ออก เข้าและออก เข้าสาย ออกก่อน),rae-dc-admin-owners,high,Attendance notification — HR/timekeeping responsibility
+RAE-DC-0004A,ใบนำส่งเอกสารเพื่อลงนาม,rae-dc-admin-owners,high,Document routing form — general admin responsibility
+RAE-DC-0007,แบบคำขอมีบัตรประจำตัวบุคลากรดิจิทัล (Smart Card),rae-dc-admin-owners,medium,Smart card application — could be IT or HR depending on org structure
+RAE-DC-0008,ขออนุมัติเดินทางไปปฏิบัติงาน ณ ต่างประเทศ (E-Passport/VISA),rae-dc-admin-owners,high,International travel approval — admin/HR responsibility
+RAE-DC-0009,ขออนุมัติเข้าร่วมโครงการฝึกอบรม,rae-dc-admin-owners,high,Training approval — HR/admin training coordinator
+RAE-DC-0010,รายงานผลการฝึกอบรม,rae-dc-admin-owners,high,Training report — HR/admin training coordinator
+RAE-DC-0011,สรุปผลที่ได้จากการไปฝึกอบรม ประชุมสัมมนา,rae-dc-admin-owners,high,Training summary — HR/admin training coordinator
+RAE-DC-0012,แบบฟอร์มคำร้องขอหนังสือรับรอง สำหรับลูกจ้างชั่วคราว (จ้างเหมา),rae-dc-admin-owners,high,Contractor certificate request — HR/admin responsibility
+RAE-DC-0013,แบบฟอร์มลงเวลาปฏิบัติราชการ,rae-dc-admin-owners,high,Attendance form — HR/timekeeping (may merge with RAE-DC-0004)
+RAE-DC-0014,ใบลาป่วย ลากิจ ลาคลอดบุตร,rae-dc-admin-owners,high,Leave forms — HR responsibility
+RAE-DC-0015,ใบลาพักผ่อน,rae-dc-admin-owners,high,Vacation leave — HR responsibility
+RAE-DC-0016,ใบยกเลิกวันลา,rae-dc-admin-owners,high,Leave cancellation — HR responsibility
+RAE-DC-0017,ใบลาศึกษาต่อ ฝึกอบรม ดูงาน,rae-dc-admin-owners,high,Study/training leave — HR responsibility
+RAE-DC-0018,แบบหนังสือลาออกจากงานของพนักงานมหาวิทยาลัย,rae-dc-admin-owners,high,University employee resignation — HR responsibility
+RAE-DC-0019,แบบหนังสือลาออกจากงานของพนักงานราชการ,rae-dc-admin-owners,high,Government employee resignation — HR responsibility
+RAE-DC-0020,แบบหนังสือขอลาออกจากราชการ (พนักงานส่วนงานเฉพาะกิจ จ้างเหมา),rae-dc-admin-owners,medium,Contractor resignation — HR but may need specific unit confirmation
+RAE-DC-0021,แบบรายงานไปราชการ ดูงาน ประชุมสัมมนา ฝึกอบรม,rae-dc-admin-owners,high,Official travel report — HR/admin
+RAE-DC-0022,ประกาศ คกก. ก.บ.ม. เรื่อง วัน เวลาปฏิบัติงาน พ.ศ.2564,rae-dc-admin-owners,medium,Working hours policy — admin/HR but policy-level document needs governance owner
+RAE-DC-0023,หลักเกณฑ์และวิธีการประเมินผลการปฏิบัติงาน ปีงบประมาณ 2565,TBD,low,Assessment criteria — unclear if HR or research unit owns this; needs human review
+RAE-DC-0024,หลักเกณฑ์และวิธีการประเมินผลพฤติกรรมในการปฏิบัติงาน ปีงบประมาณ 2565,TBD,low,Behavior assessment criteria — same uncertainty as RAE-DC-0023
+RAE-DC-0025,ระเบียบงานสารบรรณว่าด้วย ระบบสารบรรณอิเล็กทรอนิกส์,rae-dc-admin-owners,high,Correspondence regulation — admin/records management
+RAE-DC-0026,การใช้ตรามหาวิทยาลัยและข้อความต่างๆ ในหนังสือของมหาวิทยาลัย,rae-dc-admin-owners,high,University seal usage — admin/communications
+RAE-DC-0027,ตัวอย่างหนังสือราชการ หนังสือภายใน,rae-dc-admin-owners,high,Internal letter sample — admin/records management
+RAE-DC-0028,ตัวอย่างหนังสือราชการ หนังสือภายนอก,rae-dc-admin-owners,high,External letter sample — admin/records management
+RAE-DC-0029,ตัวอย่างหนังสือราชการ คำสั่ง,rae-dc-admin-owners,high,Order sample — admin/records management
+RAE-DC-0030,ตัวอย่างหนังสือราชการ ประกาศ,rae-dc-admin-owners,high,Announcement sample — admin/records management
+RAE-DC-0031,ตัวอย่างหนังสือราชการ หนังสือประทับตรา,rae-dc-admin-owners,high,Sealed letter sample — admin/records management
+RAE-DC-0032,ขั้นตอนการขออนุมัติเดินทางไปต่างประเทศ,rae-dc-admin-owners,medium,International travel procedure — admin but may need rewrite owner assigned separately
+RAE-DC-0033,หลักเกณฑ์วิธีการประเภทการลาฯ ของพนักงานมหาวิทยาลัย พ.ศ.2561,rae-dc-admin-owners,high,Leave types regulation — HR/admin
+RAE-DC-0034,สิทธิการลาของบุคลากรประเภทต่างๆ,TBD,low,Leave rights — external link (personnel.mju.ac.th/leave.php) — may not be a real document; needs review
+RAE-DC-0035,หลักเกณฑ์การขอใช้ยานพาหนะ อัตราค่าเชื้อเพลิง ค่าบำรุงรักษาฯ สำนักวิจัยฯ,rae-dc-admin-owners,high,Vehicle usage criteria — fleet/admin responsibility
+RAE-DC-0036,ฟอร์มขอใช้ยานพาหนะ รถยนต์,rae-dc-admin-owners,high,Vehicle request (car) — fleet/admin
+RAE-DC-0037,ฟอร์มขอใช้ยานพาหนะ รถจักรยานยนต์,rae-dc-admin-owners,high,Vehicle request (motorcycle) — fleet/admin
+RAE-DC-0038,ฟอร์มขอเบิกน้ำมันเชื้อเพลิง,rae-dc-admin-owners,high,Fuel requisition — fleet/admin
+RAE-DC-0039,แบบรายงานประจำเดือน การใช้รถยนต์,rae-dc-admin-owners,high,Monthly car usage report — fleet/admin
+RAE-DC-0040,แบบรายงานการซ่อมบำรุงยานพาหนะ,rae-dc-admin-owners,high,Vehicle maintenance report — fleet/admin
+RAE-DC-0041,ฟอร์มใบปะหน้ารายงานการใช้รถยนต์,rae-dc-admin-owners,high,Car usage report cover sheet — fleet/admin

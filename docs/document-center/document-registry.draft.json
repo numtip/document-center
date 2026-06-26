@@ -1,0 +1,769 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-06-18",
+  "source": "Phase 5A.6 draft — generated from migration-matrix.v2.csv",
+  "migrationPhase": "5A.6",
+  "totalDocuments": 40,
+  "documents": [
+    {
+      "id": "RAE-DC-0001",
+      "title": "แบบฟอร์มขออนุญาตเข้าร่วมอบรม ปี2569",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบฟอร์มขออนุญาตเข้าร่วมอบรม",
+        "ปี2569"
+      ],
+      "legacySource": "dlw1.MD#form-01",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Active form - update year annually"
+    },
+    {
+      "id": "RAE-DC-0002",
+      "title": "แบบฟอร์มรายงานผลการเข้าร่วมอบรม ปี2569",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบฟอร์มรายงานผลการเข้าร่วมอบรม",
+        "ปี2569"
+      ],
+      "legacySource": "dlw1.MD#form-02",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Active form - update year annually"
+    },
+    {
+      "id": "RAE-DC-0003",
+      "title": "แบบฟอร์มรายงานผลการนำความรู้ไปใช้ประโยชน์ในการปฏิบัติงาน ปี2569",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบฟอร์มรายงานผลการนำความรู้ไปใช้ประโยชน์ในการปฏิบัติงาน",
+        "ปี2569"
+      ],
+      "legacySource": "dlw1.MD#form-03",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Active form - update year annually"
+    },
+    {
+      "id": "RAE-DC-0004",
+      "title": "แบบแจ้งการลงเวลาปฏิบัติงาน (เข้า ออก เข้าและออก เข้าสาย ออกก่อน)",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบแจ้งการลงเวลาปฏิบัติงาน",
+        "เข้า",
+        "เข้าและออก"
+      ],
+      "legacySource": "dlw1.MD#form-04",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Available in PDF and WORD"
+    },
+    {
+      "id": "RAE-DC-0004A",
+      "title": "ใบนำส่งเอกสารเพื่อลงนาม",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ใบนำส่งเอกสารเพื่อลงนาม"
+      ],
+      "legacySource": "dlw1.MD#form-05",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Available in PDF and WORD"
+    },
+    {
+      "id": "RAE-DC-0007",
+      "title": "แบบคำขอมีบัตรประจำตัวบุคลากรดิจิทัล (Smart Card)",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบคำขอมีบัตรประจำตัวบุคลากรดิจิทัล",
+        "smart",
+        "card"
+      ],
+      "legacySource": "dlw1.MD#form-08",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "PDF only"
+    },
+    {
+      "id": "RAE-DC-0008",
+      "title": "ขออนุมัติเดินทางไปปฏิบัติงาน ณ ต่างประเทศ (E-Passport/VISA)",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ขออนุมัติเดินทางไปปฏิบัติงาน",
+        "ต่างประเทศ",
+        "e-passport/visa"
+      ],
+      "legacySource": "dlw1.MD#form-09",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only"
+    },
+    {
+      "id": "RAE-DC-0009",
+      "title": "ขออนุมัติเข้าร่วมโครงการฝึกอบรม",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ขออนุมัติเข้าร่วมโครงการฝึกอบรม"
+      ],
+      "legacySource": "dlw1.MD#form-10",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only"
+    },
+    {
+      "id": "RAE-DC-0010",
+      "title": "รายงานผลการฝึกอบรม",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "รายงานผลการฝึกอบรม"
+      ],
+      "legacySource": "dlw1.MD#form-11",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only"
+    },
+    {
+      "id": "RAE-DC-0011",
+      "title": "สรุปผลที่ได้จากการไปฝึกอบรม ประชุมสัมมนา",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "สรุปผลที่ได้จากการไปฝึกอบรม",
+        "ประชุมสัมมนา"
+      ],
+      "legacySource": "dlw1.MD#form-12",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only"
+    },
+    {
+      "id": "RAE-DC-0012",
+      "title": "แบบฟอร์มคำร้องขอหนังสือรับรอง สำหรับลูกจ้างชั่วคราว (จ้างเหมา)",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบฟอร์มคำร้องขอหนังสือรับรอง",
+        "สำหรับลูกจ้างชั่วคราว",
+        "จ้างเหมา"
+      ],
+      "legacySource": "dlw1.MD#form-13",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Available in PDF and WORD"
+    },
+    {
+      "id": "RAE-DC-0013",
+      "title": "แบบฟอร์มลงเวลาปฏิบัติราชการ",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบฟอร์มลงเวลาปฏิบัติราชการ"
+      ],
+      "legacySource": "dlw1.MD#form-14",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Available in PDF and WORD - may merge with RAE-DC-0004"
+    },
+    {
+      "id": "RAE-DC-0014",
+      "title": "ใบลาป่วย ลากิจ ลาคลอดบุตร",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ใบลาป่วย",
+        "ลากิจ",
+        "ลาคลอดบุตร"
+      ],
+      "legacySource": "dlw1.MD#form-15",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Available in PDF and WORD"
+    },
+    {
+      "id": "RAE-DC-0015",
+      "title": "ใบลาพักผ่อน",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ใบลาพักผ่อน"
+      ],
+      "legacySource": "dlw1.MD#form-16",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Available in PDF and WORD"
+    },
+    {
+      "id": "RAE-DC-0016",
+      "title": "ใบยกเลิกวันลา",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ใบยกเลิกวันลา"
+      ],
+      "legacySource": "dlw1.MD#form-17",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Available in PDF and WORD"
+    },
+    {
+      "id": "RAE-DC-0017",
+      "title": "ใบลาศึกษาต่อ ฝึกอบรม ดูงาน",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ใบลาศึกษาต่อ",
+        "ฝึกอบรม",
+        "ดูงาน"
+      ],
+      "legacySource": "dlw1.MD#form-18",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only"
+    },
+    {
+      "id": "RAE-DC-0018",
+      "title": "แบบหนังสือลาออกจากงานของพนักงานมหาวิทยาลัย",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบหนังสือลาออกจากงานของพนักงานมหาวิทยาลัย"
+      ],
+      "legacySource": "dlw1.MD#form-19",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "PDF only"
+    },
+    {
+      "id": "RAE-DC-0019",
+      "title": "แบบหนังสือลาออกจากงานของพนักงานราชการ",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบหนังสือลาออกจากงานของพนักงานราชการ"
+      ],
+      "legacySource": "dlw1.MD#form-20",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "PDF only"
+    },
+    {
+      "id": "RAE-DC-0020",
+      "title": "แบบหนังสือขอลาออกจากราชการ (พนักงานส่วนงานเฉพาะกิจ จ้างเหมา)",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบหนังสือขอลาออกจากราชการ",
+        "พนักงานส่วนงานเฉพาะกิจ",
+        "จ้างเหมา"
+      ],
+      "legacySource": "dlw1.MD#form-21",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only - review owner"
+    },
+    {
+      "id": "RAE-DC-0021",
+      "title": "แบบรายงานไปราชการ ดูงาน ประชุมสัมมนา ฝึกอบรม",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบรายงานไปราชการ",
+        "ดูงาน",
+        "ประชุมสัมมนา"
+      ],
+      "legacySource": "dlw1.MD#form-22",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only"
+    },
+    {
+      "id": "RAE-DC-0022",
+      "title": "ประกาศ คกก. ก.บ.ม. เรื่อง วัน เวลาปฏิบัติงาน และวิธีลงเวลาปฏิบัติงาน พ.ศ.2564",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ประกาศ",
+        "คกก.",
+        "ก.บ.ม."
+      ],
+      "legacySource": "dlw1.MD#manual-01",
+      "migrationAction": "review",
+      "migrationStatus": "needs-owner",
+      "notes": "Policy document - verify current validity"
+    },
+    {
+      "id": "RAE-DC-0023",
+      "title": "หลักเกณฑ์และวิธีการประเมินผลการปฏิบัติงานสำหรับบุคลากรสำนักวิจัยฯ ประจำปีงบประมาณ 2565",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "หลักเกณฑ์และวิธีการประเมินผลการปฏิบัติงานสำหรับบุคลากรสำนักวิจัยฯ",
+        "ประจำปีงบประมาณ",
+        "2565"
+      ],
+      "legacySource": "dlw1.MD#manual-02",
+      "migrationAction": "review",
+      "migrationStatus": "needs-owner",
+      "notes": "May be outdated - check for newer version"
+    },
+    {
+      "id": "RAE-DC-0024",
+      "title": "หลักเกณฑ์และวิธีการประเมินผลพฤติกรรมในการปฏิบัติงานสำหรับบุคลากรสำนักวิจัยฯ ประจำปีงบประมาณ 2565",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "หลักเกณฑ์และวิธีการประเมินผลพฤติกรรมในการปฏิบัติงานสำหรับบุคลากรสำนักวิจัยฯ",
+        "ประจำปีงบประมาณ",
+        "2565"
+      ],
+      "legacySource": "dlw1.MD#manual-03",
+      "migrationAction": "review",
+      "migrationStatus": "needs-owner",
+      "notes": "May be outdated - check for newer version"
+    },
+    {
+      "id": "RAE-DC-0025",
+      "title": "ระเบียบงานสารบรรณว่าด้วย ระบบสารบรรณอิเล็กทรอนิกส์",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ระเบียบงานสารบรรณว่าด้วย",
+        "ระบบสารบรรณอิเล็กทรอนิกส์"
+      ],
+      "legacySource": "dlw1.MD#manual-04",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Standing regulation"
+    },
+    {
+      "id": "RAE-DC-0026",
+      "title": "การใช้ตรามหาวิทยาลัยและข้อความต่างๆ ในหนังสือของมหาวิทยาลัย",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "การใช้ตรามหาวิทยาลัยและข้อความต่างๆ",
+        "ในหนังสือของมหาวิทยาลัย"
+      ],
+      "legacySource": "dlw1.MD#manual-05",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Brand usage guideline"
+    },
+    {
+      "id": "RAE-DC-0027",
+      "title": "ตัวอย่างหนังสือราชการ หนังสือภายใน",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ตัวอย่างหนังสือราชการ",
+        "หนังสือภายใน"
+      ],
+      "legacySource": "dlw1.MD#manual-06",
+      "migrationAction": "merge",
+      "migrationStatus": "needs-owner",
+      "notes": "Consider merging with other sample letter docs"
+    },
+    {
+      "id": "RAE-DC-0028",
+      "title": "ตัวอย่างหนังสือราชการ หนังสือภายนอก",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ตัวอย่างหนังสือราชการ",
+        "หนังสือภายนอก"
+      ],
+      "legacySource": "dlw1.MD#manual-07",
+      "migrationAction": "merge",
+      "migrationStatus": "needs-owner",
+      "notes": "Consider merging with other sample letter docs"
+    },
+    {
+      "id": "RAE-DC-0029",
+      "title": "ตัวอย่างหนังสือราชการ คำสั่ง",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ตัวอย่างหนังสือราชการ",
+        "คำสั่ง"
+      ],
+      "legacySource": "dlw1.MD#manual-08",
+      "migrationAction": "merge",
+      "migrationStatus": "needs-owner",
+      "notes": "Consider merging with other sample letter docs"
+    },
+    {
+      "id": "RAE-DC-0030",
+      "title": "ตัวอย่างหนังสือราชการ ประกาศ",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ตัวอย่างหนังสือราชการ",
+        "ประกาศ"
+      ],
+      "legacySource": "dlw1.MD#manual-09",
+      "migrationAction": "merge",
+      "migrationStatus": "needs-owner",
+      "notes": "Consider merging with other sample letter docs"
+    },
+    {
+      "id": "RAE-DC-0031",
+      "title": "ตัวอย่างหนังสือราชการ หนังสือประทับตรา",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ตัวอย่างหนังสือราชการ",
+        "หนังสือประทับตรา"
+      ],
+      "legacySource": "dlw1.MD#manual-10",
+      "migrationAction": "merge",
+      "migrationStatus": "needs-owner",
+      "notes": "Consider merging with other sample letter docs"
+    },
+    {
+      "id": "RAE-DC-0032",
+      "title": "ขั้นตอนการขออนุมัติเดินทางไปต่างประเทศ",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ขั้นตอนการขออนุมัติเดินทางไปต่างประเทศ"
+      ],
+      "legacySource": "dlw1.MD#manual-11",
+      "migrationAction": "rewrite",
+      "migrationStatus": "needs-owner",
+      "notes": "PDF only - may need modern rewrite"
+    },
+    {
+      "id": "RAE-DC-0033",
+      "title": "หลักเกณฑ์วิธีการประเภทการลาฯ ของพนักงานมหาวิทยาลัย พ.ศ.2561",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "หลักเกณฑ์วิธีการประเภทการลาฯ",
+        "ของพนักงานมหาวิทยาลัย",
+        "พ.ศ.2561"
+      ],
+      "legacySource": "dlw1.MD#manual-12",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "Standing regulation"
+    },
+    {
+      "id": "RAE-DC-0034",
+      "title": "สิทธิการลาของบุคลากรประเภทต่างๆ",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "สิทธิการลาของบุคลากรประเภทต่างๆ"
+      ],
+      "legacySource": "dlw1.MD#manual-13",
+      "migrationAction": "review",
+      "migrationStatus": "needs-owner",
+      "notes": "Verify current validity - may link to external URL"
+    },
+    {
+      "id": "RAE-DC-0035",
+      "title": "หลักเกณฑ์การขอใช้ยานพาหนะ อัตราค่าเชื้อเพลิง ค่าบำรุงรักษาฯ สำนักวิจัยฯ",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "pdf",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "หลักเกณฑ์การขอใช้ยานพาหนะ",
+        "อัตราค่าเชื้อเพลิง",
+        "ค่าบำรุงรักษาฯ"
+      ],
+      "legacySource": "dlw1.MD#vehicle-01",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "PDF only"
+    },
+    {
+      "id": "RAE-DC-0036",
+      "title": "ฟอร์มขอใช้ยานพาหนะ รถยนต์",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ฟอร์มขอใช้ยานพาหนะ",
+        "รถยนต์"
+      ],
+      "legacySource": "dlw1.MD#vehicle-02",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only"
+    },
+    {
+      "id": "RAE-DC-0037",
+      "title": "ฟอร์มขอใช้ยานพาหนะ รถจักรยานยนต์",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ฟอร์มขอใช้ยานพาหนะ",
+        "รถจักรยานยนต์"
+      ],
+      "legacySource": "dlw1.MD#vehicle-03",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only"
+    },
+    {
+      "id": "RAE-DC-0038",
+      "title": "ฟอร์มขอเบิกน้ำมันเชื้อเพลิง",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ฟอร์มขอเบิกน้ำมันเชื้อเพลิง"
+      ],
+      "legacySource": "dlw1.MD#vehicle-04",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only"
+    },
+    {
+      "id": "RAE-DC-0039",
+      "title": "แบบรายงานประจำเดือน การใช้รถยนต์",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบรายงานประจำเดือน",
+        "การใช้รถยนต์"
+      ],
+      "legacySource": "dlw1.MD#vehicle-05",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only"
+    },
+    {
+      "id": "RAE-DC-0040",
+      "title": "แบบรายงานการซ่อมบำรุงยานพาหนะ",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "แบบรายงานการซ่อมบำรุงยานพาหนะ"
+      ],
+      "legacySource": "dlw1.MD#vehicle-06",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only"
+    },
+    {
+      "id": "RAE-DC-0041",
+      "title": "ฟอร์มใบปะหน้ารายงานการใช้รถยนต์",
+      "category": "admin",
+      "owner": "TBD",
+      "fileType": "docx",
+      "updatedDate": "2026-06-18",
+      "status": "current",
+      "storageUrl": "PENDING_ONEDRIVE",
+      "tags": [
+        "admin",
+        "ฟอร์มใบปะหน้ารายงานการใช้รถยนต์"
+      ],
+      "legacySource": "dlw1.MD#vehicle-07",
+      "migrationAction": "keep",
+      "migrationStatus": "needs-owner",
+      "notes": "WORD only"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+findingId,documentId,issueType,severity,currentStatus,remediationAction,owner,targetStatus,notes
+F-001,RAE-DC-0004A,id-format,LOW,open,accepted-risk,registry-governor,accepted-risk,Letter suffix 'A' is intentional to preserve source lineage; document exception in naming standard
+F-002,RAE-DC-0001,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-003,RAE-DC-0002,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-004,RAE-DC-0003,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-005,RAE-DC-0004,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-006,RAE-DC-0004A,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-007,RAE-DC-0005,status-drop,HIGH,open,resolved,registry-governor,resolved,Verified excluded from document-registry.draft.json (not in 40 documents) - drop enforced
+F-008,RAE-DC-0006,status-drop,HIGH,open,resolved,registry-governor,resolved,Verified excluded from document-registry.draft.json (not in 40 documents) - drop enforced
+F-009,RAE-DC-0007,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners medium confidence) - awaiting human confirmation
+F-010,RAE-DC-0008,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-011,RAE-DC-0009,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-012,RAE-DC-0010,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-013,RAE-DC-0011,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-014,RAE-DC-0012,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-015,RAE-DC-0013,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-016,RAE-DC-0013,duplicate-content,LOW,open,deferred,hr-admin-lead,deferred,Potential merge with RAE-DC-0004 - defer decision to Phase 5A.9 human review
+F-017,RAE-DC-0014,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-018,RAE-DC-0015,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-019,RAE-DC-0016,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-020,RAE-DC-0017,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-021,RAE-DC-0018,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-022,RAE-DC-0019,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-023,RAE-DC-0020,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners medium confidence) - awaiting human confirmation
+F-024,RAE-DC-0021,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-025,RAE-DC-0022,review-no-rationale,MEDIUM,open,needs-human-decision,policy-owner,needs-human-decision,Review action - needs human to verify if พ.ศ.2564 announcement still in effect
+F-026,RAE-DC-0022,owner-tbd,MEDIUM,open,needs-human-decision,policy-owner,needs-human-decision,Owner proposal exists (rae-dc-admin-owners medium confidence) - awaiting human confirmation
+F-027,RAE-DC-0023,review-no-rationale,MEDIUM,open,needs-human-decision,policy-owner,needs-human-decision,Review action - needs human to verify if FY2565 assessment criteria updated
+F-028,RAE-DC-0023,owner-tbd,MEDIUM,open,needs-human-decision,policy-owner,needs-human-decision,Owner proposal is TBD (low confidence) - needs human review
+F-029,RAE-DC-0023,duplicate-content,LOW,open,deferred,policy-owner,deferred,Companion document with RAE-DC-0024 - defer linking decision to Phase 5A.9
+F-030,RAE-DC-0024,review-no-rationale,MEDIUM,open,needs-human-decision,policy-owner,needs-human-decision,Review action - needs human to verify if FY2565 behavior criteria updated
+F-031,RAE-DC-0024,owner-tbd,MEDIUM,open,needs-human-decision,policy-owner,needs-human-decision,Owner proposal is TBD (low confidence) - needs human review
+F-032,RAE-DC-0025,owner-tbd,MEDIUM,open,needs-human-decision,admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-033,RAE-DC-0026,owner-tbd,MEDIUM,open,needs-human-decision,admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-034,RAE-DC-0027,owner-tbd,MEDIUM,open,needs-human-decision,admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-035,RAE-DC-0028,owner-tbd,MEDIUM,open,needs-human-decision,admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-036,RAE-DC-0029,owner-tbd,MEDIUM,open,needs-human-decision,admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-037,RAE-DC-0030,owner-tbd,MEDIUM,open,needs-human-decision,admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-038,RAE-DC-0031,owner-tbd,MEDIUM,open,needs-human-decision,admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-039,RAE-DC-0027-0031,merge-candidate,LOW,open,deferred,admin-lead,deferred,5 sample letter docs flagged for merge - defer merge decision to Phase 5A.9
+F-040,RAE-DC-0032,owner-tbd,MEDIUM,open,needs-human-decision,admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners medium confidence) - awaiting human confirmation
+F-041,RAE-DC-0032,rewrite-unclear,LOW,open,needs-human-decision,admin-lead,needs-human-decision,Rewrite scope undefined - needs human to define what needs rewriting
+F-042,RAE-DC-0033,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-043,RAE-DC-0034,review-no-rationale,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Review action - needs human to confirm if PHP page or real document
+F-044,RAE-DC-0034,external-link-risk,LOW,open,needs-human-decision,hr-admin-lead,needs-human-decision,Links to personnel.mju.ac.th/leave.php - may not be downloadable document
+F-045,RAE-DC-0034,owner-tbd,MEDIUM,open,needs-human-decision,hr-admin-lead,needs-human-decision,Owner proposal is TBD (low confidence) - needs human review
+F-046,RAE-DC-0035,owner-tbd,MEDIUM,open,needs-human-decision,fleet-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-047,RAE-DC-0036,owner-tbd,MEDIUM,open,needs-human-decision,fleet-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-048,RAE-DC-0037,owner-tbd,MEDIUM,open,needs-human-decision,fleet-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-049,RAE-DC-0038,owner-tbd,MEDIUM,open,needs-human-decision,fleet-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-050,RAE-DC-0039,owner-tbd,MEDIUM,open,needs-human-decision,fleet-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-051,RAE-DC-0040,owner-tbd,MEDIUM,open,needs-human-decision,fleet-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-052,RAE-DC-0041,owner-tbd,MEDIUM,open,needs-human-decision,fleet-lead,needs-human-decision,Owner proposal exists (rae-dc-admin-owners high confidence) - awaiting human confirmation
+F-053,ALL,category-monoculture,MEDIUM,open,accepted-risk,registry-governor,accepted-risk,All 40 docs in admin category - expected since only dlw1.MD source inventoried; accept-risk for initial migration
+F-054,ALL,updatedDate-synthetic,INFO,open,deferred,registry-governor,deferred,Will populate real dates during OneDrive upload when files are inspected
+F-055,ALL,no-version-history,INFO,open,deferred,registry-governor,deferred,Will verify real versions during OneDrive upload when files are inspected
+F-056,ALL,storageUrl-pending,INFO,open,accepted-risk,registry-governor,accepted-risk,All PENDING_ONEDRIVE - expected state before OneDrive provisioning

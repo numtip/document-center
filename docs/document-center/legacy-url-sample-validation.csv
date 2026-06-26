@@ -1,0 +1,11 @@
+documentId,legacyUrl,sampleGroup,httpStatus,result,notes
+RAE-DC-0001,https://erp.mju.ac.th/openFile.aspx?id=Nzk4NTgw&method=inline,keep,200,reachable,ERP openFile.aspx returns 200 OK - training permission form accessible
+RAE-DC-0007,https://erp.mju.ac.th/openFile.aspx?id=NTMxMTM3&method=inline,keep,200,reachable,ERP openFile.aspx returns 200 OK - smart card application accessible
+RAE-DC-0014,https://erp.mju.ac.th/openFile.aspx?id=NDk4Mzky&method=inline,keep,200,reachable,ERP openFile.aspx returns 200 OK - leave form accessible
+RAE-DC-0027,http://www.general.mju.ac.th/wtms_document_download.aspx?id=MTgyMjQ=,merge,404,broken,general.mju.ac.th returns 404 Not Found - sample letter PDF no longer available at this URL
+RAE-DC-0028,https://erp.mju.ac.th/openFile.aspx?id=NDY2Mzc1&method=inline,merge,200,reachable,ERP openFile.aspx returns 200 OK - external letter sample WORD version accessible
+RAE-DC-0032,http://personnel.mju.ac.th/edoc/forms/10789.pdf,rewrite,404,broken,personnel.mju.ac.th returns 404 Not Found - international travel procedure PDF no longer available
+RAE-DC-0022,https://erp.mju.ac.th/openFile.aspx?id=NDgwMDg4&method=inline,review,200,reachable,ERP openFile.aspx returns 200 OK - working hours announcement accessible
+RAE-DC-0034,http://personnel.mju.ac.th/leave.php,review,200,reachable,personnel.mju.ac.th/leave.php returns 200 OK - PHP page is live (confirms this is a web page not a document)
+RAE-DC-0035,http://www.erp.mju.ac.th/openFile.aspx?id=MzI0MDcz&method=inline,random,200,reachable,ERP openFile.aspx returns 200 OK - vehicle usage criteria accessible
+RAE-DC-0039,http://researchex.rae.mju.ac.th/form/05-report1.docx,random,200,reachable,researchex.rae.mju.ac.th returns 200 OK - monthly car usage report accessible

@@ -1,0 +1,34 @@
+metric,maxScore,actualScore,evidence,gap,recommendedFix
+Metadata Completeness - Required fields present,8,8,40/40 documents have all required fields (id,title,category,owner,fileType,updatedDate,status,migrationAction,migrationStatus),0,None
+Metadata Completeness - Valid status values,3,3,40/40 documents have status=current (valid enum),0,None
+Metadata Completeness - Valid fileType values,3,3,40/40 documents have valid fileType (pdf/docx/xlsx),0,None
+Metadata Completeness - tags populated,3,3,40/40 documents have at least 1 tag,0,None
+Metadata Completeness - legacySource populated,3,3,40/40 documents have legacySource reference,0,None
+Metadata Completeness - Real updatedDate,3,0,0/40 documents have real dates (all 2026-06-18 synthetic),3,Populate with real last-modified dates from legacy files during OneDrive upload
+Metadata Completeness - Real version,2,0,0/40 documents have real version (all default 1.0),2,Verify actual versions from legacy files during OneDrive upload
+Category Quality - Valid taxonomy IDs,8,8,40/40 documents use valid category=admin,0,None
+Category Quality - No empty categories,4,4,0/40 documents have empty category,0,None
+Category Quality - Category diversity,4,2,1/6 categories used (admin only),2,Inventory other legacy sources to populate finance-procurement/research/academic-service/policy-planning/manuals
+Category Quality - No misclassifications,4,0,8/40 documents suspected misclassified (RAE-DC-0025/0026/0027-0031/0033),4,Reclassify after full inventory or accept-risk for initial migration
+Owner Readiness - Owner populated,12,0,0/40 documents have real owner (all TBD),12,Human confirms owners from owner-assignment-proposal.csv
+Owner Readiness - Owner proposal exists,3,3,owner-assignment-proposal.csv exists with 40 proposals,0,None
+Owner Readiness - High-confidence proposals,3,3,32/40 proposals are high-confidence,0,None
+Owner Readiness - Low-confidence kept TBD,2,2,3/40 low-confidence proposals remain TBD (not fabricated),0,None
+Link Readiness - storageUrl PENDING_ONEDRIVE,5,5,40/40 documents have storageUrl=PENDING_ONEDRIVE (expected),0,None
+Link Readiness - Legacy URLs catalogued,4,4,legacy-link-audit.csv exists with 48 URLs,0,None
+Link Readiness - URL format issues identified,3,3,HTTP/HTTPS/www inconsistencies documented in LEGACY_LINK_AUDIT_REPORT.md,0,None
+Link Readiness - High-risk URLs flagged,2,2,RAE-DC-0034 PHP page + RAE-DC-0004 double-wrapped URL flagged,0,None
+Link Readiness - Sample validation performed,1,0,Sample validation not yet performed (Phase 7),1,Run lightweight sample URL validation in Phase 7
+Governance Compliance - Taxonomy defined,2,2,taxonomy.json v1.0.0 exists,0,None
+Governance Compliance - Data model documented,2,2,REGISTRY_DATA_MODEL.md exists,0,None
+Governance Compliance - Naming standard defined,1,1,DOCUMENT_NAMING_STANDARD.md exists,0,None
+Governance Compliance - Permission policy defined,1,1,ONEDRIVE_PERMISSION_POLICY.md exists,0,None
+Governance Compliance - Validators passing,2,2,validate-document-migration-matrix.ts + validate-document-registry.ts both pass,0,None
+Governance Compliance - Audit completed,1,1,Phase 5A.7 audit reports exist,0,None
+Governance Compliance - Remediation plan exists,1,1,audit-remediation-plan.csv created in Phase 5A.8,0,None
+Migration Readiness - Matrix validated,2,2,migration-matrix.v2.csv passes validation,0,None
+Migration Readiness - Registry draft validated,2,2,document-registry.draft.json passes validation,0,None
+Migration Readiness - OneDrive prep map,2,2,onedrive-migration-prep.csv exists,0,None
+Migration Readiness - Remediated registry,2,2,document-registry.remediated.json created in Phase 5A.8,0,None
+Migration Readiness - Ready-for-onedrive-prep docs,2,0,0/40 documents ready-for-onedrive-prep (all blocked by owner TBD),2,Confirm owners to move documents to ready-for-onedrive-prep
+TOTAL,100,76,Sum of all actualScore values,24,Address owner assignment + real dates/versions + sample validation

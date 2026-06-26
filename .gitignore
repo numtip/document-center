@@ -1,0 +1,17 @@
+node_modules/
+.next/
+dist/
+build/
+.env
+.env.*
+*.local
+*.log
+.DS_Store
+Thumbs.db
+secrets/
+tokens/
+*.pfx
+*.pem
+*.key
+*.crt
+*.cer

@@ -1,0 +1,57 @@
+rowId,issueType,severity,description,recommendedFix
+RAE-DC-0004A,id-format,LOW,ID uses letter suffix 'A' which deviates from RAE-DC-NNNN standard — may cause sorting or lookup issues,Reassign as RAE-DC-0042 or document the exception in naming standard
+RAE-DC-0001,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner or unit responsible for training forms
+RAE-DC-0002,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner or unit responsible for training forms
+RAE-DC-0003,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner or unit responsible for training forms
+RAE-DC-0004,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner or unit responsible for attendance/timekeeping
+RAE-DC-0004A,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner or unit responsible for document routing
+RAE-DC-0005,status-drop,HIGH,Document has action=drop but still present in matrix — should be excluded from registry,Verify exclusion from registry draft (already excluded in 5A.6)
+RAE-DC-0006,status-drop,HIGH,Document has action=drop but still present in matrix — should be excluded from registry,Verify exclusion from registry draft (already excluded in 5A.6)
+RAE-DC-0007,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for IT/HR smart card process
+RAE-DC-0008,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for international travel
+RAE-DC-0009,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for training approval
+RAE-DC-0010,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for training reports
+RAE-DC-0011,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for training summaries
+RAE-DC-0012,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for contractor certificates
+RAE-DC-0013,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for attendance forms
+RAE-DC-0013,duplicate-content,LOW,Title overlaps with RAE-DC-0004 (both attendance/timekeeping forms) — notes indicate potential merge,Review whether RAE-DC-0004 and RAE-DC-0013 should be merged into single registry entry
+RAE-DC-0014,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for HR leave forms
+RAE-DC-0015,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for HR leave forms
+RAE-DC-0016,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for HR leave forms
+RAE-DC-0017,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for HR leave forms
+RAE-DC-0018,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for HR resignation forms
+RAE-DC-0019,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for HR resignation forms
+RAE-DC-0020,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for HR resignation forms
+RAE-DC-0021,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign named owner for travel/training reports
+RAE-DC-0022,review-no-rationale,MEDIUM,Review action lacks specific rationale — only states 'verify current validity',Add specific review criteria: confirm if พ.ศ.2564 announcement is still in effect or superseded
+RAE-DC-0022,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign policy owner
+RAE-DC-0023,review-no-rationale,MEDIUM,Review action lacks specific rationale — states 'may be outdated',Add specific review criteria: confirm if FY2565 assessment criteria have been updated for FY2566+
+RAE-DC-0023,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign policy owner
+RAE-DC-0023,duplicate-content,LOW,RAE-DC-0023 and RAE-DC-0024 are companion documents (TOR criteria + behavior criteria for same period),Consider linking these two documents in registry notes as a related pair
+RAE-DC-0024,review-no-rationale,MEDIUM,Review action lacks specific rationale — states 'may be outdated',Add specific review criteria: confirm if FY2565 behavior criteria have been updated
+RAE-DC-0024,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign policy owner
+RAE-DC-0025,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign admin/records management owner
+RAE-DC-0026,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign communications/brand owner
+RAE-DC-0027,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign admin owner for sample letters group
+RAE-DC-0028,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign admin owner for sample letters group
+RAE-DC-0029,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign admin owner for sample letters group
+RAE-DC-0030,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign admin owner for sample letters group
+RAE-DC-0031,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign admin owner for sample letters group
+RAE-DC-0027-0031,merge-candidate,LOW,5 sample letter documents (หนังสือภายใน/ภายนอก/คำสั่ง/ประกาศ/ประทับตรา) flagged for merge — review if a single reference document is better,Decide whether to keep as 5 separate entries or merge into 1 composite reference with sub-entries
+RAE-DC-0032,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign admin/travel procedure owner
+RAE-DC-0032,rewrite-unclear,LOW,Rewrite action flagged but no specific rewrite scope defined,Define what needs rewriting: content modernization vs format update vs policy change
+RAE-DC-0033,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign HR/leave policy owner
+RAE-DC-0034,review-no-rationale,MEDIUM,Review action lacks specific rationale — 'may link to external URL',Confirm if this is a standalone document or just a pointer to external personnel.mju.ac.th/leave.php
+RAE-DC-0034,external-link-risk,LOW,Legacy source links to external URL (personnel.mju.ac.th/leave.php) — may not be a downloadable document,Verify if content exists as a document or is just a web page reference
+RAE-DC-0034,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign HR policy owner
+RAE-DC-0035,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign fleet/vehicle management owner
+RAE-DC-0036,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign fleet/vehicle management owner
+RAE-DC-0037,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign fleet/vehicle management owner
+RAE-DC-0038,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign fleet/vehicle management owner
+RAE-DC-0039,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign fleet/vehicle management owner
+RAE-DC-0040,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign fleet/vehicle management owner
+RAE-DC-0041,owner-tbd,MEDIUM,Owner is TBD — required before migration,Assign fleet/vehicle management owner
+ALL,category-monoculture,MEDIUM,All 40 documents are in 'admin' category — 5 taxonomy categories unused,Review if some documents belong in other categories (e.g. manuals for regulations, policy-planning for strategic docs)
+ALL,updatedDate-synthetic,INFO,All registry documents have updatedDate=2026-06-18 (generation date) — not actual document dates,Populate with real last-modified dates from legacy source when available
+ALL,no-version-history,INFO,All documents default to version 1.0 — actual version history unknown,Verify actual versions from legacy files during OneDrive upload
+ALL,storageUrl-pending,INFO,All storageUrl values are PENDING_ONEDRIVE — expected at this stage,No action needed until OneDrive provisioning

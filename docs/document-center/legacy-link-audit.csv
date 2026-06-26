@@ -1,0 +1,52 @@
+documentId,legacyUrl,urlStatus,notes
+RAE-DC-0001,https://erp.mju.ac.th/openFile.aspx?id=Nzk4NTgw&method=inline,not-tested,ERP-hosted docx - training permission form
+RAE-DC-0002,https://erp.mju.ac.th/openFile.aspx?id=Nzk4NTc5&method=inline,not-tested,ERP-hosted docx - training report form
+RAE-DC-0003,https://erp.mju.ac.th/openFile.aspx?id=Nzk4NTc4&method=inline,not-tested,ERP-hosted docx - knowledge application report
+RAE-DC-0004,https://erp.mju.ac.th/openFile.aspx?id=NDgwMDg3&method=inline,not-tested,ERP-hosted pdf - attendance notification (PDF version)
+RAE-DC-0004,https://view.officeapps.live.com/op/view.aspx?src=https://erp.mju.ac.th/openFile.aspx?id=NDgwMDk0&method=inline,not-tested,Office Online viewer wrapping ERP URL - attendance notification (WORD version) - DOUBLE WRAPPED URL
+RAE-DC-0004A,http://www.e-manage.mju.ac.th/openFile.aspx?id=MTI5MzY2,not-tested,e-manage HTTP (not HTTPS) - document routing form (PDF)
+RAE-DC-0004A,http://www.e-manage.mju.ac.th/openFile.aspx?id=MTI5MzY3,not-tested,e-manage HTTP (not HTTPS) - document routing form (WORD)
+RAE-DC-0005,http://www.erp.mju.ac.th/openFile.aspx?id=MzY1Njkx&method=inline,not-tested,ERP HTTP (not HTTPS) - TOR form FY2563 (dropped - outdated)
+RAE-DC-0006,http://personnel.mju.ac.th/edoc/tor/02_assessment_support_2563.xls,not-tested,Personnel site direct .xls file - assessment support FY2563 (dropped - outdated)
+RAE-DC-0007,https://erp.mju.ac.th/openFile.aspx?id=NTMxMTM3&method=inline,not-tested,ERP-hosted pdf - smart card application
+RAE-DC-0008,https://erp.mju.ac.th/openFile.aspx?id=NjIyOTc2&method=inline,not-tested,ERP-hosted docx - international travel approval
+RAE-DC-0009,http://erp.mju.ac.th/openFile.aspx?id=MjAzOTU3&method=inline,not-tested,ERP HTTP (not HTTPS) - training approval
+RAE-DC-0010,http://erp.mju.ac.th/openFile.aspx?id=MjAzOTU2&method=inline,not-tested,ERP HTTP (not HTTPS) - training report
+RAE-DC-0011,http://www.erp.mju.ac.th/openFile.aspx?id=MjAzOTU4&method=inline,not-tested,ERP HTTP with www prefix - training summary
+RAE-DC-0012,https://erp.mju.ac.th/openFile.aspx?id=NjIxNTcx&method=inline,not-tested,ERP-hosted pdf - contractor certificate request
+RAE-DC-0013,http://www.e-manage.mju.ac.th/openFile.aspx?id=MTI5Mzc0,not-tested,e-manage HTTP (not HTTPS) - attendance form (PDF)
+RAE-DC-0013,http://e-manage.mju.ac.th/openFile.aspx?id=MTI5Mzc1,not-tested,e-manage HTTP (not HTTPS) without www - attendance form (WORD) - INCONSISTENT www
+RAE-DC-0014,https://erp.mju.ac.th/openFile.aspx?id=NDk4Mzky&method=inline,not-tested,ERP-hosted pdf - sick/personal/maternity leave
+RAE-DC-0015,https://erp.mju.ac.th/openFile.aspx?id=NDk4Mzkw&method=inline,not-tested,ERP-hosted pdf - vacation leave
+RAE-DC-0016,http://personnel.mju.ac.th/edoc/forms/26975.pdf,not-tested,Personnel site direct .pdf file - leave cancellation (PDF)
+RAE-DC-0016,http://e-manage.mju.ac.th/openFile.aspx?id=MTI5MzY4,not-tested,e-manage HTTP - leave cancellation (WORD)
+RAE-DC-0017,http://personnel.mju.ac.th/edoc/forms/13045.doc,not-tested,Personnel site direct .doc file - study/training leave (legacy .doc format)
+RAE-DC-0018,http://erp.mju.ac.th/openFile.aspx?id=MzkzMTA5&method=inline,not-tested,ERP HTTP - university employee resignation
+RAE-DC-0019,http://erp.mju.ac.th/openFile.aspx?id=MzkzMTEw&method=inline,not-tested,ERP HTTP - government employee resignation
+RAE-DC-0020,https://erp.mju.ac.th/openFile.aspx?id=NDk0NzIz&method=inline,not-tested,ERP-hosted docx - contractor resignation
+RAE-DC-0021,http://personnel.mju.ac.th/edoc/forms/23707.doc,not-tested,Personnel site direct .doc file - official travel report (legacy .doc format)
+RAE-DC-0022,https://erp.mju.ac.th/openFile.aspx?id=NDgwMDg0&method=inline,not-tested,ERP-hosted pdf - working hours announcement พ.ศ.2564
+RAE-DC-0023,https://erp.mju.ac.th/openFile.aspx?id=NDkxNzQy&method=inline,not-tested,ERP-hosted pdf - TOR assessment criteria FY2565
+RAE-DC-0024,https://erp.mju.ac.th/openFile.aspx?id=NDkxNzQ1&method=inline,not-tested,ERP-hosted pdf - behavior assessment criteria FY2565
+RAE-DC-0025,http://www.admin.general.mju.ac.th/wtms_document_download.aspx?id=MTU4ODE=,not-tested,admin.general.mju.ac.th HTTP - electronic correspondence regulation
+RAE-DC-0026,http://www.admin.general.mju.ac.th/wtms_documentDownload.aspx?id=MzAzMzU=,not-tested,admin.general.mju.ac.th HTTP - university seal usage guideline
+RAE-DC-0027,http://www.general.mju.ac.th/wtms_document_download.aspx?id=MTgyMjQ=,not-tested,general.mju.ac.th HTTP - internal letter sample (PDF)
+RAE-DC-0027,https://erp.mju.ac.th/openFile.aspx?id=NDY2Mzc2&method=inline,not-tested,ERP-hosted docx - internal letter sample (WORD)
+RAE-DC-0028,http://www.general.mju.ac.th/wtms_document_download.aspx?id=MTgyMjg=,not-tested,general.mju.ac.th HTTP - external letter sample (PDF)
+RAE-DC-0028,https://erp.mju.ac.th/openFile.aspx?id=NDY2Mzc1&method=inline,not-tested,ERP-hosted docx - external letter sample (WORD)
+RAE-DC-0029,http://www.general.mju.ac.th/wtms_document_download.aspx?id=MTgyMjU=,not-tested,general.mju.ac.th HTTP - order sample (PDF)
+RAE-DC-0029,https://erp.mju.ac.th/openFile.aspx?id=NDY2Mzc3&method=inline,not-tested,ERP-hosted docx - order sample (WORD)
+RAE-DC-0030,http://www.general.mju.ac.th/wtms_document_download.aspx?id=MTgyMjY=,not-tested,general.mju.ac.th HTTP - announcement sample (PDF)
+RAE-DC-0030,https://erp.mju.ac.th/openFile.aspx?id=NDY2Mzc4&method=inline,not-tested,ERP-hosted docx - announcement sample (WORD)
+RAE-DC-0031,http://www.general.mju.ac.th/wtms_document_download.aspx?id=MTgyMjc=,not-tested,general.mju.ac.th HTTP - sealed letter sample (PDF)
+RAE-DC-0031,https://erp.mju.ac.th/openFile.aspx?id=NDY2Mzc5&method=inline,not-tested,ERP-hosted docx - sealed letter sample (WORD)
+RAE-DC-0032,http://personnel.mju.ac.th/edoc/forms/10789.pdf,not-tested,Personnel site direct .pdf file - international travel procedure
+RAE-DC-0033,https://erp.mju.ac.th/openFile.aspx?id=MzEwNjE4&method=inline,not-tested,ERP-hosted pdf - leave types criteria พ.ศ.2561
+RAE-DC-0034,http://personnel.mju.ac.th/leave.php,not-tested,PERSONNEL PHP PAGE - not a document download - dynamic web page
+RAE-DC-0035,http://www.erp.mju.ac.th/openFile.aspx?id=MzI0MDcz&method=inline,not-tested,ERP HTTP with www - vehicle usage criteria
+RAE-DC-0036,https://erp.mju.ac.th/openFile.aspx?id=NDgwMDk4&method=inline,not-tested,ERP-hosted docx - vehicle request form (car)
+RAE-DC-0037,https://erp.mju.ac.th/openFile.aspx?id=MzQ0NDY1&method=inline,not-tested,ERP-hosted docx - vehicle request form (motorcycle)
+RAE-DC-0038,https://erp.mju.ac.th/openFile.aspx?id=MzQ0NDY2&method=inline,not-tested,ERP-hosted docx - fuel requisition form
+RAE-DC-0039,http://researchex.rae.mju.ac.th/form/05-report1.docx,not-tested,RAE research site - direct .docx file - monthly car usage report
+RAE-DC-0040,http://researchex.rae.mju.ac.th/form/06-report1.docx,not-tested,RAE research site - direct .docx file - vehicle maintenance report
+RAE-DC-0041,http://www.erp.mju.ac.th/openFile.aspx?id=MzQ0NDc2&method=inline,not-tested,ERP HTTP with www - car usage report cover sheet

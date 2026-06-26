@@ -1,0 +1,43 @@
+id,title,category,owner,fileType,action,confidence,registryCandidate,legacySource,notes
+RAE-DC-0001,แบบฟอร์มขออนุญาตเข้าร่วมอบรม ปี2569,admin,TBD,docx,keep,high,true,dlw1.MD#form-01,Active form - update year annually
+RAE-DC-0002,แบบฟอร์มรายงานผลการเข้าร่วมอบรม ปี2569,admin,TBD,docx,keep,high,true,dlw1.MD#form-02,Active form - update year annually
+RAE-DC-0003,แบบฟอร์มรายงานผลการนำความรู้ไปใช้ประโยชน์ในการปฏิบัติงาน ปี2569,admin,TBD,docx,keep,high,true,dlw1.MD#form-03,Active form - update year annually
+RAE-DC-0004,แบบแจ้งการลงเวลาปฏิบัติงาน (เข้า ออก เข้าและออก เข้าสาย ออกก่อน),admin,TBD,pdf,keep,high,true,dlw1.MD#form-04,Available in PDF and WORD
+RAE-DC-0004A,ใบนำส่งเอกสารเพื่อลงนาม,admin,TBD,pdf,keep,high,true,dlw1.MD#form-05,Available in PDF and WORD
+RAE-DC-0005,แบบฟอร์มข้อตกลงภาระงานและพฤติกรรมการปฏิบัติราชการ (TOR) รอบปีงบประมาณ 2563,admin,TBD,xlsx,drop,low,false,dlw1.MD#form-06,Outdated - FY2563 assessment round only
+RAE-DC-0006,แบบรายงานภาระงานตามข้อตกลงและแบบประเมินผลการปฏิบัติราชการ ปีงบประมาณ 2563,admin,TBD,xlsx,drop,low,false,dlw1.MD#form-07,Outdated - FY2563 assessment round only
+RAE-DC-0007,แบบคำขอมีบัตรประจำตัวบุคลากรดิจิทัล (Smart Card),admin,TBD,pdf,keep,high,true,dlw1.MD#form-08,PDF only
+RAE-DC-0008,ขออนุมัติเดินทางไปปฏิบัติงาน ณ ต่างประเทศ (E-Passport/VISA),admin,TBD,docx,keep,high,true,dlw1.MD#form-09,WORD only
+RAE-DC-0009,ขออนุมัติเข้าร่วมโครงการฝึกอบรม,admin,TBD,docx,keep,high,true,dlw1.MD#form-10,WORD only
+RAE-DC-0010,รายงานผลการฝึกอบรม,admin,TBD,docx,keep,high,true,dlw1.MD#form-11,WORD only
+RAE-DC-0011,สรุปผลที่ได้จากการไปฝึกอบรม ประชุมสัมมนา,admin,TBD,docx,keep,high,true,dlw1.MD#form-12,WORD only
+RAE-DC-0012,แบบฟอร์มคำร้องขอหนังสือรับรอง สำหรับลูกจ้างชั่วคราว (จ้างเหมา),admin,TBD,pdf,keep,high,true,dlw1.MD#form-13,Available in PDF and WORD
+RAE-DC-0013,แบบฟอร์มลงเวลาปฏิบัติราชการ,admin,TBD,pdf,keep,high,true,dlw1.MD#form-14,Available in PDF and WORD - may merge with RAE-DC-0004
+RAE-DC-0014,ใบลาป่วย ลากิจ ลาคลอดบุตร,admin,TBD,pdf,keep,high,true,dlw1.MD#form-15,Available in PDF and WORD
+RAE-DC-0015,ใบลาพักผ่อน,admin,TBD,pdf,keep,high,true,dlw1.MD#form-16,Available in PDF and WORD
+RAE-DC-0016,ใบยกเลิกวันลา,admin,TBD,pdf,keep,high,true,dlw1.MD#form-17,Available in PDF and WORD
+RAE-DC-0017,ใบลาศึกษาต่อ ฝึกอบรม ดูงาน,admin,TBD,docx,keep,high,true,dlw1.MD#form-18,WORD only
+RAE-DC-0018,แบบหนังสือลาออกจากงานของพนักงานมหาวิทยาลัย,admin,TBD,pdf,keep,high,true,dlw1.MD#form-19,PDF only
+RAE-DC-0019,แบบหนังสือลาออกจากงานของพนักงานราชการ,admin,TBD,pdf,keep,high,true,dlw1.MD#form-20,PDF only
+RAE-DC-0020,แบบหนังสือขอลาออกจากราชการ (พนักงานส่วนงานเฉพาะกิจ จ้างเหมา),admin,TBD,docx,keep,medium,true,dlw1.MD#form-21,WORD only - review owner
+RAE-DC-0021,แบบรายงานไปราชการ ดูงาน ประชุมสัมมนา ฝึกอบรม,admin,TBD,docx,keep,high,true,dlw1.MD#form-22,WORD only
+RAE-DC-0022,ประกาศ คกก. ก.บ.ม. เรื่อง วัน เวลาปฏิบัติงาน และวิธีลงเวลาปฏิบัติงาน พ.ศ.2564,admin,TBD,pdf,review,medium,true,dlw1.MD#manual-01,Policy document - verify current validity
+RAE-DC-0023,หลักเกณฑ์และวิธีการประเมินผลการปฏิบัติงานสำหรับบุคลากรสำนักวิจัยฯ ประจำปีงบประมาณ 2565,admin,TBD,pdf,review,medium,true,dlw1.MD#manual-02,May be outdated - check for newer version
+RAE-DC-0024,หลักเกณฑ์และวิธีการประเมินผลพฤติกรรมในการปฏิบัติงานสำหรับบุคลากรสำนักวิจัยฯ ประจำปีงบประมาณ 2565,admin,TBD,pdf,review,medium,true,dlw1.MD#manual-03,May be outdated - check for newer version
+RAE-DC-0025,ระเบียบงานสารบรรณว่าด้วย ระบบสารบรรณอิเล็กทรอนิกส์,admin,TBD,pdf,keep,high,true,dlw1.MD#manual-04,Standing regulation
+RAE-DC-0026,การใช้ตรามหาวิทยาลัยและข้อความต่างๆ ในหนังสือของมหาวิทยาลัย,admin,TBD,pdf,keep,high,true,dlw1.MD#manual-05,Brand usage guideline
+RAE-DC-0027,ตัวอย่างหนังสือราชการ หนังสือภายใน,admin,TBD,pdf,merge,high,true,dlw1.MD#manual-06,Consider merging with other sample letter docs
+RAE-DC-0028,ตัวอย่างหนังสือราชการ หนังสือภายนอก,admin,TBD,pdf,merge,high,true,dlw1.MD#manual-07,Consider merging with other sample letter docs
+RAE-DC-0029,ตัวอย่างหนังสือราชการ คำสั่ง,admin,TBD,pdf,merge,high,true,dlw1.MD#manual-08,Consider merging with other sample letter docs
+RAE-DC-0030,ตัวอย่างหนังสือราชการ ประกาศ,admin,TBD,pdf,merge,high,true,dlw1.MD#manual-09,Consider merging with other sample letter docs
+RAE-DC-0031,ตัวอย่างหนังสือราชการ หนังสือประทับตรา,admin,TBD,pdf,merge,high,true,dlw1.MD#manual-10,Consider merging with other sample letter docs
+RAE-DC-0032,ขั้นตอนการขออนุมัติเดินทางไปต่างประเทศ,admin,TBD,pdf,rewrite,high,true,dlw1.MD#manual-11,PDF only - may need modern rewrite
+RAE-DC-0033,หลักเกณฑ์วิธีการประเภทการลาฯ ของพนักงานมหาวิทยาลัย พ.ศ.2561,admin,TBD,pdf,keep,high,true,dlw1.MD#manual-12,Standing regulation
+RAE-DC-0034,สิทธิการลาของบุคลากรประเภทต่างๆ,admin,TBD,pdf,review,medium,true,dlw1.MD#manual-13,Verify current validity - may link to external URL
+RAE-DC-0035,หลักเกณฑ์การขอใช้ยานพาหนะ อัตราค่าเชื้อเพลิง ค่าบำรุงรักษาฯ สำนักวิจัยฯ,admin,TBD,pdf,keep,high,true,dlw1.MD#vehicle-01,PDF only
+RAE-DC-0036,ฟอร์มขอใช้ยานพาหนะ รถยนต์,admin,TBD,docx,keep,high,true,dlw1.MD#vehicle-02,WORD only
+RAE-DC-0037,ฟอร์มขอใช้ยานพาหนะ รถจักรยานยนต์,admin,TBD,docx,keep,high,true,dlw1.MD#vehicle-03,WORD only
+RAE-DC-0038,ฟอร์มขอเบิกน้ำมันเชื้อเพลิง,admin,TBD,docx,keep,high,true,dlw1.MD#vehicle-04,WORD only
+RAE-DC-0039,แบบรายงานประจำเดือน การใช้รถยนต์,admin,TBD,docx,keep,high,true,dlw1.MD#vehicle-05,WORD only
+RAE-DC-0040,แบบรายงานการซ่อมบำรุงยานพาหนะ,admin,TBD,docx,keep,high,true,dlw1.MD#vehicle-06,WORD only
+RAE-DC-0041,ฟอร์มใบปะหน้ารายงานการใช้รถยนต์,admin,TBD,docx,keep,high,true,dlw1.MD#vehicle-07,WORD only

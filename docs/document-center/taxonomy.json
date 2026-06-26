@@ -1,0 +1,66 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-06-17",
+  "categories": [
+    {
+      "id": "admin",
+      "name_th": "งานบริหารและธุรการ",
+      "name_en": "Administration & General Affairs",
+      "folder": "01-งานบริหารและธุรการ",
+      "owner_group": "rae-dc-admin-owners",
+      "description_th": "เอกสารด้านการบริหาร ธุรการ การประชุม และงานสนับสนุนทั่วไป",
+      "sort_order": 1,
+      "enabled": true
+    },
+    {
+      "id": "finance-procurement",
+      "name_th": "งานคลังและพัสดุ",
+      "name_en": "Inventory & Procurement",
+      "folder": "02-งานคลังและพัสดุ",
+      "owner_group": "rae-dc-finance-owners",
+      "description_th": "เอกสารด้านพัสดุ คลัง จัดซื้อจัดจ้าง และการเบิกจ่าย",
+      "sort_order": 2,
+      "enabled": true
+    },
+    {
+      "id": "research",
+      "name_th": "งานวิจัย",
+      "name_en": "Research",
+      "folder": "03-งานวิจัย",
+      "owner_group": "rae-dc-research-owners",
+      "description_th": "เอกสารด้านการวิจัย รายงานผล แบบฟอร์ม และคู่มือวิจัย",
+      "sort_order": 3,
+      "enabled": true
+    },
+    {
+      "id": "academic-service",
+      "name_th": "งานบริการวิชาการ",
+      "name_en": "Academic Services",
+      "folder": "04-งานบริการวิชาการ",
+      "owner_group": "rae-dc-academic-owners",
+      "description_th": "เอกสารด้านบริการวิชาการ การอบรม และการให้คำปรึกษา",
+      "sort_order": 4,
+      "enabled": true
+    },
+    {
+      "id": "policy-planning",
+      "name_th": "งานนโยบายและแผน",
+      "name_en": "Policy & Planning",
+      "folder": "05-งานนโยบายและแผน",
+      "owner_group": "rae-dc-policy-owners",
+      "description_th": "เอกสารด้านนโยบาย แผนยุทธศาสตร์ และแผนปฏิบัติการ",
+      "sort_order": 5,
+      "enabled": true
+    },
+    {
+      "id": "manuals",
+      "name_th": "คู่มือปฏิบัติงาน",
+      "name_en": "Operational Manuals",
+      "folder": "06-คู่มือปฏิบัติงาน",
+      "owner_group": "rae-dc-manuals-owners",
+      "description_th": "คู่มือปฏิบัติงาน ขั้นตอนการทำงาน และแนวปฏิบัติมาตรฐาน",
+      "sort_order": 6,
+      "enabled": true
+    }
+  ]
+}

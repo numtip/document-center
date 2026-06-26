@@ -1,0 +1,4 @@
+id,title,category,owner,file_type,status,updated_date,onedrive_path,storage_url,tags,version,visibility,note
+RAE-DC-0001,ตัวอย่างเอกสาร — คู่มือปฏิบัติงาน,manuals,ops-lead@example.org,pdf,current,2026-06-17,06-คู่มือปฏิบัติงาน/RAE-DC-0001_คู่มือปฏิบัติงาน_v1.0.pdf,https://example.sharepoint.com/EXAMPLE-LINK-RAE-DC-0001,manual;operations;document-management,1.0,public,EXAMPLE URL — replace with real OneDrive share link
+RAE-DC-0002,ตัวอย่างเอกสาร — ร่าง,admin,hr-admin@example.org,docx,draft,2026-06-17,00-Inbox/RAE-DC-0002_ร่างเอกสาร_v0.1.docx,,draft;hr;recruitment,0.1,internal,Draft — storage_url not required until published
+RAE-DC-0003,ระเบียบการประชุมคณะกรรมการ,admin,admin-lead@example.org,pdf,current,2026-05-10,01-งานบริหารและธุรการ/RAE-DC-0003_ระเบียบการประชุม_v2.0.pdf,https://example.sharepoint.com/EXAMPLE-LINK-RAE-DC-0003,meeting;governance;committee,2.0,internal,EXAMPLE URL — internal staff only
