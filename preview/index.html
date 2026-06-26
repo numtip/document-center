@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAE Document Center — Preview</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <p class="eyebrow">สำนักวิจัยและส่งเสริมวิชาการการเกษตร · Maejo University</p>
+        <h1>RAE Document Center</h1>
+        <p class="subtitle">ศูนย์เอกสาร — ตัวอย่างการแสดงผล (Preview / Demo)</p>
+        <div class="banner banner-demo" role="status">
+          GitHub Pages preview only — sample public records · no real files or OneDrive links
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="kpis" id="kpis" aria-label="สรุปเอกสาร"></section>
+
+      <section class="search-panel">
+        <label for="search">ค้นหาเอกสาร</label>
+        <input
+          id="search"
+          type="search"
+          placeholder="ค้นหาชื่อเอกสาร, หมวด, แท็ก..."
+          autocomplete="off"
+        />
+        <select id="category-filter" aria-label="กรองตามหมวด">
+          <option value="">ทุกหมวด</option>
+        </select>
+      </section>
+
+      <section class="categories" id="categories" aria-label="หมวดเอกสาร"></section>
+
+      <section class="documents">
+        <h2>เอกสารสาธารณะ (ตัวอย่าง)</h2>
+        <div id="document-list" class="document-grid"></div>
+        <p id="empty-state" class="empty hidden">ไม่พบเอกสารที่ตรงกับการค้นหา</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          Metadata-only registry preview · Production UI lives in
+          <code>rae-nextjs-main</code>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

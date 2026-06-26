@@ -1,6 +1,7 @@
 node_modules/
 .next/
 dist/
+preview/.DS_Store
 build/
 .env
 .env.*

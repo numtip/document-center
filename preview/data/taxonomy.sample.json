@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-06-17",
+  "categories": [
+    {
+      "id": "admin",
+      "name_th": "งานบริหารและธุรการ",
+      "name_en": "Administration & General Affairs",
+      "folder": "01-งานบริหารและธุรการ",
+      "sort_order": 1,
+      "enabled": true
+    },
+    {
+      "id": "finance-procurement",
+      "name_th": "งานคลังและพัสดุ",
+      "name_en": "Inventory & Procurement",
+      "folder": "02-งานคลังและพัสดุ",
+      "sort_order": 2,
+      "enabled": true
+    },
+    {
+      "id": "research",
+      "name_th": "งานวิจัย",
+      "name_en": "Research",
+      "folder": "03-งานวิจัย",
+      "sort_order": 3,
+      "enabled": true
+    },
+    {
+      "id": "academic-service",
+      "name_th": "งานบริการวิชาการ",
+      "name_en": "Academic Services",
+      "folder": "04-งานบริการวิชาการ",
+      "sort_order": 4,
+      "enabled": true
+    },
+    {
+      "id": "policy-planning",
+      "name_th": "งานนโยบายและแผน",
+      "name_en": "Policy & Planning",
+      "folder": "05-งานนโยบายและแผน",
+      "sort_order": 5,
+      "enabled": true
+    },
+    {
+      "id": "manuals",
+      "name_th": "คู่มือปฏิบัติงาน",
+      "name_en": "Operational Manuals",
+      "folder": "06-คู่มือปฏิบัติงาน",
+      "sort_order": 6,
+      "enabled": true
+    }
+  ]
+}

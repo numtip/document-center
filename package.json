@@ -9,6 +9,7 @@
     "generate:registry": "tsx scripts/generate-registry-draft.ts docs/document-center/migration-matrix.v2.csv docs/document-center/taxonomy.json docs/document-center/document-registry.draft.json",
     "generate:prep-map": "tsx scripts/generate-onedrive-prep-map.ts docs/document-center/document-registry.draft.json docs/document-center/taxonomy.json docs/document-center/onedrive-migration-prep.csv",
     "validate:all": "npm run validate:matrix && npm run validate:registry",
+    "build": "tsx scripts/build-preview.ts",
     "lint": "echo 'No linter configured yet'"
   },
   "devDependencies": {
