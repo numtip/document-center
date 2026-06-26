@@ -42,9 +42,18 @@ rtk npm run build
 
 ### Enable GitHub Pages (one-time, repo admin)
 
-1. Repository **Settings → Pages**
-2. **Build and deployment → Source:** GitHub Actions
-3. Push to `main` — workflow `.github/workflows/pages.yml` deploys automatically
+The workflow publishes the built site to the **`gh-pages`** branch. You must enable Pages once:
+
+1. Open **https://github.com/numtip/document-center/settings/pages**
+2. Under **Build and deployment → Source**, choose **Deploy from a branch**
+3. **Branch:** `gh-pages` · **Folder:** `/ (root)` · **Save**
+4. Re-run the workflow if needed: **Actions → Deploy GitHub Pages Preview → Run workflow**
+
+After the workflow succeeds and Pages is enabled, the site is available at:
+
+**https://numtip.github.io/document-center/**
+
+> If you see “There isn't a GitHub Pages site here”, Pages is not enabled yet or the latest workflow run failed — check the **Actions** tab.
 
 ### Local preview
 
