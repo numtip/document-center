@@ -23,12 +23,9 @@ HOME workstation
 
 WORK workstation
     = Git-backed checkout of canonical repository
-
-G:\ProjectAI\RAE-M365-Platform
-    = one-time historical recovery source (retired after import)
 ```
 
-After historical recovery completes, **no active project development occurs outside Git**.
+**No active project development occurs outside Git.**
 
 ---
 
@@ -39,8 +36,7 @@ After historical recovery completes, **no active project development occurs outs
 | `https://github.com/numtip/document-center` — `main` | Canonical integrated baseline | Single source of truth |
 | `https://github.com/numtip/document-center` — feature branches | Isolated development work | Temporary, merged via PR |
 | `F:\projectAi\document-center` (HOME) | Git checkout of canonical repository | Pulls from GitHub |
-| `G:\ProjectAI\document-center` (WORK, after recovery) | Git checkout of canonical repository | Pulls from GitHub |
-| `G:\ProjectAI\RAE-M365-Platform` (WORK) | One-time recovery source | **Not** a canonical project. Retired after import. |
+| `G:\ProjectAI\document-center` (WORK) | Git checkout of canonical repository | Pulls from GitHub |
 
 ---
 
@@ -107,21 +103,7 @@ Every workstation used for RAE Document Center development MUST:
 
 ---
 
-## 6. Recovery Source Status
-
-`G:\ProjectAI\RAE-M365-Platform` is a **one-time historical recovery source**.
-
-After its contents have been inspected, classified, and selectively imported into the canonical repository via the `recovery/ea-m365-baseline` branch process, it must be **retired**:
-
-```bash
-rtk mv G:\ProjectAI\RAE-M365-Platform G:\ProjectAI\RAE-M365-Platform.RECOVERED.<YYYY-MM-DD>
-```
-
-After retirement, all development resumes through the canonical GitHub repository only.
-
----
-
-## 7. All Commands Use `rtk` Prefix
+## 6. All Commands Use `rtk` Prefix
 
 Every Git, npm, and shell operation in all runbooks, policies, and workflows uses the `rtk` command prefix. Examples:
 

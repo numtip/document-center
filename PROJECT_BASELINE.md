@@ -8,13 +8,9 @@
 | **Handoff Baseline Commit** | `87802abcfe40dd643ec8ad233dc1b3c45308c7ac` |
 | **Architecture Status** | OneDrive-based metadata registry with proposed M365 Foundation blueprint (not yet implemented) |
 
-## Known Archives for Recovery
+## Source of Truth
 
-| Source | Purpose | Status |
-|--------|---------|--------|
-| `G:\ProjectAI\RAE-M365-Platform` | ONE-TIME historical recovery source | Active |
-
-> **Important**: `G:\ProjectAI\RAE-M365-Platform` is NOT a second canonical project. It is a recovery source only. After historical recovery is complete, all authoritative work must flow through the canonical repository at https://github.com/numtip/document-center.
+No external recovery sources exist or have ever existed. This repository is the sole source of project history. All architecture artifacts, governance documents, schemas, and tooling are authored directly against the canonical repository — nothing is imported from elsewhere.
 
 ## Branch Strategy
 
