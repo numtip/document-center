@@ -16,3 +16,11 @@ tokens/
 *.key
 *.crt
 *.cer
+# === RAE Migration Staging — binary files ===
+# Block all document binary files. Only metadata/scripts/reports are tracked.
+.migration/rae-wtms/files/
+.migration/rae-wtms/review/
+# Allow metadata, tools, reports (not binary)
+!.migration/rae-wtms/metadata/
+!.migration/rae-wtms/tools/
+!.migration/rae-wtms/reports/

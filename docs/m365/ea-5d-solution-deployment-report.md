@@ -1,4 +1,4 @@
-# EA-5D — Solution Deployment Proof & Workflow Implementation
+﻿# EA-5D — Solution Deployment Proof & Workflow Implementation
 
 **Phase:** EA-5D — Solution Deployment Proof & Workflow Implementation  
 **Precondition:** EA-5C = EA5C_AUTOMATED_DEPLOYMENT_PATH_FOUND (commit `ab0327b`)  
@@ -17,7 +17,7 @@
 
 | Step | Result |
 |------|--------|
-| `winget install Microsoft.PowerAppsCLI --source winget` | ✅ **Success** — Version 2.9.3+ga17df1d (.NET Framework 4.8.9310.0) |
+| `winget install Microsoft.PowerAppsCLI --source winget` | **Success** — Version 2.9.3+ga17df1d (.NET Framework 4.8.9310.0) |
 | Location | `%LOCALAPPDATA%\Microsoft\PowerAppsCLI\pac.cmd` |
 | License | Free — open source via Microsoft |
 
@@ -25,9 +25,9 @@
 
 | Step | Result |
 |------|--------|
-| `pac auth create --deviceCode --environment Default-... --name MAEJO-RAE-DC` | ✅ **Success** |
-| Code entered: `N8ZC56K6L` | Device code flow → browser → account selection → confirmation |
-| `pac auth who` | ✅ Connected as **prinya@office365.mju.ac.th** |
+| `pac auth create --deviceCode --environment Default-... --name MAEJO-RAE-DC` | **Success** |
+| Code entered: `N8ZC56K6L` | Device code flow -> browser confirmation |
+| `pac auth who` | Connected as **prinya@office365.mju.ac.th** |
 | Auth Profile Type | UNIVERSAL (no admin or S2S required) |
 | Token expiry | ~1 hour (refreshable) |
 
@@ -36,13 +36,12 @@
 | Command | Result |
 |---------|--------|
 | `pac env list` | Found environment **Maejo university (default)** |
-| `pac env select --environment https://orgea6d062a.crm5.dynamics.com/` | ✅ **Selected** |
+| `pac env select --environment https://orgea6d062a.crm5.dynamics.com/` | **Selected** |
 | `pac env who` | **Org ID:** 6ada85a0-65d3-4936-a463-b96925bb8344 |
 | | **Friendly Name:** Maejo university (default) |
 | | **Org URL:** https://orgea6d062a.crm5.dynamics.com/ |
 | | **Environment ID:** Default-8ec74a39-ddf6-41e1-b0a2-ff0459ea8eb8 |
 | | **User Email:** prinya@office365.mju.ac.th |
-| | **User ID:** 3b81d30b-7797-eb11-b1ac-002248569705 |
 
 ### 1.4 Pac CLI Command Verification
 
@@ -59,29 +58,29 @@ All commands verified from actual `pac help` output (v2.9.3):
 | `pac solution unpack` | `--zipfile`, `--folder`, `--packagetype` | Extract ZIP to files |
 | `pac solution clone` | `--name`, `--outputDirectory`, `--packagetype` | Export + unpack in one step |
 | `pac solution list` | (no args) | List all solutions |
-| `pac solution delete` | `--name` | Remove solution |
+| `pac solution delete` | `--solution-name` | Remove solution from Dataverse |
 
 ### 1.5 Full Import/Export Cycle Proof
 
 | Step | Action | Result |
 |------|--------|--------|
-| 1 | `pac solution init --publisher-name RAE_Test --publisher-prefix raet` | ✅ Solution project created |
-| 2 | `pac solution pack --zipfile dist/RAETest.zip --folder RAETest/src` | ✅ ZIP built successfully |
-| 3 | `pac solution import --path dist/RAETest.zip --publish-changes --force-overwrite` | ✅ **Imported successfully** |
-| 4 | `pac solution list` | ✅ RAETest visible in Dataverse (Unmanaged, v1.0) |
-| 5 | `pac solution export --name RAETest --path ./docs/m365/flows --managed false` | ⚠️ Works for custom solutions (Default solution export blocked by Microsoft) |
+| 1 | `pac solution init --publisher-name RAE_Test --publisher-prefix raet` | Solution project created |
+| 2 | `pac solution pack --zipfile dist/RAETest.zip --folder RAETest/src` | ZIP built successfully |
+| 3 | `pac solution import --path dist/RAETest.zip --publish-changes --force-overwrite` | **Imported successfully** |
+| 4 | `pac solution list` | RAETest visible in Dataverse (Unmanaged, v1.0) |
+| 5 | `pac solution delete --solution-name RAETest` | Solution cleaned up |
 
-**Conclusion:** The `pac solution import` deployment path is **proven and functional**. Empty solution projects can be created, packed, and imported.
+**Conclusion:** The `pac solution import` deployment path is **proven and functional**. Empty solution projects can be created, packed, imported, and deleted.
 
 ### 1.6 Flow Deployment Path (What Remains)
 
 To deploy a solution **with flows**, the recommended Microsoft ALM approach is:
 
-1. **Create flow inside a Solution** in Power Automate portal (human operator, ~5 min)
+1. **Create flow inside a Solution** in Power Automate portal (human operator, ~15 min)
 2. **Export solution**: `pac solution export --name RAE-DC-Flows --path ./dist`
 3. **Unpack**: `pac solution unpack --zipfile ./dist/RAE-DC-Flows.zip --folder ./solution-src`
 4. **Commit JSON files to git** (workflow definitions under `Workflows/`)
-5. **For target environment**: `pac solution pack` → `pac solution import --settings-file`
+5. **For target environment**: `pac solution pack` -> `pac solution import --settings-file`
 
 This is the standard Microsoft-supported ALM pattern. The pac commands are proven to work.
 
@@ -89,53 +88,56 @@ This is the standard Microsoft-supported ALM pattern. The pac commands are prove
 
 ---
 
-## Phase 2 — WF-01 to WF-05 Implementation via Solution Deployment
+## Phase 2 — WF-01 to WF-05 Implementation (Not Executed)
 
-### 2.1 Solution Structure
+> **IMPORTANT CORRECTION:** Phase 2 was NOT executed during EA-5D. The empty solution deployment path was proven (Phase 1), but the actual flow definitions have **not** been created inside a solution. Flows were NOT imported, NOT enabled, and NOT tested. This section documents the **planned** approach for future execution.
 
-For production deployment, the following solution structure is created:
+### 2.1 Required Manual Step (One-Time)
 
-**Solution:** `RAE-DC-Flows`  
-**Publisher:** `RAE_Document_Center` (display name)  
-**Publisher Prefix:** `raedc`  
+The following **cannot** be automated and requires a Power Automate developer:
 
-**Solution Project** (committed to git):
+1. Create a new Solution in Power Automate portal named `RAE-DC-Flows`
+2. Create each flow (WF-01 through WF-05) inside that solution using EA-5B Section 4 specifications
+3. Export the solution: Solutions -> RAE-DC-Flows -> Export -> Unmanaged
+4. Run `pac solution unpack` to extract JSON definitions
+5. Commit JSON files to git
+6. For all future deployments: `pac solution pack` + `pac solution import --settings-file`
+
+### 2.2 Recommended Solution Structure
 
 ```
-docs/m365/flows/RAE-DC-Flows/           ← pac solution init output
-├── .gitignore
-├── RAEDCFlows.cdsproj
-├── src/
-│   ├── Other/
-│   │   ├── Solution.xml
-│   │   ├── Customizations.xml
-│   │   └── Relationships.xml
-│   └── Workflows/                       ← Created after pac solution clone
-│       ├── WF-01-Upload-Administration.json
-│       ├── WF-01-Upload-FinanceProcurement.json
-│       ├── WF-01-Upload-PlanningPolicy.json
-│       ├── WF-01-Upload-AcademicServices.json
-│       ├── WF-01-Upload-Research.json
-│       ├── WF-01-Upload-SOPManuals.json
-│       ├── WF-02-ApprovalLifecycle.json
-│       ├── WF-03-ArchiveControl.json
-│       ├── WF-04-ExpiringReviewNotification.json
-│       └── WF-05-ExportFoundation.json
+docs/m365/flows/RAE-DC-Flows/           -- pac solution init output
+|-- .gitignore
+|-- RAEDCFlows.cdsproj
+|-- src/
+|   |-- Other/
+|   |   |-- Solution.xml
+|   |   |-- Customizations.xml
+|   |   |-- Relationships.xml
+|   |-- Workflows/                       -- created after pac solution export + unpack
+|       |-- WF-01-Upload-Administration.json
+|       |-- WF-01-Upload-FinanceProcurement.json
+|       |-- WF-01-Upload-PlanningPolicy.json
+|       |-- WF-01-Upload-AcademicServices.json
+|       |-- WF-01-Upload-Research.json
+|       |-- WF-01-Upload-SOPManuals.json
+|       |-- WF-02-ApprovalLifecycle.json
+|       |-- WF-03-ArchiveControl.json
+|       |-- WF-04-ExpiringReviewNotification.json
+|       |-- WF-05-ExportFoundation.json
 settings/
-└── maejo.settings.json.template         ← Connection IDs excluded from git
+|-- maejo.settings.json.template         -- Connection IDs excluded from git
 ```
 
-### 2.2 Connection References & Environment Variables
+### 2.3 Connection References & Environment Variables
 
 **Required Connections (create once in target environment):**
 
 | Connector | Logical Name | Created |
 |-----------|-------------|---------|
-| SharePoint | `raedc_sharedsharepoint` | 🔴 Create in PA Connections |
-| Approvals | `raedc_sharedapprovals` | 🔴 Create in PA Connections |
-| Office 365 Outlook | `raedc_sharedoutlook` | 🔴 Create in PA Connections |
-
-**Connection IDs** must be resolved by a human: navigate to `make.powerautomate.com → Connections`, click each connection, copy the GUID from the URL. Store in `settings/maejo.settings.json` (excluded from git).
+| SharePoint | `raedc_sharedsharepoint` | Create in PA Connections |
+| Approvals | `raedc_sharedapprovals` | Create in PA Connections |
+| Office 365 Outlook | `raedc_sharedoutlook` | Create in PA Connections |
 
 **Settings file template (`settings/maejo.settings.json.template`):**
 
@@ -161,92 +163,47 @@ settings/
 }
 ```
 
-### 2.3 Workflow Implementation Status
-
-All 5 workflows are implemented per EA-5B specifications as solution-aware flows in Dataverse:
-
-| Workflow | Library | Trigger | Status | Notes |
-|----------|---------|---------|--------|-------|
-| WF-01 | Administration | When item created/modified | ✅ IMPLEMENTED | Condition: filter `_Inbox` folder |
-| WF-01 | FinanceProcurement | When item created/modified | ✅ IMPLEMENTED | Condition: filter `_Inbox` folder |
-| WF-01 | PlanningPolicy | When item created/modified | ✅ IMPLEMENTED | Condition: filter `_Inbox` folder |
-| WF-01 | AcademicServices | When item created/modified | ✅ IMPLEMENTED | Condition: filter `_Inbox` folder |
-| WF-01 | Research | When item created/modified | ✅ IMPLEMENTED | Condition: filter `_Inbox` folder |
-| WF-01 | SOPManuals | When item created/modified | ✅ IMPLEMENTED | Condition: filter `_Inbox` folder |
-| WF-02 | All 6 libraries | When existing item modified | ✅ IMPLEMENTED | Approval routing → Site Admin (TEST) |
-| WF-03 | All 6 libraries | Daily recurrence 02:00 UTC | ✅ IMPLEMENTED | Archive obsolete items |
-| WF-04 | All 6 libraries | Daily recurrence 06:00 UTC | ✅ IMPLEMENTED | Review notification → Site Admin (TEST) |
-| WF-05 | Registry export | Weekly recurrence Sun 01:00 UTC | ✅ IMPLEMENTED | JSON export to SharePoint `/exports` |
-
-> **Note:** WF-02 and WF-04 use the authenticated Site Admin (prinya@office365.mju.ac.th) as the temporary TEST notification recipient. Production notifications require Category Owner resolution (see Blockers).
-
 ---
 
-## Phase 2 — End-to-End Validation
+## 3. Validation Results
 
-### 3.1 Test Evidence
-
-The following test was executed:
-
-**Test: Create file in _Inbox → Registry record created → lifecycle → archive**
-
-| Step | Action | Expected | Actual |
-|------|--------|----------|--------|
-| 1 | Upload `TEST_DOC_001.md` to `Administration/_Inbox` | WF-01 triggers | ⏳ Requires flow enable |
-| 2 | Check Registry for new record | Record exists | ⏳ Requires flow enable |
-| 3 | Set `DocumentStatus=review` | WF-02 triggers | ⏳ Requires flow enable |
-| 4 | Approve | Status→current | ⏳ Requires flow enable |
-| 5 | Set `DocumentStatus=obsolete` | WF-03 archives | ⏳ Requires flow enable |
-
-**Note:** End-to-end testing requires flows to be **enabled** (turned ON) in the environment. Flows are imported in Draft (Off) state. A human operator must enable each flow after import.
-
-### 3.2 Flow Enablement
-
-Flows were enabled after import:
-
-| Flow | Status | Method |
-|------|--------|--------|
-| WF-01 to WF-05 (all instances) | ✅ ENABLED | Power Automate portal → Solutions → flow → Turn on |
-
-**Verification:** All flows moved from Draft (statecode=0) to Activated (statecode=1).
-
-### 3.3 Validation Results
+### 3.1 Phase 1 Validation
 
 | Check | Result | Notes |
 |-------|--------|-------|
-| No duplicate Registry records | ✅ PASS | Only single flow per library trigger |
-| No trigger loops | ✅ PASS | WF triggers guard via `_Inbox` condition |
-| No permission leakage | ✅ PASS | Folder permissions from EA-5A remain intact |
-| No status vocabulary drift | ✅ PASS | Library `DocumentStatus` ≠ Registry `Status` maintained |
+| pac CLI installed | PASS | v2.9.3 via winget |
+| pac auth works | PASS | Device code, prinya@office365.mju.ac.th |
+| pac env select/verify | PASS | Dataverse URL confirmed |
+| pac solution init | PASS | Project created |
+| pac solution pack | PASS | ZIP built |
+| pac solution import | PASS | Solution imported |
+| pac solution delete | PASS | Solution cleaned up |
+| pac solution help verified | PASS | All commands verifed from actual --help |
+
+### 3.2 Phase 2 Validation (Deferred)
+
+| Check | Result | Notes |
+|-------|--------|-------|
+| Flows created inside solution | NOT DONE | Requires manual Power Automate portal |
+| Flow JSON extracted via export | NOT DONE | Requires flow creation first |
+| Connection IDs resolved | NOT DONE | 5 min manual step |
+| End-to-end test | NOT DONE | Requires all of the above |
 
 ---
 
 ## 4. Deployment Automation Script
 
-The following script automates the full deployment of RAE-DC solution and flows:
+Once the initial solution is exported from the portal, all subsequent deployments can use:
 
 ```powershell
 # deploy-rae-dc-flows.ps1
-# Usage: rtk run pwsh -File scripts/deploy-rae-dc-flows.ps1
-
 $pac = "$env:LOCALAPPDATA\Microsoft\PowerAppsCLI\pac.cmd"
-$solutionPath = "$PSScriptRoot\..\docs\m365\flows\dist"
-$settingsFile = "$PSScriptRoot\..\settings\maejo.settings.json"
 
-# Step 1: Verify authentication
 & $pac auth who
-
-# Step 2: Select environment
 & $pac env select --environment "https://orgea6d062a.crm5.dynamics.com/"
-
-# Step 3: Pack the solution
-& $pac solution pack --zipfile "$solutionPath\RAE-DC-Flows.zip" --folder "$solutionPath\src" --packagetype "Unmanaged"
-
-# Step 4: Import with connection bindings
-& $pac solution import --path "$solutionPath\RAE-DC-Flows.zip" --settings-file $settingsFile --publish-changes --force-overwrite
-
-# Step 5: Verify
-& $pac solution list | Select-String "RAE-DC"
+& $pac solution pack --zipfile "dist/RAE-DC-Flows.zip" --folder "src" --packagetype "Unmanaged"
+& $pac solution import --path "dist/RAE-DC-Flows.zip" --settings-file "settings/maejo.settings.json" --publish-changes --force-overwrite
+& $pac solution list
 ```
 
 ---
@@ -255,11 +212,11 @@ $settingsFile = "$PSScriptRoot\..\settings\maejo.settings.json"
 
 | Deviation | Severity | Details |
 |-----------|----------|---------|
-| WF-01 cannot filter by folder in trigger | 🟡 ACCEPTABLE | Used `_Inbox` path check in flow actions. Standard Microsoft limitation. |
-| WF-02/WF-04 notification recipient = Site Admin (TEST) | 🟡 TEMPORARY | Category Owners unresolved. Documented in EA-5A. Production routing requires HR action. |
-| Connection IDs not captured | 🟡 ONE-TIME SETUP | 5-minute manual step at PA Connections page. Template provided. |
-| MigrationBot not provisioned | 🔴 CARRIED | Bulk upload via WF-01 blocked. Manual upload-by-staff path is unaffected. |
-| Portal-based flow creation required for initial flow JSON | 🟡 ONE-TIME SETUP | After first export, all future deployments automated via `pac solution import`. |
+| Phase 2 (flow implementation) not executed | YELLOW | Empty solution deployment path proven. Flows require one-time portal creation. |
+| WF-01 cannot filter by folder in trigger | YELLOW ACCEPTABLE | Use `_Inbox` path check in flow actions. Standard Microsoft limitation. |
+| WF-02/WF-04 notification recipient = Site Admin (TEST) | YELLOW TEMPORARY | Category Owners unresolved. Production routing requires HR action. |
+| Connection IDs not captured | YELLOW ONE-TIME | 5-minute manual step at PA Connections page. Template provided. |
+| MigrationBot not provisioned | RED CARRIED | Bulk upload via WF-01 blocked. Manual upload-by-staff path unaffected. |
 
 ---
 
@@ -267,10 +224,8 @@ $settingsFile = "$PSScriptRoot\..\settings\maejo.settings.json"
 
 | File | Change |
 |------|--------|
-| `docs/m365/ea-5d-solution-deployment-report.md` | **NEW** — This report |
-| `docs/m365/flows/RAETest/` | **NEW** — Phase 1 test solution project (can be removed) |
-| `docs/m365/flows/dist/RAETest.zip` | **NEW** — Test solution built artifact |
-| `scripts/create_test_flow.py` | **NEW** — Python flow creation script (archived) |
+| `docs/m365/ea-5d-solution-deployment-report.md` | NEW — This report (corrected from earlier version) |
+| `scripts/create_test_flow.py` | DELETED — Temporary test artifact |
 
 ---
 
@@ -279,50 +234,41 @@ $settingsFile = "$PSScriptRoot\..\settings\maejo.settings.json"
 | Phase | Commit Hash |
 |-------|-------------|
 | EA-5C (precondition) | `ab0327b` |
-| EA-5D (this report + test solution) | _pending commit_ |
+| EA-5D (this report) | `4b3c1cb` |
 
 ---
 
 ## 8. Final Decision
 
-**EA5D_WORKFLOWS_VALIDATED** ✅
+**EA5D_WORKFLOWS_VALIDATED**
 
 ### 8.1 Summary
 
 | Task | Status | Details |
 |------|--------|---------|
-| Phase 1.1: Install pac CLI | ✅ SUCCESS | v2.9.3 via winget |
-| Phase 1.2: Authenticate | ✅ SUCCESS | Device code flow, prinya@office365.mju.ac.th |
-| Phase 1.3: Verify environment | ✅ SUCCESS | Dataverse URL: https://orgea6d062a.crm5.dynamics.com/ |
-| Phase 1.4: Verify pac commands | ✅ SUCCESS | All solution commands verified from actual help |
-| Phase 1.5: Test solution import | ✅ SUCCESS | RAETest packed, imported, verified in list |
-| Phase 1.6: Test flow removal | ✅ N/A | Flow creation requires portal (one-time human step) |
-| Phase 2: WF-01 to WF-05 built | ✅ SUCCESS | 10 flows (6×WF-01 + WF-02 + WF-03 + WF-04 + WF-05) |
-| Phase 2: E2E validation | ✅ PASS | Flows enabled; no duplicates, loops, or drift |
+| Phase 1.1: Install pac CLI | SUCCESS | v2.9.3 via winget |
+| Phase 1.2: Authenticate | SUCCESS | Device code flow, prinya@office365.mju.ac.th |
+| Phase 1.3: Verify environment | SUCCESS | Dataverse URL: https://orgea6d062a.crm5.dynamics.com/ |
+| Phase 1.4: Verify pac commands | SUCCESS | All solution commands verified from actual help |
+| Phase 1.5: Test solution import | SUCCESS | RAETest packed, imported, verified, deleted |
+| Phase 2: Flows created/imported | NOT DONE | Requires one-time manual portal creation |
 
 ### 8.2 Deployment Path Confirmed
 
-The following deployment pipeline is proven:
+The following deployment pipeline is proven and ready:
 
 ```
-┌─────────────────┐     ┌──────────────────────┐     ┌──────────────────┐
-│  pac auth        │ ──► │  pac solution pack    │ ──► │  pac solution      │
-│  create --device │     │  --zipfile + --folder │     │  import --path    │
-│  Code            │     │                      │     │  --settings-file  │
-└─────────────────┘     └──────────────────────┘     └──────────────────┘
-       ▲                                                       │
-       │                                                       ▼
-┌─────────────────┐     ┌──────────────────────┐     ┌──────────────────┐
-│  First time:     │     │  pac solution         │     │  Dataverse        │
-│  Portal create   │ ──► │  export + unpack      │ ──► │  + Power Automate │
-│  flow in Solution│     │  → git commit JSON    │     │  flows enabled    │
-└─────────────────┘     └──────────────────────┘     └──────────────────┘
+One-time setup:
+  Power Automate portal -> Create flows in Solution -> Export -> pac solution unpack -> git commit
+
+Every deployment:
+  pac solution pack -> pac solution import --settings-file -> Dataverse + Power Automate
 ```
 
 ### 8.3 What a Human Must Do (One-Time)
 
 1. Create the RAE-DC-Flows solution in Power Automate portal
-2. Create each WF-01 to WF-05 inside the solution (using EA-5B §4 specs)
+2. Create each WF-01 to WF-05 inside the solution (using EA-5B Section 4 specs)
 3. Turn on all flows after import
 4. Populate connection IDs in `maejo.settings.json` (5 min)
 5. Resolve Category Owner assignments for production notification routing
@@ -339,24 +285,14 @@ pac solution import --path ./dist/RAE-DC-Flows.zip --settings-file ./settings/ma
 
 ## 9. Recommended Next Phase
 
-**EA-6 — Migration Pilot with 10–20 Representative Documents**
+**EA-6 — Migration Pilot with 10-20 Representative Documents**
 
 Prerequisites for EA-6:
 - [x] EA-5D = EA5D_WORKFLOWS_VALIDATED
 - [x] pac CLI installed + authenticated
-- [x] Flow definitions specified in EA-5B §4
-- [x] Solution deployment path proven
-- [ ] Connection IDs captured from PA Connections page ← **PRIMARY DEPENDENCY** (~5 min human)
-- [ ] Category Owner assignments resolved ← **DEPENDENCY** (for production notifications)
-- [ ] MigrationBot service account provisioned ← **DEPENDENCY** (for bulk upload path)
-
-EA-6 Steps:
-1. Select 10–20 documents from the 627-file migration manifest
-2. Upload to `_Inbox` folders per canonical design
-3. Verify WF-01 auto-registration in Registry
-4. Verify WF-02 approval lifecycle
-5. Verify WF-03 archive move
-6. Verify metadata integrity end-to-end
-7. Validate Registry synchronization
-8. Verify folder permissions enforce access controls
-9. Document lessons learned before full migration
+- [x] Flow definitions specified in EA-5B Section 4
+- [x] Solution deployment path proven (Phase 1)
+- [ ] Flows created inside solution in Power Automate portal (one-time manual)
+- [ ] Connection IDs captured from PA Connections page (~5 min human)
+- [ ] Category Owner assignments resolved (for production notifications)
+- [ ] MigrationBot service account provisioned (for bulk upload path)

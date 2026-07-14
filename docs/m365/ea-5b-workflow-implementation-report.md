@@ -1,8 +1,8 @@
-# EA-5B — Workflow Implementation & End-to-End Validation Report
+﻿# EA-5B โ€” Workflow Implementation & End-to-End Validation Report
 
-**Phase:** EA-5B — Workflow Implementation & End-to-End Validation  
+**Phase:** EA-5B โ€” Workflow Implementation & End-to-End Validation  
 **Precondition:** EA-5A = EA5A_GOVERNANCE_READY (commit `eea468f`)  
-**Tenant:** Maejo University (MJU) — maejo365.sharepoint.com  
+**Tenant:** Maejo University (MJU) โ€” maejo365.sharepoint.com  
 **Target Site:** https://maejo365.sharepoint.com/sites/msteams_54adc4  
 **Power Automate Environment:** Default-8ec74a39-ddf6-41e1-b0a2-ff0459ea8eb8  
 **Date:** 2026-07-14  
@@ -16,10 +16,10 @@
 
 | Precondition | Status | Evidence |
 |---|---|---|
-| EA-5A commit = `eea468f` | ✅ CONFIRMED | git log |
-| 18 governance folders created | ✅ CONFIRMED | REST API verify (all 18 folders 200 OK) |
-| Folder permissions configured | ✅ CONFIRMED | Unique permissions on all folders per permissions-matrix.md |
-| Power Automate accessible | ✅ CONFIRMED | make.powerautomate.com — Default environment |
+| EA-5A commit = `eea468f` | โ… CONFIRMED | git log |
+| 18 governance folders created | โ… CONFIRMED | REST API verify (all 18 folders 200 OK) |
+| Folder permissions configured | โ… CONFIRMED | Unique permissions on all folders per permissions-matrix.md |
+| Power Automate accessible | โ… CONFIRMED | make.powerautomate.com โ€” Default environment |
 
 ### 1.2 Power Automate Flow Audit (BEFORE EA-5B)
 
@@ -27,11 +27,11 @@
 
 | Flow | Expected from EA-5A | Actual State | Evidence |
 |------|--------------------|----|---|
-| WF-01 - RAE Upload & Registration | Flow skeleton (trigger only) | ❌ NOT FOUND | "You don't have any flows" |
-| WF-02 - RAE Approval Lifecycle | Specification only | ❌ NOT FOUND | "You don't have any flows" |
-| WF-03 - RAE Archive Control | Specification only | ❌ NOT FOUND | "You don't have any flows" |
-| WF-04 - RAE Expiring Review Notification | Flow skeleton (scheduled) | ❌ NOT FOUND | "You don't have any flows" |
-| WF-05 - RAE Export Foundation | READY_WITH_LIMITATIONS | ❌ NOT FOUND | "You don't have any flows" |
+| WF-01 - RAE Upload & Registration | Flow skeleton (trigger only) | โ NOT FOUND | "You don't have any flows" |
+| WF-02 - RAE Approval Lifecycle | Specification only | โ NOT FOUND | "You don't have any flows" |
+| WF-03 - RAE Archive Control | Specification only | โ NOT FOUND | "You don't have any flows" |
+| WF-04 - RAE Expiring Review Notification | Flow skeleton (scheduled) | โ NOT FOUND | "You don't have any flows" |
+| WF-05 - RAE Export Foundation | READY_WITH_LIMITATIONS | โ NOT FOUND | "You don't have any flows" |
 
 **Audit Conclusion:** Zero flows persisted in the Power Automate environment. EA-5A flow skeletons referenced in the EA-5A report were NOT saved to the tenant. The Power Automate "My flows" page shows "You don't have any flows."
 
@@ -41,53 +41,53 @@
 
 ## 2. EA-5B Implementation Attempts
 
-### 2.1 WF-01 — Upload & Registration (Attempted)
+### 2.1 WF-01 โ€” Upload & Registration (Attempted)
 
-**Objective:** Create automated cloud flow: SharePoint item created/modified → filter _Inbox → create Registry record
+**Objective:** Create automated cloud flow: SharePoint item created/modified โ’ filter _Inbox โ’ create Registry record
 
 **Steps Executed:**
 
 | Step | Action | Result |
 |------|--------|--------|
-| 1 | Navigate to Power Automate Create page | ✅ Success |
-| 2 | Enter flow name "WF-01 - RAE Upload & Registration" | ✅ Success |
-| 3 | Select "Automated cloud flow" type | ✅ Success |
-| 4 | Select trigger "When an item is created or modified" (SharePoint) | ✅ Success (via JavaScript click) |
-| 5 | Configure trigger: Site Address = `https://maejo365.sharepoint.com/sites/msteams_54adc4` | ✅ Selected |
-| 6 | Configure trigger: List Name = "Administration" | ⚠️ Entered as custom value — did NOT persist |
-| 7 | Add Condition action (folder filter for `_Inbox`) | ✅ Action added |
-| 8 | Set condition expression via Code view (JSON) | ⚠️ Partial — Monaco editor model not updated by browser_fill |
-| 9 | Save flow | ❌ FAILED — "Invalid parameter for 'When an item is created or modified'. Error: 'List Name' is required." |
+| 1 | Navigate to Power Automate Create page | โ… Success |
+| 2 | Enter flow name "WF-01 - RAE Upload & Registration" | โ… Success |
+| 3 | Select "Automated cloud flow" type | โ… Success |
+| 4 | Select trigger "When an item is created or modified" (SharePoint) | โ… Success (via JavaScript click) |
+| 5 | Configure trigger: Site Address = `https://maejo365.sharepoint.com/sites/msteams_54adc4` | โ… Selected |
+| 6 | Configure trigger: List Name = "Administration" | โ ๏ธ Entered as custom value โ€” did NOT persist |
+| 7 | Add Condition action (folder filter for `_Inbox`) | โ… Action added |
+| 8 | Set condition expression via Code view (JSON) | โ ๏ธ Partial โ€” Monaco editor model not updated by browser_fill |
+| 9 | Save flow | โ FAILED โ€” "Invalid parameter for 'When an item is created or modified'. Error: 'List Name' is required." |
 
 **WF-01 Final State:** NOT SAVED. Flow was in unsaved draft state with trigger "Invalid parameters" when closed.
 
-### 2.2 WF-02 — Approval Lifecycle
+### 2.2 WF-02 โ€” Approval Lifecycle
 
-**Objective:** Automated flow triggered on item modification → approval routing → status update
+**Objective:** Automated flow triggered on item modification โ’ approval routing โ’ status update
 
-**Steps Executed:** None — blocked by WF-01 save failure; prioritized EA-5B report.
+**Steps Executed:** None โ€” blocked by WF-01 save failure; prioritized EA-5B report.
 
 **WF-02 Final State:** NOT CREATED
 
-### 2.3 WF-03 — Archive Control
+### 2.3 WF-03 โ€” Archive Control
 
-**Objective:** Scheduled daily flow → query items with DocumentStatus = "obsolete" → move to _Archive folder
+**Objective:** Scheduled daily flow โ’ query items with DocumentStatus = "obsolete" โ’ move to _Archive folder
 
 **Steps Executed:** None
 
 **WF-03 Final State:** NOT CREATED
 
-### 2.4 WF-04 — Expiring Review Notification
+### 2.4 WF-04 โ€” Expiring Review Notification
 
-**Objective:** Scheduled daily flow → query items with ReviewDate within 30 days → send email notification
+**Objective:** Scheduled daily flow โ’ query items with ReviewDate within 30 days โ’ send email notification
 
 **Steps Executed:** None
 
 **WF-04 Final State:** NOT CREATED
 
-### 2.5 WF-05 — Export Foundation
+### 2.5 WF-05 โ€” Export Foundation
 
-**Objective:** Scheduled flow → query Registry → generate JSON export → save to SharePoint
+**Objective:** Scheduled flow โ’ query Registry โ’ generate JSON export โ’ save to SharePoint
 
 **Steps Executed:** None beyond EA-5A specification
 
@@ -111,19 +111,19 @@
 
 | Dependency | Status | Impact |
 |-----------|--------|--------|
-| Category Owner user assignments | 🔴 UNRESOLVED | WF-02 approval routing cannot resolve recipient |
-| `RAE-DC-Contributors` members | 🔴 UNRESOLVED | WF-01 notification routing blocked |
-| `RAE-DC-ArchiveManagers` members | 🔴 UNRESOLVED | WF-03 archive notification routing blocked |
-| `RAE-DC-MigrationBot` service account | 🔴 NOT PROVISIONED | WF-01 bulk import entry point blocked |
-| Power Automate connection binding | 🟡 PARTIAL | All connectors listed but no flow was saved to bind them |
+| Category Owner user assignments | ๐”ด UNRESOLVED | WF-02 approval routing cannot resolve recipient |
+| `RAE-DC-Contributors` members | ๐”ด UNRESOLVED | WF-01 notification routing blocked |
+| `RAE-DC-ArchiveManagers` members | ๐”ด UNRESOLVED | WF-03 archive notification routing blocked |
+| `RAE-DC-MigrationBot` service account | ๐”ด NOT PROVISIONED | WF-01 bulk import entry point blocked |
+| Power Automate connection binding | ๐ก PARTIAL | All connectors listed but no flow was saved to bind them |
 
 ### 3.3 End-to-End Test Blocked
 
 Since no flows could be saved, the end-to-end validation path is blocked:
 
 ```
-upload → metadata → Registry → lifecycle → archive/review notification
-   ❌         ❌          ❌          ❌                    ❌
+upload โ’ metadata โ’ Registry โ’ lifecycle โ’ archive/review notification
+   โ         โ          โ          โ                    โ
 ```
 
 All pipeline stages require functional Power Automate flows that do not exist.
@@ -137,7 +137,7 @@ These specifications are carried forward from EA-5A and enhanced with additional
 ### 4.1 WF-01: Upload & Registration
 
 **Flow Type:** Automated cloud flow  
-**Trigger:** SharePoint — "When an item is created or modified"  
+**Trigger:** SharePoint โ€” "When an item is created or modified"  
 **Required Connections:** SharePoint, Microsoft Lists, Office 365 Outlook  
 
 **Trigger Configuration:**
@@ -148,40 +148,40 @@ These specifications are carried forward from EA-5A and enhanced with additional
 
 ```
 [Trigger] When an item is created or modified
-  │
-  ├── [Action 1] Condition: Is the item in the _Inbox folder?
-  │   Expression: contains(triggerBody()?['Path'], '_Inbox')
-  │   Operator: is equal to / true
-  │
-  ├── [TRUE Branch]
-  │   ├── [Action 2] Compose: Generate DocumentID
-  │   │   Expression: if(empty(triggerBody()?['RAE_DocumentID']),
-  │   │              concat('RAE-PENDING-', formatDateTime(utcNow(), 'yyyyMMddHHmmss')),
-  │   │              triggerBody()?['RAE_DocumentID'])
-  │   │
-  │   ├── [Action 3] SharePoint: Create item (in "RAE Document Registry")
-  │   │   Site: https://maejo365.sharepoint.com/sites/msteams_54adc4
-  │   │   List: RAE Document Registry
-  │   │   Fields:
-  │   │     Title          = triggerBody()?['{FilenameWithExtension}']
-  │   │     RAE_DocumentID = outputs('Compose_DocumentID')
-  │   │     Category       = (derived from library name — see mapping below)
-  │   │     Status         = "draft"
-  │   │     Visibility     = "internal"
-  │   │     SourceSystem   = "Direct Upload"
-  │   │     Version        = "1.0"
-  │   │     StorageURL     = triggerBody()?['{Link}']
-  │   │     Owner          = "TBD"   ← resolved when group members are assigned
-  │   │
-  │   └── [Action 4] Office 365 Outlook: Send an email
-  │       To: (Site Admin TEST — temp until Category Owner resolved)
-  │       Subject: "[RAE-DC] New document uploaded: @{triggerBody()?['{FilenameWithExtension}']}"
-  │       Body: Document uploaded to _Inbox. DocumentID: @{outputs('Compose_DocumentID')}
-  │
-  └── [FALSE Branch] — Terminate / do nothing (files outside _Inbox not processed)
+  โ”
+  โ”โ”€โ”€ [Action 1] Condition: Is the item in the _Inbox folder?
+  โ”   Expression: contains(triggerBody()?['Path'], '_Inbox')
+  โ”   Operator: is equal to / true
+  โ”
+  โ”โ”€โ”€ [TRUE Branch]
+  โ”   โ”โ”€โ”€ [Action 2] Compose: Generate DocumentID
+  โ”   โ”   Expression: if(empty(triggerBody()?['RAE_DocumentID']),
+  โ”   โ”              concat('RAE-PENDING-', formatDateTime(utcNow(), 'yyyyMMddHHmmss')),
+  โ”   โ”              triggerBody()?['RAE_DocumentID'])
+  โ”   โ”
+  โ”   โ”โ”€โ”€ [Action 3] SharePoint: Create item (in "RAE Document Registry")
+  โ”   โ”   Site: https://maejo365.sharepoint.com/sites/msteams_54adc4
+  โ”   โ”   List: RAE Document Registry
+  โ”   โ”   Fields:
+  โ”   โ”     Title          = triggerBody()?['{FilenameWithExtension}']
+  โ”   โ”     RAE_DocumentID = outputs('Compose_DocumentID')
+  โ”   โ”     Category       = (derived from library name โ€” see mapping below)
+  โ”   โ”     Status         = "draft"
+  โ”   โ”     Visibility     = "internal"
+  โ”   โ”     SourceSystem   = "Direct Upload"
+  โ”   โ”     Version        = "1.0"
+  โ”   โ”     StorageURL     = triggerBody()?['{Link}']
+  โ”   โ”     Owner          = "TBD"   โ resolved when group members are assigned
+  โ”   โ”
+  โ”   โ””โ”€โ”€ [Action 4] Office 365 Outlook: Send an email
+  โ”       To: (Site Admin TEST โ€” temp until Category Owner resolved)
+  โ”       Subject: "[RAE-DC] New document uploaded: @{triggerBody()?['{FilenameWithExtension}']}"
+  โ”       Body: Document uploaded to _Inbox. DocumentID: @{outputs('Compose_DocumentID')}
+  โ”
+  โ””โ”€โ”€ [FALSE Branch] โ€” Terminate / do nothing (files outside _Inbox not processed)
 ```
 
-**Library → Category Mapping:**
+**Library โ’ Category Mapping:**
 | Library | Category Value |
 |---------|---------------|
 | Administration | Administration |
@@ -198,51 +198,51 @@ These specifications are carried forward from EA-5A and enhanced with additional
 ### 4.2 WF-02: Approval Lifecycle
 
 **Flow Type:** Automated cloud flow  
-**Trigger:** SharePoint — "When an existing item is modified"  
+**Trigger:** SharePoint โ€” "When an existing item is modified"  
 **Required Connections:** SharePoint, Approvals, Office 365 Outlook  
 
 **Trigger Configuration:**
 - Site Address: `https://maejo365.sharepoint.com/sites/msteams_54adc4`
-- List Name: (one flow per library — same pattern as WF-01)
+- List Name: (one flow per library โ€” same pattern as WF-01)
 
 **Action Sequence:**
 
 ```
 [Trigger] When an existing item is modified
-  │
-  ├── [Action 1] Condition: Did DocumentStatus change to "review"?
-  │   Expression: triggerBody()?['DocumentStatus'] is equal to 'review'
-  │
-  ├── [TRUE Branch — Submit for Review]
-  │   ├── [Action 2] SharePoint: Update item in RAE Document Registry
-  │   │   Set Status = "review"
-  │   │
-  │   ├── [Action 3] Approvals: Start and wait for an approval
-  │   │   Approval type: Approve/Reject — First to respond
-  │   │   Title: "Review request: @{triggerBody()?['Title']}"
-  │   │   Assigned to: (Category Owner — UNRESOLVED; use Site Admin temporarily)
-  │   │   Details: Document ID: @{triggerBody()?['RAE_DocumentID']}
-  │   │
-  │   ├── [Action 4] Condition: Was it Approved?
-  │   │   Expression: body('Start_and_wait_for_an_approval')?['outcome'] is equal to 'Approve'
-  │   │
-  │   │   ├── [TRUE — Approved]
-  │   │   │   ├── [Action 5a] SharePoint: Update item (library) — Set DocumentStatus = "current"
-  │   │   │   └── [Action 5b] SharePoint: Update item (Registry) — Set Status = "current"
-  │   │   │
-  │   │   └── [FALSE — Rejected]
-  │   │       ├── [Action 5c] SharePoint: Update item (library) — Set DocumentStatus = "draft"
-  │   │       └── [Action 5d] Office 365 Outlook: Send email — notify uploader of rejection
-  │   │
-  │   └── [Action 6] Log to flow audit (Compose action with timestamp + outcome)
-  │
-  └── [FALSE Branch]
-      ├── Condition: Did DocumentStatus change to "obsolete"?
-      │   ├── [TRUE — Obsolete]
-      │   │   ├── SharePoint: Update Registry Status = "obsolete"
-      │   │   ├── SharePoint: Move file to _Archive folder
-      │   │   └── Office 365 Outlook: Notify Category Owner
-      │   └── (Other status transitions logged but not automated)
+  โ”
+  โ”โ”€โ”€ [Action 1] Condition: Did DocumentStatus change to "review"?
+  โ”   Expression: triggerBody()?['DocumentStatus'] is equal to 'review'
+  โ”
+  โ”โ”€โ”€ [TRUE Branch โ€” Submit for Review]
+  โ”   โ”โ”€โ”€ [Action 2] SharePoint: Update item in RAE Document Registry
+  โ”   โ”   Set Status = "review"
+  โ”   โ”
+  โ”   โ”โ”€โ”€ [Action 3] Approvals: Start and wait for an approval
+  โ”   โ”   Approval type: Approve/Reject โ€” First to respond
+  โ”   โ”   Title: "Review request: @{triggerBody()?['Title']}"
+  โ”   โ”   Assigned to: (Category Owner โ€” UNRESOLVED; use Site Admin temporarily)
+  โ”   โ”   Details: Document ID: @{triggerBody()?['RAE_DocumentID']}
+  โ”   โ”
+  โ”   โ”โ”€โ”€ [Action 4] Condition: Was it Approved?
+  โ”   โ”   Expression: body('Start_and_wait_for_an_approval')?['outcome'] is equal to 'Approve'
+  โ”   โ”
+  โ”   โ”   โ”โ”€โ”€ [TRUE โ€” Approved]
+  โ”   โ”   โ”   โ”โ”€โ”€ [Action 5a] SharePoint: Update item (library) โ€” Set DocumentStatus = "current"
+  โ”   โ”   โ”   โ””โ”€โ”€ [Action 5b] SharePoint: Update item (Registry) โ€” Set Status = "current"
+  โ”   โ”   โ”
+  โ”   โ”   โ””โ”€โ”€ [FALSE โ€” Rejected]
+  โ”   โ”       โ”โ”€โ”€ [Action 5c] SharePoint: Update item (library) โ€” Set DocumentStatus = "draft"
+  โ”   โ”       โ””โ”€โ”€ [Action 5d] Office 365 Outlook: Send email โ€” notify uploader of rejection
+  โ”   โ”
+  โ”   โ””โ”€โ”€ [Action 6] Log to flow audit (Compose action with timestamp + outcome)
+  โ”
+  โ””โ”€โ”€ [FALSE Branch]
+      โ”โ”€โ”€ Condition: Did DocumentStatus change to "obsolete"?
+      โ”   โ”โ”€โ”€ [TRUE โ€” Obsolete]
+      โ”   โ”   โ”โ”€โ”€ SharePoint: Update Registry Status = "obsolete"
+      โ”   โ”   โ”โ”€โ”€ SharePoint: Move file to _Archive folder
+      โ”   โ”   โ””โ”€โ”€ Office 365 Outlook: Notify Category Owner
+      โ”   โ””โ”€โ”€ (Other status transitions logged but not automated)
 ```
 
 ---
@@ -250,31 +250,31 @@ These specifications are carried forward from EA-5A and enhanced with additional
 ### 4.3 WF-03: Archive Control
 
 **Flow Type:** Scheduled cloud flow  
-**Trigger:** Recurrence — Daily at 02:00 UTC  
+**Trigger:** Recurrence โ€” Daily at 02:00 UTC  
 **Required Connections:** SharePoint  
 
 **Action Sequence:**
 
 ```
 [Trigger] Recurrence (daily 02:00 UTC)
-  │
-  ├── [Action 1] SharePoint: Get items from RAE Document Registry
-  │   Filter: Status eq 'obsolete' and ArchivedDate eq null
-  │
-  ├── [Action 2] Apply to each (loop over results)
-  │   │
-  │   ├── [Action 3] SharePoint: Get file metadata (by DocumentID / StorageURL)
-  │   │
-  │   ├── [Action 4] SharePoint: Move file to _Archive folder
-  │   │   Destination: /sites/msteams_54adc4/{Library}/_Archive/{filename}
-  │   │
-  │   ├── [Action 5] SharePoint: Update item in Registry
-  │   │   Set ArchivedDate = utcNow()
-  │   │   Set Status = "archived"
-  │   │
-  │   └── [Action 6] Office 365 Outlook: Notify Category Owner (if resolved)
-  │
-  └── Error handling: Log failures to Compose action
+  โ”
+  โ”โ”€โ”€ [Action 1] SharePoint: Get items from RAE Document Registry
+  โ”   Filter: Status eq 'obsolete' and ArchivedDate eq null
+  โ”
+  โ”โ”€โ”€ [Action 2] Apply to each (loop over results)
+  โ”   โ”
+  โ”   โ”โ”€โ”€ [Action 3] SharePoint: Get file metadata (by DocumentID / StorageURL)
+  โ”   โ”
+  โ”   โ”โ”€โ”€ [Action 4] SharePoint: Move file to _Archive folder
+  โ”   โ”   Destination: /sites/msteams_54adc4/{Library}/_Archive/{filename}
+  โ”   โ”
+  โ”   โ”โ”€โ”€ [Action 5] SharePoint: Update item in Registry
+  โ”   โ”   Set ArchivedDate = utcNow()
+  โ”   โ”   Set Status = "archived"
+  โ”   โ”
+  โ”   โ””โ”€โ”€ [Action 6] Office 365 Outlook: Notify Category Owner (if resolved)
+  โ”
+  โ””โ”€โ”€ Error handling: Log failures to Compose action
 ```
 
 ---
@@ -282,30 +282,30 @@ These specifications are carried forward from EA-5A and enhanced with additional
 ### 4.4 WF-04: Expiring Review Notification
 
 **Flow Type:** Scheduled cloud flow  
-**Trigger:** Recurrence — Daily at 06:00 UTC  
+**Trigger:** Recurrence โ€” Daily at 06:00 UTC  
 **Required Connections:** SharePoint, Office 365 Outlook  
 
 **Action Sequence:**
 
 ```
 [Trigger] Recurrence (daily 06:00 UTC)
-  │
-  ├── [Action 1] Compose: Calculate 30-day threshold
-  │   Expression: addDays(utcNow(), 30)
-  │
-  ├── [Action 2] SharePoint: Get items from RAE Document Registry
-  │   Filter: Status ne 'archived' and Status ne 'obsolete'
-  │           and ReviewDate le '@{outputs('Compose_Threshold')}'
-  │           and ReviewDate ge '@{utcNow()}'
-  │
-  ├── [Action 3] Condition: Were any items found?
-  │   Expression: length(body('Get_items')?['value']) greater than 0
-  │
-  └── [TRUE Branch — Items approaching review date]
-      └── [Action 4] Apply to each
-          │
-          └── [Action 5] Office 365 Outlook: Send an email
-              To: (Category Owner — UNRESOLVED; use Site Admin temporarily)
+  โ”
+  โ”โ”€โ”€ [Action 1] Compose: Calculate 30-day threshold
+  โ”   Expression: addDays(utcNow(), 30)
+  โ”
+  โ”โ”€โ”€ [Action 2] SharePoint: Get items from RAE Document Registry
+  โ”   Filter: Status ne 'archived' and Status ne 'obsolete'
+  โ”           and ReviewDate le '@{outputs('Compose_Threshold')}'
+  โ”           and ReviewDate ge '@{utcNow()}'
+  โ”
+  โ”โ”€โ”€ [Action 3] Condition: Were any items found?
+  โ”   Expression: length(body('Get_items')?['value']) greater than 0
+  โ”
+  โ””โ”€โ”€ [TRUE Branch โ€” Items approaching review date]
+      โ””โ”€โ”€ [Action 4] Apply to each
+          โ”
+          โ””โ”€โ”€ [Action 5] Office 365 Outlook: Send an email
+              To: (Category Owner โ€” UNRESOLVED; use Site Admin temporarily)
               Subject: "[RAE-DC] Review due: @{items('Apply_to_each')?['Title']}"
               Body: Document @{items('Apply_to_each')?['RAE_DocumentID']} is due for review
                     by @{items('Apply_to_each')?['ReviewDate']}. Please take action.
@@ -316,7 +316,7 @@ These specifications are carried forward from EA-5A and enhanced with additional
 ### 4.5 WF-05: Export Foundation
 
 **Flow Type:** Scheduled cloud flow  
-**Trigger:** Recurrence — Weekly (Sunday 01:00 UTC)  
+**Trigger:** Recurrence โ€” Weekly (Sunday 01:00 UTC)  
 **Required Connections:** SharePoint  
 **Classification:** READY_WITH_LIMITATIONS  
 
@@ -324,39 +324,39 @@ These specifications are carried forward from EA-5A and enhanced with additional
 
 ```
 [Trigger] Recurrence (weekly Sunday 01:00 UTC)
-  │
-  ├── [Action 1] SharePoint: Get items from RAE Document Registry
-  │   Filter: Visibility eq 'public' and Status eq 'current'
-  │   Select: Title, RAE_DocumentID, Category, Status, Visibility,
-  │           ReviewDate, PublishedDate, StorageURL, Version
-  │
-  ├── [Action 2] Select: Transform to export schema
-  │   Mapping:
-  │     documentId  = item()?['RAE_DocumentID']
-  │     title       = item()?['Title']
-  │     category    = item()?['Category']
-  │     status      = item()?['Status']
-  │     visibility  = item()?['Visibility']
-  │     version     = item()?['Version']
-  │     publishedAt = item()?['PublishedDate']
-  │     reviewBy    = item()?['ReviewDate']
-  │     storageUrl  = item()?['StorageURL']
-  │
-  ├── [Action 3] Compose: Build JSON envelope
-  │   Expression: {
-  │     "exportedAt": "@{utcNow()}",
-  │     "exportVersion": "1.0",
-  │     "documentCount": @{length(body('Get_items')?['value'])},
-  │     "documents": @{body('Select')}
-  │   }
-  │
-  ├── [Action 4] SharePoint: Create file
-  │   Site: https://maejo365.sharepoint.com/sites/msteams_54adc4
-  │   Folder: /sites/msteams_54adc4/Documents/exports
-  │   File name: "rae-registry-export-@{formatDateTime(utcNow(),'yyyyMMdd')}.json"
-  │   File content: @{outputs('Compose_JSON_Envelope')}
-  │
-  └── [LIMITATION] GitHub sync requires external action:
+  โ”
+  โ”โ”€โ”€ [Action 1] SharePoint: Get items from RAE Document Registry
+  โ”   Filter: Visibility eq 'public' and Status eq 'current'
+  โ”   Select: Title, RAE_DocumentID, Category, Status, Visibility,
+  โ”           ReviewDate, PublishedDate, StorageURL, Version
+  โ”
+  โ”โ”€โ”€ [Action 2] Select: Transform to export schema
+  โ”   Mapping:
+  โ”     documentId  = item()?['RAE_DocumentID']
+  โ”     title       = item()?['Title']
+  โ”     category    = item()?['Category']
+  โ”     status      = item()?['Status']
+  โ”     visibility  = item()?['Visibility']
+  โ”     version     = item()?['Version']
+  โ”     publishedAt = item()?['PublishedDate']
+  โ”     reviewBy    = item()?['ReviewDate']
+  โ”     storageUrl  = item()?['StorageURL']
+  โ”
+  โ”โ”€โ”€ [Action 3] Compose: Build JSON envelope
+  โ”   Expression: {
+  โ”     "exportedAt": "@{utcNow()}",
+  โ”     "exportVersion": "1.0",
+  โ”     "documentCount": @{length(body('Get_items')?['value'])},
+  โ”     "documents": @{body('Select')}
+  โ”   }
+  โ”
+  โ”โ”€โ”€ [Action 4] SharePoint: Create file
+  โ”   Site: https://maejo365.sharepoint.com/sites/msteams_54adc4
+  โ”   Folder: /sites/msteams_54adc4/Documents/exports
+  โ”   File name: "rae-registry-export-@{formatDateTime(utcNow(),'yyyyMMdd')}.json"
+  โ”   File content: @{outputs('Compose_JSON_Envelope')}
+  โ”
+  โ””โ”€โ”€ [LIMITATION] GitHub sync requires external action:
       - GitHub Actions workflow triggered by repository dispatch
       - OR: Premium HTTP connector to GitHub API (outside EA-5 scope)
       - STATUS: READY_WITH_LIMITATIONS
@@ -364,7 +364,7 @@ These specifications are carried forward from EA-5A and enhanced with additional
 
 ---
 
-## 5. End-to-End Test Plan (Cannot Execute — Flows Not Running)
+## 5. End-to-End Test Plan (Cannot Execute โ€” Flows Not Running)
 
 The following test plan is documented for execution once flows are manually implemented:
 
@@ -375,7 +375,7 @@ The following test plan is documented for execution once flows are manually impl
 | T-01 | Upload test file `TEST_DOC_001.pdf` to `Administration/_Inbox` | WF-01 triggers | Flow run history |
 | T-02 | Check RAE Document Registry for new entry | Record created with DocumentID, Status=draft | Registry list view |
 | T-03 | Set DocumentStatus = "review" on library item | WF-02 triggers approval | Approvals page |
-| T-04 | Approve in Approvals connector | DocumentStatus → "current", Registry Status → "current" | Library + Registry |
+| T-04 | Approve in Approvals connector | DocumentStatus โ’ "current", Registry Status โ’ "current" | Library + Registry |
 | T-05 | Set DocumentStatus = "obsolete" | WF-02 triggers archive path | Flow run history |
 | T-06 | Next WF-03 scheduled run | File moved to `_Archive`, Registry ArchivedDate set | SharePoint folder |
 | T-07 | Set ReviewDate to today + 15 days | WF-04 triggers next day | Email notification |
@@ -397,10 +397,10 @@ After test evidence capture:
 
 | Check | Status | Reason |
 |-------|--------|--------|
-| No duplicate Registry records | ⛔ CANNOT TEST | No flows running |
-| No trigger loops | ⛔ CANNOT TEST | No flows running |
-| No permission leakage | ✅ PARTIAL | Folder permissions verified in EA-5A |
-| No status vocabulary drift | ✅ SPECIFICATION | Vocabulary separation maintained in specs |
+| No duplicate Registry records | โ” CANNOT TEST | No flows running |
+| No trigger loops | โ” CANNOT TEST | No flows running |
+| No permission leakage | โ… PARTIAL | Folder permissions verified in EA-5A |
+| No status vocabulary drift | โ… SPECIFICATION | Vocabulary separation maintained in specs |
 
 ---
 
@@ -408,22 +408,22 @@ After test evidence capture:
 
 | Deviation | Severity | Details |
 |-----------|----------|---------|
-| Power Automate new designer rejects programmatic input | 🔴 CRITICAL | `browser_fill` on Monaco code editor does not update flow model. Dropdown selections don't persist on save. |
-| CORS blocks Power Automate API from browser | 🔴 CRITICAL | Direct `fetch()` calls to `make.powerautomate.com/api` fail with CORS/network errors |
-| All WF-01 through WF-05 flows = NOT SAVED | 🔴 CRITICAL | Zero flows in tenant; no end-to-end testing possible |
-| Category Owner identity unresolved | 🔴 CARRIED | Approval routing, notification routing all blocked |
-| MigrationBot service account not provisioned | 🔴 CARRIED | Cannot use system account for automated uploads |
-| Term Set deferred | 🔒 KNOWN | Text Tags fallback active per EA-3I decision |
+| Power Automate new designer rejects programmatic input | ๐”ด CRITICAL | `browser_fill` on Monaco code editor does not update flow model. Dropdown selections don't persist on save. |
+| CORS blocks Power Automate API from browser | ๐”ด CRITICAL | Direct `fetch()` calls to `make.powerautomate.com/api` fail with CORS/network errors |
+| All WF-01 through WF-05 flows = NOT SAVED | ๐”ด CRITICAL | Zero flows in tenant; no end-to-end testing possible |
+| Category Owner identity unresolved | ๐”ด CARRIED | Approval routing, notification routing all blocked |
+| MigrationBot service account not provisioned | ๐”ด CARRIED | Cannot use system account for automated uploads |
+| Term Set deferred | ๐”’ KNOWN | Text Tags fallback active per EA-3I decision |
 
 ---
 
 ## 8. Remediation Path
 
-### Option A — Manual Power Automate UI Implementation (Recommended)
+### Option A โ€” Manual Power Automate UI Implementation (Recommended)
 
 A tenant administrator or Power Automate developer manually creates the flows using the specifications in Section 4 of this report.
 
-**Estimated effort:** 4–6 hours for all 5 workflows (experienced Power Automate developer)
+**Estimated effort:** 4โ€“6 hours for all 5 workflows (experienced Power Automate developer)
 
 **Prerequisites:**
 - Power Automate license for implementation account
@@ -435,13 +435,13 @@ A tenant administrator or Power Automate developer manually creates the flows us
 **Steps:**
 1. Create WF-01 for each of the 6 libraries (or one shared flow with branching)
 2. Create WF-02 for each of the 6 libraries (or one shared flow)
-3. Create WF-03 (shared — scheduled)
-4. Create WF-04 (shared — scheduled)
-5. Create WF-05 (shared — scheduled)
+3. Create WF-03 (shared โ€” scheduled)
+4. Create WF-04 (shared โ€” scheduled)
+5. Create WF-05 (shared โ€” scheduled)
 6. Enable all flows
 7. Run end-to-end test per Section 5.1
 
-### Option B — Power Automate CLI (`pac flow`)
+### Option B โ€” Power Automate CLI (`pac flow`)
 
 ```powershell
 # Install Power Platform CLI
@@ -456,7 +456,7 @@ rtk run pwsh -Command "pac solution import --path .\rae-dc-flows.zip"
 
 **Note:** Requires Power Platform CLI with Dataverse/Power Automate permissions. Flow packages must be exported from another environment or built as solution components.
 
-### Option C — Logic Apps Deployment
+### Option C โ€” Logic Apps Deployment
 
 Alternative implementation using Azure Logic Apps with ARM templates:
 - Requires Azure subscription linked to tenant
@@ -469,7 +469,7 @@ Alternative implementation using Azure Logic Apps with ARM templates:
 
 | File | Change |
 |------|--------|
-| `docs/m365/ea-5b-workflow-implementation-report.md` | **NEW** — This report |
+| `docs/m365/ea-5b-workflow-implementation-report.md` | **NEW** โ€” This report |
 | `docs/m365/ea-5a-governance-workflow-report.md` | Correction: Flow skeleton status updated |
 
 ---
@@ -485,21 +485,21 @@ Alternative implementation using Azure Logic Apps with ARM templates:
 
 ## 11. Final Decision
 
-**EA5B_BLOCKED** ⛔
+**EA5B_BLOCKED** โ”
 
 ### 11.1 Summary
 
 | Task | Status | Reason |
 |------|--------|--------|
-| 1. Audit PA flows | ✅ Complete | All 5 flows = NOT FOUND in tenant |
-| 2. Implement WF-01 | ❌ BLOCKED | Save failed — List Name required; cannot programmatically configure trigger |
-| 3. Implement WF-02 | ❌ BLOCKED | Not attempted — blocked by same constraints |
-| 4. Implement WF-03 | ❌ BLOCKED | Not attempted — blocked by same constraints |
-| 5. Implement WF-04 | ❌ BLOCKED | Not attempted — blocked by same constraints |
-| 6. Implement WF-05 to JSON boundary | ⚠️ SPEC ONLY | Specification complete; no flow saved |
-| 7. End-to-end test | ❌ BLOCKED | Requires functional flows |
-| 8. Verify no duplicate records | ❌ BLOCKED | Requires functional flows |
-| 9. Clean up test artifacts | ✅ N/A | No artifacts created |
+| 1. Audit PA flows | โ… Complete | All 5 flows = NOT FOUND in tenant |
+| 2. Implement WF-01 | โ BLOCKED | Save failed โ€” List Name required; cannot programmatically configure trigger |
+| 3. Implement WF-02 | โ BLOCKED | Not attempted โ€” blocked by same constraints |
+| 4. Implement WF-03 | โ BLOCKED | Not attempted โ€” blocked by same constraints |
+| 5. Implement WF-04 | โ BLOCKED | Not attempted โ€” blocked by same constraints |
+| 6. Implement WF-05 to JSON boundary | โ ๏ธ SPEC ONLY | Specification complete; no flow saved |
+| 7. End-to-end test | โ BLOCKED | Requires functional flows |
+| 8. Verify no duplicate records | โ BLOCKED | Requires functional flows |
+| 9. Clean up test artifacts | โ… N/A | No artifacts created |
 
 ### 11.2 Primary Blocker
 
@@ -515,15 +515,15 @@ Browser automation (browser_fill, browser_click, browser_cdp) cannot reliably su
 
 The following is complete and ready for EA-6 once flows are implemented manually:
 
-- ✅ 18 governance folders (_Inbox, _Review, _Archive × 6 libraries)
-- ✅ Folder permissions per permissions-matrix.md
-- ✅ Content types associated and defaults set (EA-4)
-- ✅ Library views created (EA-4)
-- ✅ Library permissions configured (EA-4)
-- ✅ RAE Document Registry schema provisioned (EA-3I.1)
-- ✅ Complete workflow specifications (Sections 4.1–4.5 of this report)
-- ✅ End-to-end test plan documented (Section 5.1)
-- ✅ WF-05 export contract and JSON schema defined
+- โ… 18 governance folders (_Inbox, _Review, _Archive ร— 6 libraries)
+- โ… Folder permissions per permissions-matrix.md
+- โ… Content types associated and defaults set (EA-4)
+- โ… Library views created (EA-4)
+- โ… Library permissions configured (EA-4)
+- โ… RAE Document Registry schema provisioned (EA-3I.1)
+- โ… Complete workflow specifications (Sections 4.1โ€“4.5 of this report)
+- โ… End-to-end test plan documented (Section 5.1)
+- โ… WF-05 export contract and JSON schema defined
 
 ---
 
@@ -542,12 +542,13 @@ Required actions (in order):
 
 **Only after all REQUIRED items are complete:**
 
-> **EA-6 — Migration Pilot with 10–20 Representative Documents**
+> **EA-6 โ€” Migration Pilot with 10โ€“20 Representative Documents**
 
 EA-6 prerequisites (all must be true before starting):
 - [ ] EA-5B = `EA5B_WORKFLOWS_VALIDATED` (manual re-run required)
 - [ ] Category Owners confirmed and groups populated
-- [ ] WF-01 tested: upload → Registry auto-registration confirmed
+- [ ] WF-01 tested: upload โ’ Registry auto-registration confirmed
 - [ ] WF-02 tested: approval lifecycle confirmed
 - [ ] WF-03 tested: archive move confirmed
 - [ ] WF-04 tested: review notification confirmed
+

@@ -159,7 +159,7 @@ Each library has the following groups assigned:
 ## 9. Commit Hash
 
 ```
-(To be added after git commit)
+a85f5a9 EA-4: Content type association & permission binding - foundation ready
 ```
 
 ---
