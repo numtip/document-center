@@ -401,20 +401,35 @@ EA-4 has been completed (see `ea-4-content-type-permission-binding-report.md`). 
 | Landing page | ✅ COMPLETE | Published via REST API |
 | Navigation entry | ⏸️ DEFERRED | Teams-connected site; navigation deferred to EA-5 |
 
-### Prerequisites for EA-5
+### EA-5A Completion Summary
+
+| Task | Status | Details |
+|:----:|:------:|---------|
+| EA-4 reconciled with EA-5 workflow inventory | ✅ COMPLETE | 5 canonical workflows defined and documented |
+| _Inbox, _Review, _Archive folders created | ✅ COMPLETE | 18 folders (3 per library × 6 libraries) |
+| Folder permissions configured | ✅ COMPLETE | Unique permissions per permissions-matrix.md |
+| WF-01 Upload & Registration | ✅ FLOW SKELETON | Automated trigger created; action sequence documented |
+| WF-02 Approval Lifecycle | ✅ SPECIFICATION | Flow definition documented |
+| WF-03 Archive Control | ✅ SPECIFICATION | Flow definition documented |
+| WF-04 Expiring Review Notification | ✅ FLOW SKELETON | Scheduled daily recurrence trigger created |
+| WF-05 Export Foundation | ✅ READY_WITH_LIMITATIONS | Export specification documented; GitHub sync deferred |
+| No bulk migration | ✅ COMPLIANT | No 627-file import |
+| No production rollout | ✅ COMPLIANT | All test data non-sensitive |
+
+### Prerequisites for EA-6 (Migration Pilot)
 
 | Dependency | Status | Action Needed |
 |-----------|:------:|--------------|
 | Category Owner named individuals confirmed | 🔴 PENDING | HR/Admin to provide |
 | Group members populated | 🔴 PENDING | After owners confirmed |
 | `RAE-DC-MigrationBot` service account | 🔴 NOT PROVISIONED | Create and add as Contribute to all libraries |
-| `_Inbox`, `_Archive`, `_Review` folders | 🔴 PENDING | Create per library |
-| Folder-level permissions | 🔴 PENDING | Contribute on `_Inbox`, Edit on `_Archive` |
+| Power Automate flow action binding | 🟡 PENDING | Complete dynamic content mapping in designer |
 | `RAE-Tags` Term Set | 🔒 TERM STORE | Requires Term Store admin privileges |
+| GitHub Actions sync for WF-05 | ⏸️ DEFERRED | Requires Premium HTTP connector or external action |
 
 ---
 
 **Account Used:** researchmju@mju.ac.th (Site Admin)  
 **Browser Session:** Authenticated M365 browser session via Cursor IDE  
-**Provisioning Method:** SharePoint REST API + UI interaction  
+**Provisioning Method:** SharePoint REST API + UI interaction + Power Automate  
 **Date:** 2026-07-14
