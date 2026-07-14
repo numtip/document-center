@@ -1,9 +1,9 @@
 # Provisioning Authorization Gate — RAE Document Center
 
-**Phase:** EA-3P — Provisioning Preflight  
+**Phase:** EA-3P — Provisioning Preflight (Updated per EA-3R/EA-3S Exception)  
 **Tenant:** Maejo University (MJU) — maejo365.sharepoint.com  
 **Date:** 2026-07-14  
-**Status:** ALL ACTIONS `NOT_AUTHORIZED`
+**Status:** EXISTING SITE APPROVED — Actions 1-2: `REUSE_EXISTING_SITE` | Actions 3-11: `NOT_AUTHORIZED`
 
 ---
 
@@ -29,29 +29,29 @@ Evidence is recorded in provisioning manifest
 
 ## Authorization Register
 
-### Action 1 — Create SharePoint Site
+### Action 1 — Create SharePoint Site (EXISTING SITE REUSE)
 
 | Field | Value |
 |-------|-------|
-| **Production Change** | Create RAE Document Center SharePoint Team Site at `/sites/RAEDocumentCenter` |
-| **Impact** | Creates a new SharePoint site with M365 Group. Generates site URL, creates storage capacity allocation |
-| **Reversible** | ✅ Yes — Site can be deleted within 30 days; all data is recoverable |
-| **Rollback Method** | SharePoint admin center → Delete site → Confirm permanent deletion after 30-day retention |
-| **Required Role** | SharePoint admin or user with self-service site creation permission |
-| **Evidence Required Before Action** | Tenant admin confirms site creation capability; owner identity confirmed |
-| **Authorization Status** | **NOT_AUTHORIZED** |
+| **Production Change** | ~~Create RAE Document Center SharePoint Team Site at `/sites/RAEDocumentCenter`~~ **NOT REQUIRED** — Existing RAE site at `/sites/msteams_54adc4` is the approved deployment boundary per `ARCHITECTURE_IMPLEMENTATION_EXCEPTION` (EA-3R/EA-3S) |
+| **Impact** | No site creation needed. Existing site is a Private Team Site connected to M365 Group with 23 members |
+| **Reversible** | N/A — no site creation action required |
+| **Rollback Method** | N/A — the site already exists; the fallback dedicated-site path is the Admin Provisioning Request Package |
+| **Required Role** | Site Admin (researchmju@mju.ac.th) — already verified as `IsSiteAdmin = true` |
+| **Evidence Required Before Action** | EA-3S readiness closure confirmed: `EXISTING_SITE_READY_FOR_PROVISIONING` |
+| **Authorization Status** | **REUSE_EXISTING_SITE — NO CREATION REQUIRED** |
 
-### Action 2 — Create M365 Group
+### Action 2 — Create M365 Group (EXISTING GROUP REUSE)
 
 | Field | Value |
 |-------|-------|
-| **Production Change** | Auto-created with Team Site (Action 1). M365 Group named "RAE Document Center" with email alias RAEDocumentCenter |
-| **Impact** | Creates group with owner/member list, email address, SharePoint site, Teams team option |
-| **Reversible** | ✅ Yes — Group can be deleted |
-| **Rollback Method** | M365 admin center → Delete group |
-| **Required Role** | Inherits from site creation |
-| **Evidence Required Before Action** | Primary owner identity confirmed |
-| **Authorization Status** | **NOT_AUTHORIZED** |
+| **Production Change** | ~~Auto-created with Team Site (Action 1). M365 Group named "RAE Document Center" with email alias RAEDocumentCenter~~ **NOT REQUIRED** — Existing M365 Group for the RAE site is reused per `ARCHITECTURE_IMPLEMENTATION_EXCEPTION` (EA-3R/EA-3S) |
+| **Impact** | No group creation needed. Existing M365 Group has 23 members managed through Azure AD |
+| **Reversible** | N/A — no group creation action required |
+| **Rollback Method** | N/A — group already exists |
+| **Required Role** | N/A — group exists; Site Admin has full site management capability |
+| **Evidence Required Before Action** | EA-3S condition C4 confirmed: `OWNERSHIP_CLEAR` |
+| **Authorization Status** | **REUSE_EXISTING_GROUP — NO CREATION REQUIRED** |
 
 ### Action 3 — Create Document Libraries
 

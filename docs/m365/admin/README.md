@@ -19,8 +19,10 @@ This package formally requests MJU M365 tenant administration to provision the f
 | Tenant verification | ✅ Complete |
 | Architecture design (EA-3/EA-4) | ✅ Complete |
 | Provisioning preflight | ✅ Complete |
-| Admin provisioning request | ➡️ **PENDING — AWAITING ADMIN ACTION** |
+| Admin provisioning request | ➞ **PENDING — AWAITING ADMIN ACTION** (FALLBACK PATH) — see EA-3S readiness closure |
 | User authorization | ❌ NOT YET AUTHORIZED |
+
+|| Existing-site reuse (EA-3S) | ✅ COMPLETE — `EXISTING_SITE_READY_FOR_PROVISIONING` (see `docs/m365/m365-existing-site-reuse-readiness-closure.md`) |
 
 All tenant capability checks (SharePoint, Lists, Power Automate) have been verified using the operational account `researchmju@mju.ac.th`. Site creation and Term Store access require MJU admin privileges.
 

@@ -1,20 +1,47 @@
 # SharePoint + Registry Provisioning Plan — RAE Document Center
 
-**Phase:** EA-3P — Provisioning Preflight  
+**Phase:** EA-3P — Pro
+
+---
+
+## Architecture Implementation Exception — Existing Site Boundary (EA-3R / EA-3S)
+
+Per **EA-3R** reuse audit and **EA-3S** readiness closure, the deployment boundary is changed from a dedicated new site to the **existing RAE SharePoint site**.
+
+| Parameter | Original Design | Approved Exception |
+|-----------|-----------------|-------------------|
+| Site URL | `/sites/RAEDocumentCenter` | `/sites/msteams_54adc4` |
+| Site Type | New Team Site + M365 Group | Existing Team Site + M365 Group |
+| Account Role | Regular user (admin-dependent) | **Site Admin** (self-service capable) |
+| Group Creation | New M365 Group required | Existing M365 Group reused (23 members) |
+| Permission Groups | 9 new RAE-DC-* groups | 9 new RAE-DC-* groups (Site Admin can create) |
+| Libraries | 6 new (PLANNED) | 6 new (unchanged) |
+| Registry | New list (PLANNED) | New list (unchanged) |
+| Content Types | 5 new (PLANNED) | 5 new (unchanged) |
+| Site Columns | 17 new (PLANNED) | 17 new (unchanged) |
+
+**Exception document:** `docs/m365/m365-existing-site-implementation-exception.md`  
+**Readiness closure:** `docs/m365/m365-existing-site-reuse-readiness-closure.md`
+
+---
+
+visioning Preflight (Updated per EA-3R/EA-3S Exception)  
 **Tenant:** Maejo University (MJU) — maejo365.sharepoint.com  
-**Account:** researchmju@mju.ac.th (Jumpon Sriudomsuwan)  
+**Account:** researchmju@mju.ac.th (Jumpon Sriudomsuwan) — Site Admin of existing RAE site  
 **Date:** 2026-07-14  
-**Status:** PREFLIGHT — NOT YET AUTHORIZED
+**Status:** PROVISIONING_READY — EXISTING_SITE_APPROVED (see EA-3S readiness closure)
 
 ---
 
 ## Executive Summary
 
-This document defines the provisioning plan for the RAE Document Center SharePoint Site and RAE Document Registry Microsoft List. All preflight checks have been completed. The tenant evidence confirms SharePoint Online and Microsoft Lists are available. The account used for verification (researchmju@mju.ac.th) does **not** have SharePoint admin or self-service site creation privileges. **Site creation requires Maejo University tenant admin involvement.**
+This document defines the provisioning plan for the RAE Document Center and RAE Document Registry Microsoft List. All preflight checks have been completed. The plan originally assumed a dedicated new SharePoint site, but per the **EA-3R reuse audit** and **EA-3S readiness closure**, the approved deployment boundary is the **existing RAE SharePoint site** (`https://maejo365.sharepoint.com/sites/msteams_54adc4`). An `ARCHITECTURE_IMPLEMENTATION_EXCEPTION` has been approved for this boundary change.
 
-The plan defines exact parameters for site creation, library provisioning, content type creation, column creation, Microsoft List creation, permission configuration, and internal name capture. No production resource has been created or modified.
+The account used for verification (`researchmju@mju.ac.th`) is a **Site Admin** of the existing RAE site with full self-service capability for libraries, lists, columns, content types, pages, and permission groups. This significantly reduces MJU tenant admin dependency.
 
-**Preflight Verdict:** `PROVISIONING_READY_WITH_CONDITIONS`
+The plan defines exact parameters for library provisioning, content type creation, column creation, Microsoft List creation, permission configuration, and internal name capture within the existing site boundary. No production resource has been created or modified.
+
+**Preflight Verdict:** `PROVISIONING_READY` — Deployment boundary: existing RAE site (`/sites/msteams_54adc4`)
 
 ---
 
@@ -33,7 +60,18 @@ The plan defines exact parameters for site creation, library provisioning, conte
 
 ---
 
-## SharePoint Site Parameters
+## Existing Site — Deployment Parameters
+
+### Site Identity
+
+| Property | Value |
+|----------|-------|
+| Site URL | `https://maejo365.sharepoint.com/sites/msteams_54adc4` |
+| Display Name | สำนักวิจัยฯ (สำนักวิจัยและส่งเสริมวิชาการการเกษตร) |
+| Type | Private Team Site (M365 Group connected) |
+| Site Admin | researchmju@mju.ac.th (IsSiteAdmin = true) |
+
+> A new site is NOT required. The existing RAE site is the approved deployment boundary per ARCHITECTURE_IMPLEMENTATION_EXCEPTION.
 
 ### Site Type Decision
 
@@ -68,10 +106,10 @@ The plan defines exact parameters for site creation, library provisioning, conte
 
 | Decision | Value |
 |----------|-------|
-| Create new M365 Group? | **YES** — Site creation with Team Site template automatically creates an M365 Group |
-| Group name | `RAE Document Center` |
-| Group privacy | **Private** — Members must be added by owner |
-| Group owners | Requires MJU admin to designate initial owner(s) |
+| Create new M365 Group? | **NO** — Existing M365 Group reused per ARCHITECTURE_IMPLEMENTATION_EXCEPTION (EA-3R/EA-3S) |
+| Group name | Existing M365 Group: สมาชิก สำนักวิจัยฯ (`msteams_54adc4@maejo365.onmicrosoft.com`) |
+| Group privacy | **Private** — Existing group is already private |
+| Group owners | Existing M365 Group owner is "เจ้าของ สำนักวิจัยฯ" managed via Azure AD. Category Owner assignment is a separate governance dependency |
 | Auto-create Teams team | **No** — Not required for this architecture; can be enabled later if needed |
 
 ### Owner Requirements
