@@ -1,0 +1,65 @@
+Sequence,ResourceType,ParentResource,DisplayName,RecommendedInternalName,ResourcePurpose,ColumnType,Required,Indexed,SourceDesign,Dependency,TenantEvidence,ProvisionStatus,ActualURL,ActualInternalName,EvidenceReference,Notes
+1,Site,RAE,RAE Document Center,,RAE Document Center SharePoint site,,,,"sharepoint-site-design.md",,NO_SITE_CREATION_ACCESS,PLANNED,,,,Requires tenant admin
+2,M365Group,RAE Document Center,RAE Document Center Group,,M365 Group for Team Site,,,,"sharepoint-site-design.md",Site (1),M365_Groups_EXIST,PLANNED,,,,Auto-created with Team Site
+3,DocumentLibrary,RAE Document Center,Administration,Administration,Library for admin documents,,,,"library-schema.md",Site (1),LIBRARY_CAPABILITY_CONFIRMED,PLANNED,,,,Content Type: RAE Legacy Document
+4,DocumentLibrary,RAE Document Center,FinanceProcurement,FinanceProcurement,Library for finance and procurement documents,,,,"library-schema.md",Site (1),LIBRARY_CAPABILITY_CONFIRMED,PLANNED,,,,Content Type: RAE Legacy Document
+5,DocumentLibrary,RAE Document Center,PlanningPolicy,PlanningPolicy,Library for policy and planning documents,,,,"library-schema.md",Site (1),LIBRARY_CAPABILITY_CONFIRMED,PLANNED,,,,Content Type: RAE Legacy Document
+6,DocumentLibrary,RAE Document Center,AcademicServices,AcademicServices,Library for academic service documents,,,,"library-schema.md",Site (1),LIBRARY_CAPABILITY_CONFIRMED,PLANNED,,,,Content Type: RAE Legacy Document
+7,DocumentLibrary,RAE Document Center,Research,Research,Library for research documents,,,,"library-schema.md",Site (1),LIBRARY_CAPABILITY_CONFIRMED,PLANNED,,,,Content Type: RAE Legacy Document; largest library
+8,DocumentLibrary,RAE Document Center,SOPManuals,SOPManuals,Library for SOP and manual documents,,,,"library-schema.md",Site (1),LIBRARY_CAPABILITY_CONFIRMED,PLANNED,,,,Content Type: RAE Legacy Document
+9,SiteColumn,RAE Document Center,DocumentID,RAE_DocumentID,Canonical document identifier,Single line of text,Yes,Yes,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,Internal name must be captured after creation
+10,SiteColumn,RAE Document Center,Category,RAE_Category,Taxonomy category slug,Single line of text,Yes,Yes,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,,Library default
+11,SiteColumn,RAE Document Center,Subcategory,RAE_Subcategory,Legacy subcategory name,Single line of text,Yes,Yes,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,,
+12,SiteColumn,RAE Document Center,Owner,RAE_Owner,Document owner or group,Single line of text,Yes,Yes,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,Default: TBD
+13,SiteColumn,RAE Document Center,DocumentStatus,RAE_DocumentStatus,Document lifecycle status,Choice,Yes,Yes,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,6 values: LegacyImported,Current,Obsolete,Archived,Draft,MetadataOnly
+14,SiteColumn,RAE Document Center,Version,RAE_Version,Semantic version,Single line of text,No,No,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,Default: 1.0
+15,SiteColumn,RAE Document Center,UpdatedDate,RAE_UpdatedDate,Last content modification date,Date and Time,No,No,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,Date only
+16,SiteColumn,RAE Document Center,Tags,RAE_Tags,Keywords for search and filtering,Single line of text (fallback),No,Yes,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,Fallback: Managed Metadata not available; admin must create Term Set
+17,SiteColumn,RAE Document Center,PublicVisibility,RAE_PublicVisibility,Information exposure classification,Choice,Yes,Yes,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,4 values: PendingReview,Public,Internal,Restricted
+18,SiteColumn,RAE Document Center,LegacySourceURL,RAE_LegacySourceURL,Original WTMS legacy URL,Hyperlink or Picture,No,No,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,,
+19,SiteColumn,RAE Document Center,MigrationStatus,RAE_MigrationStatus,Migration tracking status,Choice,Yes,Yes,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,4 values: Ready,Duplicate (linked),Metadata Only,Pending Review
+20,SiteColumn,RAE Document Center,SHA256,RAE_SHA256,File integrity hash,Single line of text,No,No,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,Empty for metadata-only
+21,SiteColumn,RAE Document Center,DuplicateOf,RAE_DuplicateOf,References primary DocumentID,Single line of text,No,No,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,,
+22,SiteColumn,RAE Document Center,Notes,RAE_Notes,Free-text governance notes,Multiple lines of text,No,No,"library-schema.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,Plain text; max 1000 chars
+23,SiteColumn,RAE Document Center,ApprovalStatus,RAE_ApprovalStatus,Approval workflow status,Choice,No,No,"content-types.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,For RAE Active Document only
+24,SiteColumn,RAE Document Center,ReviewedBy,RAE_ReviewedBy,Reviewer identity,Person or Group,No,No,"content-types.md",Site (1),PERSON_GROUP_CONFIRMED,PLANNED,,,For RAE Active Document only
+25,SiteColumn,RAE Document Center,ReviewDate,RAE_ReviewDate,Review completion date,Date and Time,No,No,"content-types.md",Site (1),COLUMN_CREATION_CONFIRMED,PLANNED,,,For RAE Active Document only
+26,ContentType,RAE Document Center,RAE Document Base,RAE_DocumentBase,Abstract parent CT for all document types,,,,"content-types.md",Site Columns (9-22),,PLANNED,,,Abstract; not used directly
+27,ContentType,RAE Document Center,RAE Legacy Document,RAE_LegacyDocument,CT for migrated documents,,,,"content-types.md",CT Base (26),,PLANNED,,,Default for all import libraries
+28,ContentType,RAE Document Center,RAE Active Document,RAE_ActiveDocument,CT for post-migration new docs,,,,"content-types.md",CT Base (26),,PLANNED,,,Includes approval columns
+29,ContentType,RAE Document Center,RAE Duplicate Reference,RAE_DuplicateReference,CT for duplicate-linked records,,,,"content-types.md",CT Base (26),,PLANNED,,,No file template
+30,ContentType,RAE Document Center,RAE Metadata Record,RAE_MetadataRecord,CT for metadata-only records (Lists),,,,,"content-types.md",,CONFIRMED,PLANNED,,,Item-based; for Microsoft Lists
+31,TermSet,RAE Document Center,RAE-Tags,RAE_Tags,Managed Metadata term set for Tags,,,,"content-types.md",,ADMIN_REQUIRED,BLOCKED,,,Requires Term Store admin
+32,MicrosoftList,RAE Document Center,RAE Document Registry,,Authoritative operational metadata registry,,,,"registry-list-schema.md",Site (1),LISTS_CONFIRMED_AVAILABLE,PLANNED,,,,22 columns
+33,ListColumn,RAE Document Registry,Document ID,RAE_DocumentID,Canonical document identifier,Single line of text,Yes,Yes,"registry-list-schema.md",List (32),,PLANNED,,,Pattern: RAE-NNNNN
+34,ListColumn,RAE Document Registry,Title,RAE_Title,Human-readable document title,Single line of text,Yes,Yes,"registry-list-schema.md",List (32),,PLANNED,,,Max 255 chars
+35,ListColumn,RAE Document Registry,Description,RAE_Description,Brief document summary,Multiple lines of text,No,No,"registry-list-schema.md",List (32),,PLANNED,,,Max 500 chars
+36,ListColumn,RAE Document Registry,Category,RAE_Category,Taxonomy category,Choice,Yes,Yes,"registry-list-schema.md",List (32),,PLANNED,,,6 values
+37,ListColumn,RAE Document Registry,Subcategory,RAE_Subcategory,Thai subcategory name,Single line of text,No,Yes,"registry-list-schema.md",List (32),,PLANNED,,,Free text
+38,ListColumn,RAE Document Registry,Tags,RAE_Tags,Keywords (semicolon-separated),Single line of text,No,No,"registry-list-schema.md",List (32),,PLANNED,,,Text, not Managed Metadata
+39,ListColumn,RAE Document Registry,Audience,RAE_Audience,Target audience,Choice (multi-select),No,No,"registry-list-schema.md",List (32),,PLANNED,,,6 values
+40,ListColumn,RAE Document Registry,Owner,RAE_Owner,Responsible person or group,Person or Group,Yes,Yes,"registry-list-schema.md",List (32),PERSON_GROUP_CONFIRMED,PLANNED,,,TBD NOT valid in registry
+41,ListColumn,RAE Document Registry,Department,RAE_Department,Responsible department,Single line of text,No,No,"registry-list-schema.md",List (32),,PLANNED,,,Derived from Owner
+42,ListColumn,RAE Document Registry,Status,RAE_Status,Document lifecycle state,Choice,Yes,Yes,"registry-list-schema.md",List (32),,PLANNED,,,7 canonical values
+43,ListColumn,RAE Document Registry,Visibility,RAE_Visibility,Information exposure classification,Choice,Yes,Yes,"registry-list-schema.md",List (32),,PLANNED,,,4 canonical values
+44,ListColumn,RAE Document Registry,Updated Date,RAE_UpdatedDate,Last content modification date,Date and Time,Yes,Yes,"registry-list-schema.md",List (32),,PLANNED,,,Date only
+45,ListColumn,RAE Document Registry,Review Date,RAE_ReviewDate,Governance review date,Date and Time,No,Yes,"registry-list-schema.md",List (32),,PLANNED,,,
+46,ListColumn,RAE Document Registry,Published Date,RAE_PublishedDate,Publication date,Date and Time,No,Yes,"registry-list-schema.md",List (32),,PLANNED,,,
+47,ListColumn,RAE Document Registry,Storage URL,RAE_StorageURL,SharePoint link to document,Hyperlink,Yes*,No,"registry-list-schema.md",List (32),,PLANNED,,,Conditionally required
+48,ListColumn,RAE Document Registry,Legacy Source URL,RAE_LegacySourceURL,Original WTMS URL,Hyperlink,No,No,"registry-list-schema.md",List (32),,PLANNED,,,
+49,ListColumn,RAE Document Registry,Related Documents,RAE_RelatedDocuments,Related DocumentIDs,Single line of text,No,No,"registry-list-schema.md",List (32),,PLANNED,,,Comma-separated
+50,ListColumn,RAE Document Registry,Duplicate Of,RAE_DuplicateOf,Primary DocumentID for duplicates,Single line of text,No,No,"registry-list-schema.md",List (32),,PLANNED,,,
+51,ListColumn,RAE Document Registry,Source System,RAE_SourceSystem,Originating system,Choice,Yes,Yes,"registry-list-schema.md",List (32),,PLANNED,,,5 values
+52,ListColumn,RAE Document Registry,Version,RAE_Version,Semantic version,Single line of text,No,No,"registry-list-schema.md",List (32),,PLANNED,,,Default: 1.0
+53,ListColumn,RAE Document Registry,Notes,RAE_Notes,Governance notes,Multiple lines of text,No,No,"registry-list-schema.md",List (32),,PLANNED,,,Max 1000 chars
+54,ListColumn,RAE Document Registry,Record Version,RAE_RecordVersion,Internal registry record version,Number,No,No,"registry-list-schema.md",List (32),,PLANNED,,,DEFERRED
+55,PermissionGroup,RAE Document Center,RAE-DC-Admin-Owners,,Administration library owners,,,,,"permissions-matrix.md",Site (1),,PLANNED,,,Category Owner group
+56,PermissionGroup,RAE Document Center,RAE-DC-Finance-Owners,,FinanceProcurement library owners,,,,,"permissions-matrix.md",Site (1),,PLANNED,,,
+57,PermissionGroup,RAE Document Center,RAE-DC-Policy-Owners,,PlanningPolicy library owners,,,,,"permissions-matrix.md",Site (1),,PLANNED,,,
+58,PermissionGroup,RAE Document Center,RAE-DC-Academic-Owners,,AcademicServices library owners,,,,,"permissions-matrix.md",Site (1),,PLANNED,,,
+59,PermissionGroup,RAE Document Center,RAE-DC-Research-Owners,,Research library owners,,,,,"permissions-matrix.md",Site (1),,PLANNED,,,
+60,PermissionGroup,RAE Document Center,RAE-DC-Manuals-Owners,,SOPManuals library owners,,,,,"permissions-matrix.md",Site (1),,PLANNED,,,
+61,PermissionGroup,RAE Document Center,RAE-DC-Contributors,,Upload staff group,,,,,"permissions-matrix.md",Site (1),,PLANNED,,,
+62,PermissionGroup,RAE Document Center,RAE-DC-Readers,,All RAE staff readers,,,,,"permissions-matrix.md",Site (1),,PLANNED,,,
+63,PermissionGroup,RAE Document Center,RAE-DC-ArchiveManagers,,Archive management group,,,,,"permissions-matrix.md",Site (1),,PLANNED,,,
+64,PermissionGroup,RAE Document Center,RAE-DC-MigrationBot,,Temporary migration bot account,,,,,"permissions-matrix.md",Site (1),,PLANNED,,,Temporary; revoke after migration

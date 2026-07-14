@@ -1,0 +1,20 @@
+manifest_field,manifest_type,sp_column_name,sp_internal_name,sp_type,required,indexed,default_value,transform_rule,notes
+DocumentID,Text,DocumentID,RAE_DocumentID,Single line of text,Yes,Yes (unique),(auto),As-is; pattern RAE-NNNNN,Primary identifier; globally unique across all 6 libraries
+Title,Text,Title,Title,Single line of text (built-in),Yes,Yes,(derived),Priority: manifest Title → link_text → original_filename → LocalRelativePath stem,616 of 772 manifest rows have empty Title; derivation required
+Category,Text,Category,RAE_Category,Single line of text,Yes,Yes,(library default),Map to taxonomy slug: บริหารจัดการ→admin; งานวิจัย→research; etc.,Manifest stores Thai display name; SP stores taxonomy slug
+Subcategory,Text,Subcategory,RAE_Subcategory,Single line of text,Yes,Yes,(folder name),As-is; Thai subcategory name from manifest,Becomes folder name within library
+Owner,Text,Owner,RAE_Owner,Single line of text,Yes,Yes,TBD,As-is; TBD is valid during migration; resolve within 90 days,Never populate with guessed individual names
+Status,Text→Choice,DocumentStatus,RAE_DocumentStatus,Choice,Yes,Yes,LegacyImported,LegacyImported (migration default) → do not change until reviewed,Manifest Status=LegacyImported maps directly
+PublicVisibility,Choice,PublicVisibility,RAE_PublicVisibility,Choice,Yes,Yes,PendingReview,As-is; PendingReview = not reviewed for portal exposure yet,All 772 manifest rows have PendingReview; no document is public at import
+SourceURL,Hyperlink,LegacySourceURL,RAE_LegacySourceURL,Hyperlink or Picture,No,No,(from manifest),As-is; original WTMS URL; may be dead link,Preserve for traceability; do not validate during import
+LocalRelativePath,Text,LocalRelativePath,(upload ref only),N/A (not a SP column),No,No,,Used by upload script to locate file in staging; not stored in SP,Migration tooling only; not a SharePoint column
+SHA256,Text,SHA256,RAE_SHA256,Single line of text,No,No,(from manifest),As-is; 64-char hex; empty for metadata-only rows,Populated from manifest SHA256; verified before upload
+DuplicateOf,Text,DuplicateOf,RAE_DuplicateOf,Single line of text,No,No,(from manifest),As-is; points to primary DocumentID or filename; empty if not duplicate,Populated for 45 duplicate rows
+MigrationStatus,Choice,MigrationStatus,RAE_MigrationStatus,Choice,Yes,Yes,Ready,Map: Ready→Ready; Duplicate (linked)→Duplicate (linked); Metadata Only→not uploaded (List),Metadata Only rows are NOT uploaded to libraries
+Notes,Text,Notes,RAE_Notes,Multiple lines of text,No,No,(empty),As-is from manifest Notes column,Free text; max 1000 chars
+(not in manifest),N/A,Version,RAE_Version,Single line of text,No,No,1.0,Default 1.0 for all legacy imports; update on content revision,Not in v1 migration manifest
+(not in manifest),N/A,UpdatedDate,RAE_UpdatedDate,Date and Time (date only),No,No,(upload date),Set to upload date for legacy imports; owner updates to actual document date,Not in v1 migration manifest
+(not in manifest),N/A,Tags,RAE_Tags,Managed Metadata,No,Yes,(empty),Empty at import; Category Owners populate post-migration,Term Set: RAE-Tags; not in v1 manifest
+link_text,(audit field),Title (fallback),Title,Single line of text (built-in),No,No,,Used when Title is empty: link_text → original_filename → path stem,From mapping_audit.csv; not in manifest directly
+original_filename,(audit field),Title (fallback),,,,,,Used as Title fallback if link_text also empty,From mapping_audit.csv or filename stem
+mapping_status,(audit field),(informational only),,,,,,Not mapped to SP; used to confirm upload readiness: VERIFIED/PROBABLE ok; REVIEW=needs check,From mapping_audit.csv
