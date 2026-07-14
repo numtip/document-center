@@ -385,21 +385,32 @@ All resource categories audited against frozen EA-3/EA-4 canonical docs. Confirm
 
 ### 9.8 Recommended Next Phase
 
-**EA-4 — Content Type Association & Permission Binding**
+**EA-5 — Workflow Automation & Migration**
 
-This is the immediate next phase per the original EA-3I roadmap (§8). The drift audit confirms the foundation is ready:
+EA-4 has been completed (see `ea-4-content-type-permission-binding-report.md`). The foundation is confirmed ready for the next phase.
 
-| Priority | Task | Dependencies |
-|:--------:|------|-------------|
-| 1 | Associate `RAE Legacy Document` CT to all 6 libraries | ✅ All CTs correct |
-| 2 | Associate `RAE Active Document` CT to target libraries | ✅ All CTs correct |
-| 3 | Associate `RAE Metadata Record` CT to RAE Document Registry | ✅ All CTs correct |
-| 4 | Configure library default content type | 🟡 EA-4 scope |
-| 5 | Add `RAE-DC-MigrationBot` service account (before EA-5 migration) | 🟡 EA-4/EA-5 boundary |
-| 6 | Remove helper scripts from `docs/m365/` | Housekeeping |
-| 7 | Publish landing page + configure navigation | EA-4 scope |
+### EA-4 Completion Summary
 
-> **Note:** EA-5 (Workflow & Migration) must NOT begin until EA-4 is complete and `RAE-DC-MigrationBot` is provisioned.
+| Task | Status | Details |
+|:----:|:------:|---------|
+| Content type associations | ✅ COMPLETE | 3 RAE CTs added to all 6 libraries; RAE Metadata Record added to Registry |
+| Default content type | ✅ COMPLETE | `RAE Legacy Document` set as default for all 6 libraries |
+| Library views | ✅ COMPLETE | 5 canonical views created/updated per library (30 total operations) |
+| Library permissions | ✅ COMPLETE | Inheritance broken; Owner groups, Readers, Contributors, ArchiveManagers assigned |
+| Group population | ⏸️ DEFERRED | All 9 groups preserved empty. HR/Admin must confirm named owners. |
+| Landing page | ✅ COMPLETE | Published via REST API |
+| Navigation entry | ⏸️ DEFERRED | Teams-connected site; navigation deferred to EA-5 |
+
+### Prerequisites for EA-5
+
+| Dependency | Status | Action Needed |
+|-----------|:------:|--------------|
+| Category Owner named individuals confirmed | 🔴 PENDING | HR/Admin to provide |
+| Group members populated | 🔴 PENDING | After owners confirmed |
+| `RAE-DC-MigrationBot` service account | 🔴 NOT PROVISIONED | Create and add as Contribute to all libraries |
+| `_Inbox`, `_Archive`, `_Review` folders | 🔴 PENDING | Create per library |
+| Folder-level permissions | 🔴 PENDING | Contribute on `_Inbox`, Edit on `_Archive` |
+| `RAE-Tags` Term Set | 🔒 TERM STORE | Requires Term Store admin privileges |
 
 ---
 
