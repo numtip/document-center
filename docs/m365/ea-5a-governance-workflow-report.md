@@ -28,10 +28,10 @@
 
 | Ref | Workflow Name | Source | Trigger Type | Status |
 |-----|--------------|--------|-------------|--------|
-| WF-01 | Upload & Registration | M365 FoundationBlueprint §Workflow A | SharePoint: When an item is created or modified | **IMPLEMENTED** |
-| WF-02 | Approval Lifecycle | M365 FoundationBlueprint §Workflow B | SharePoint: When an existing item is modified | **IMPLEMENTED** |
-| WF-03 | Archive Control | M365 FoundationBlueprint §Workflow C | SharePoint: When an item is created or modified | **IMPLEMENTED** |
-| WF-04 | Expiring Review Notification | registry-lifecycle-model.md §11 | Schedule: Daily recurrence | **IMPLEMENTED** |
+| WF-01 | Upload & Registration | M365 FoundationBlueprint §Workflow A | SharePoint: When an item is created or modified | **SPECIFICATION_ONLY** ⚠️ (EA-5B corrected) |
+| WF-02 | Approval Lifecycle | M365 FoundationBlueprint §Workflow B | SharePoint: When an existing item is modified | **SPECIFICATION_ONLY** ⚠️ (EA-5B corrected) |
+| WF-03 | Archive Control | M365 FoundationBlueprint §Workflow C | SharePoint: When an item is created or modified | **SPECIFICATION_ONLY** ⚠️ (EA-5B corrected) |
+| WF-04 | Expiring Review Notification | registry-lifecycle-model.md §11 | Schedule: Daily recurrence | **SPECIFICATION_ONLY** ⚠️ (EA-5B corrected) |
 | WF-05 | Export Foundation | registry-export-contract.md | Schedule: Daily/Weekly recurrence | **READY_WITH_LIMITATIONS** |
 
 ### 1.3 EA-5 Workflow Design Principles (Carried Forward)
@@ -128,7 +128,7 @@ Trigger: When a file is created in a library
   └── Error handling: Log failure to flow audit
 ```
 
-**Implementation Status:** ✅ Flow skeleton created (trigger: When an item is created or modified). Full action sequence requires Power Automate designer for dynamic content binding.
+**Implementation Status:** ⚠️ CORRECTION (EA-5B audit): Flow skeleton was NOT saved to the Power Automate tenant. Attempted in designer but did not persist. Full implementation requires manual Power Automate UI interaction — see `ea-5b-workflow-implementation-report.md` Section 4.1 for complete specification.
 
 **Library Instances Required:** 1 per library (6 total) or 1 flow with condition branching
 
@@ -409,7 +409,7 @@ Invoke-RestMethod -Uri "$siteUrl/_api/web/GetFolderByServerRelativeUrl('$folderU
 |-----------|----------|---------|
 | Group members not populated | 🔴 CARRIED FROM EA-4 | All 9 groups empty. Workflow notification routing requires resolved identities. |
 | MigrationBot not provisioned | 🔴 CARRIED FROM EA-4 | No M365 service account available. Blocked until tenant admin or approved provisioning path. |
-| Power Automate flow actions (WF-01 to WF-05) not fully configured | 🟡 MINOR | Flow skeletons created (triggers + names). Full action sequences require Power Automate designer for dynamic content binding. Connections available. |
+| Power Automate flows WF-01 to WF-05 not created | 🔴 CARRIED TO EA-5B | EA-5B audit confirmed 0 flows persisted in tenant. Browser automation cannot configure Power Automate flows reliably. Full manual implementation required — see `ea-5b-workflow-implementation-report.md`. |
 | Term Set `RAE-Tags` not created | 🔒 KNOWN (carried from EA-3I) | Requires Term Store admin privileges. Text Tags fallback active. |
 | Navigation entry not added | ⏸️ DEFERRED (from EA-4) | Teams-connected site navigation is managed externally. Deferred post-migration. |
 
@@ -429,7 +429,7 @@ Invoke-RestMethod -Uri "$siteUrl/_api/web/GetFolderByServerRelativeUrl('$folderU
 | Phase | Commit Hash |
 |-------|-------------|
 | EA-4 (precondition) | `a85f5a9` |
-| EA-5A (this report) | (To be added after git commit) |
+| EA-5A (this report) | `eea468f` |
 
 ---
 
@@ -447,7 +447,7 @@ Invoke-RestMethod -Uri "$siteUrl/_api/web/GetFolderByServerRelativeUrl('$folderU
 | 4. WF-01 Upload & Registration — trigger created | ✅ Flow skeleton |
 | 5. WF-02 Approval Lifecycle — specification documented | ✅ Specification ready |
 | 6. WF-03 Archive Control — specification documented | ✅ Specification ready |
-| 7. WF-04 Expiring Review Notification — scheduled flow created | ✅ Flow skeleton created (daily recurrence) |
+| 7. WF-04 Expiring Review Notification — scheduled flow created | ⚠️ CORRECTION: Flow NOT saved (EA-5B audit). Specification documented; manual implementation required. |
 | 8. WF-05 Export — READY_WITH_LIMITATIONS | ✅ Classification confirmed |
 | 9. No bulk migration / No 627-file import | ✅ Compliant |
 | 10. No production rollout | ✅ Compliant |
