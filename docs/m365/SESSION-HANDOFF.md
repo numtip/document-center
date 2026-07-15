@@ -2,10 +2,10 @@
 
 **Date:** 2026-07-14  
 **Branch:** main (ahead of origin by 7 commits)  
-**Last Commit:** `4b3c1cb` — EA-5D: Solution deployment proof  
-**Next UX Direction:** Design RAE Document Center landing page in Google Stitch, then translate into SharePoint Modern Web Parts
+**Last Commit:** `5bb575a` — docs: freeze RAE Document Center Stitch V2 and map SharePoint web parts  
+**Next UX Direction (updated 2026-07-15):** Stitch V2 design frozen. SharePoint Implementation Plan ready. Next step: tenant execution session to build page on RAE-Document-Center.aspx.
 
-**UX Track Status (updated 2026-07-15):** Stitch V2 design complete and frozen. Visual baseline registered. SharePoint Modern Web Part mapping produced.
+**UX Track Status (updated 2026-07-15):** Stitch V2 design complete and frozen. Visual baseline registered. SharePoint Modern Web Part mapping produced. Implementation Plan and Execution Checklist ready for tenant execution.
 
 ---
 
@@ -238,6 +238,8 @@ The account used for all provisioning: `prinya@office365.mju.ac.th` / `researchm
 || `docs/design/rae-document-center/stitch-v2/screen.png` | Visual screenshot |
 || `docs/design/rae-document-center/stitch-v2/code.html` | Design reference (NOT production code) |
 || `docs/m365/rae-document-center-webpart-mapping.md` | SharePoint Modern Web Part mapping specification |
+|| `docs/m365/rae-document-center-sharepoint-implementation-plan.md` | SharePoint Implementation Plan — READY FOR TENANT EXECUTION |
+|| `docs/m365/rae-document-center-sharepoint-execution-checklist.md` | Tenant execution session checklist |
 
 ---
 
@@ -258,9 +260,13 @@ However, before EA-6 can begin, the following preconditions must be met:
 | 7 | Resolve Category Owner assignments | HR/Admin | TBD |
 | 8 | Provision MigrationBot service account | M365 Admin | TBD |
 
-**UX Track (Parallel):**
-- Design RAE Document Center landing page in Google Stitch
-- Translate selected design into SharePoint Modern Web Parts on RAE-Document-Center.aspx
+**UX Track (Parallel) — Status as of 2026-07-15:**
+- ✅ Stitch V2 design: COMPLETE and FROZEN
+- ✅ Visual baseline: REGISTERED
+- ✅ Web Part Mapping: COMPLETE
+- ✅ SharePoint Implementation Plan: READY FOR TENANT EXECUTION
+- ✅ Execution Checklist: READY FOR TENANT EXECUTION
+- ⏳ Page implementation on RAE-Document-Center.aspx: NOT STARTED
 
 ---
 
@@ -269,8 +275,8 @@ However, before EA-6 can begin, the following preconditions must be met:
 | Aspect | Value |
 |--------|-------|
 | Branch | `main` |
-| Ahead of origin | 7 commits |
+| Ahead of origin | 1 commit |
 | Working tree | Clean (expected after commit) |
 | Excluded from tracking | `.migration/`, helper scripts (`_*.py`), Line OA report script, `.gitignore` (staged) |
-| Last local HEAD | `4b3c1cb` |
+| Last local HEAD | `5bb575a` |
 | Origin HEAD | _to be pushed_ |
