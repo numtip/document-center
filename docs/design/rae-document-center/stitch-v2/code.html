@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html class="light" lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RAE Document Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#f9bd3a",
+                      "tertiary-container": "#694b00",
+                      "surface-container-lowest": "#ffffff",
+                      "background": "#f8f9ff",
+                      "on-secondary": "#ffffff",
+                      "tertiary": "#4c3500",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed-variant": "#085139",
+                      "on-primary-container": "#86d2a8",
+                      "primary-container": "#005c3b",
+                      "outline": "#6f7a72",
+                      "surface": "#f8f9ff",
+                      "surface-container-low": "#eff4ff",
+                      "on-background": "#121c2a",
+                      "on-tertiary-fixed-variant": "#5d4200",
+                      "on-secondary-fixed": "#002114",
+                      "on-surface": "#121c2a",
+                      "error-container": "#ffdad6",
+                      "secondary-container": "#aff1cf",
+                      "outline-variant": "#bfc9c0",
+                      "tertiary-fixed": "#ffdea5",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#a6f3c7",
+                      "surface-container-highest": "#d9e3f6",
+                      "on-tertiary": "#ffffff",
+                      "inverse-primary": "#8ad6ac",
+                      "surface-container": "#e6eeff",
+                      "on-tertiary-fixed": "#261900",
+                      "on-primary-fixed-variant": "#005234",
+                      "surface-dim": "#d0dbed",
+                      "surface-bright": "#f8f9ff",
+                      "on-error-container": "#93000a",
+                      "primary": "#004229",
+                      "surface-container-high": "#dee9fc",
+                      "on-secondary-container": "#307055",
+                      "surface-variant": "#d9e3f6",
+                      "primary-fixed-dim": "#8ad6ac",
+                      "on-surface-variant": "#3f4942",
+                      "inverse-on-surface": "#eaf1ff",
+                      "surface-tint": "#1b6b49",
+                      "inverse-surface": "#27313f",
+                      "on-primary-fixed": "#002112",
+                      "secondary-fixed": "#aff1cf",
+                      "secondary": "#29694f",
+                      "on-error": "#ffffff",
+                      "on-tertiary-container": "#f5b936",
+                      "secondary-fixed-dim": "#93d4b4",
+                      "gold": "#D8A01A"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "40px",
+                      "unit": "8px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Sarabun", "sans-serif"
+                      ],
+                      "headline-lg-mobile": [
+                              "Sarabun", "sans-serif"
+                      ],
+                      "body-md": [
+                              "Sarabun", "sans-serif"
+                      ],
+                      "body-lg": [
+                              "Sarabun", "sans-serif"
+                      ],
+                      "headline-lg": [
+                              "Sarabun", "sans-serif"
+                      ],
+                      "title-md": [
+                              "Sarabun", "sans-serif"
+                      ],
+                      "label-sm": [
+                              "Sarabun", "sans-serif"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "title-md": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f7f3ea; /* Warm Ivory background */
+        }
+        /* Custom styles matching style guidance */
+        .card-shadow {
+            box-shadow: 0 4px 12px rgba(0, 92, 59, 0.05);
+        }
+        .text-rae-green {
+            color: #005C3B;
+        }
+        .bg-rae-green {
+            background-color: #005C3B;
+        }
+        .border-rae-green {
+            border-color: #005C3B;
+        }
+    </style>
+</head>
+<body class="text-on-background min-h-screen flex flex-col antialiased font-[Sarabun]">
+<!-- TopAppBar -->
+<header class="bg-surface-container-lowest border-b border-outline-variant w-full">
+<div class="flex items-center px-margin-mobile md:px-margin-desktop h-16 w-full max-w-container-max mx-auto gap-4">
+<span class="material-symbols-outlined text-primary-container text-2xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">description</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold leading-none">RAE Document Center</span>
+<span class="text-[12px] text-on-surface-variant mt-1 leading-none">ศูนย์กลางเอกสาร สำนักวิจัยและส่งเสริมวิชาการการเกษตร</span>
+</div>
+</div>
+</header>
+<main class="flex-grow flex flex-col w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 gap-12">
+<!-- Search-First Hero -->
+<section class="bg-primary-container rounded-2xl p-8 md:p-12 text-center shadow-md relative overflow-hidden">
+<!-- Decorative overlay pattern -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+<div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center gap-6">
+<h1 class="font-display-lg text-display-lg text-on-primary font-bold">ค้นหาและเข้าถึงเอกสารสำคัญ จากศูนย์กลางเดียว</h1>
+<p class="font-body-lg text-body-lg text-surface-container-lowest opacity-90 max-w-2xl font-normal">เข้าถึงเอกสาร แบบฟอร์ม คู่มือ และข้อมูลสำคัญของสำนักวิจัยและส่งเสริมวิชาการการเกษตร เพื่อการทำงานที่รวดเร็วและมีประสิทธิภาพ</p>
+<div class="w-full relative mt-4">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline" style="font-variation-settings: 'wght' 300;">search</span>
+<input class="w-full pl-12 pr-4 py-4 rounded-full bg-surface-container-lowest border-2 border-transparent focus:border-secondary-container focus:ring-0 text-on-surface font-body-lg font-normal shadow-sm outline-none transition-all placeholder:text-outline-variant" placeholder="ค้นหาชื่อเอกสาร รหัสเอกสาร หมวดหมู่ หรือคำสำคัญ..." type="text"/>
+</div>
+<div class="flex flex-wrap justify-center gap-4 mt-2">
+<span class="font-label-sm text-label-sm text-surface-container-lowest opacity-80 mt-1 font-normal">ค้นหาด่วน:</span>
+<a class="font-label-sm text-label-sm text-on-primary hover:text-gold transition-colors underline decoration-transparent hover:decoration-gold underline-offset-4 font-normal" href="#">เอกสารล่าสุด</a>
+<a class="font-label-sm text-label-sm text-on-primary hover:text-gold transition-colors underline decoration-transparent hover:decoration-gold underline-offset-4 font-normal" href="#">แบบฟอร์ม</a>
+<a class="font-label-sm text-label-sm text-on-primary hover:text-gold transition-colors underline decoration-transparent hover:decoration-gold underline-offset-4 font-normal" href="#">คู่มือ</a>
+<a class="font-label-sm text-label-sm text-on-primary hover:text-gold transition-colors underline decoration-transparent hover:decoration-gold underline-offset-4 font-normal" href="#">งานวิจัย</a>
+</div>
+</div>
+</section>
+<!-- Quick Access Horizontal Bar -->
+<nav class="flex flex-wrap justify-center md:justify-between items-center bg-surface-container-lowest border border-outline-variant rounded-lg p-4 gap-4 card-shadow">
+<a class="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-surface-container-low transition-colors text-on-surface font-body-md font-medium" href="#">
+<span class="material-symbols-outlined text-primary-container text-xl">folder_open</span> ค้นหาเอกสารทั้งหมด
+            </a>
+<div class="hidden md:block w-px h-6 bg-outline-variant"></div>
+<a class="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-surface-container-low transition-colors text-on-surface font-body-md font-medium" href="#">
+<span class="material-symbols-outlined text-primary-container text-xl">update</span> เอกสารที่อัปเดตล่าสุด
+            </a>
+<div class="hidden md:block w-px h-6 bg-outline-variant"></div>
+<a class="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-surface-container-low transition-colors text-on-surface font-body-md font-medium" href="#">
+<span class="material-symbols-outlined text-gold text-xl">assignment_late</span> เอกสารที่ต้องทบทวน
+            </a>
+<div class="hidden md:block w-px h-6 bg-outline-variant"></div>
+<a class="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-surface-container-low transition-colors text-on-surface font-body-md font-medium" href="#">
+<span class="material-symbols-outlined text-primary-container text-xl">account_balance</span> RAE Document Registry
+            </a>
+</nav>
+<!-- Six Document Domains Grid -->
+<section>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6 font-semibold border-l-4 border-primary-container pl-4">หมวดหมู่เอกสารหลัก</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<a class="group bg-surface-container-lowest border border-outline-variant rounded-[16px] p-6 hover:card-shadow transition-all duration-300 flex flex-col h-full hover:border-primary-container" href="#">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">corporate_fare</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-2 font-semibold">งานบริหารและธุรการ</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-4 font-normal">เอกสารที่เกี่ยวข้องกับการบริหารงานทั่วไป ระเบียบ ประกาศ และหนังสือสั่งการ</p>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold group-hover:underline underline-offset-4">ดูเอกสาร →</span>
+</a>
+<!-- Card 2 -->
+<a class="group bg-surface-container-lowest border border-outline-variant rounded-[16px] p-6 hover:card-shadow transition-all duration-300 flex flex-col h-full hover:border-primary-container" href="#">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">payments</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-2 font-semibold">งานคลังและพัสดุ</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-4 font-normal">แบบฟอร์มการเบิกจ่าย งบประมาณ การจัดซื้อจัดจ้าง และเอกสารการเงินต่างๆ</p>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold group-hover:underline underline-offset-4">ดูเอกสาร →</span>
+</a>
+<!-- Card 3 -->
+<a class="group bg-surface-container-lowest border border-outline-variant rounded-[16px] p-6 hover:card-shadow transition-all duration-300 flex flex-col h-full hover:border-primary-container" href="#">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">account_tree</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-2 font-semibold">งานนโยบายและแผน</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-4 font-normal">แผนปฏิบัติราชการ รายงานผลการดำเนินงาน และเอกสารเชิงนโยบาย</p>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold group-hover:underline underline-offset-4">ดูเอกสาร →</span>
+</a>
+<!-- Card 4 -->
+<a class="group bg-surface-container-lowest border border-outline-variant rounded-[16px] p-6 hover:card-shadow transition-all duration-300 flex flex-col h-full hover:border-primary-container" href="#">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">school</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-2 font-semibold">งานบริการวิชาการ</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-4 font-normal">เอกสารประกอบการจัดอบรม โครงการบริการวิชาการ และฐานข้อมูลผู้เชี่ยวชาญ</p>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold group-hover:underline underline-offset-4">ดูเอกสาร →</span>
+</a>
+<!-- Card 5 -->
+<a class="group bg-surface-container-lowest border border-outline-variant rounded-[16px] p-6 hover:card-shadow transition-all duration-300 flex flex-col h-full hover:border-primary-container" href="#">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">biotech</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-2 font-semibold">งานวิจัย</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-4 font-normal">คู่มือทุนวิจัย แบบฟอร์มเสนอโครงการ และรายงานผลการวิจัย</p>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold group-hover:underline underline-offset-4">ดูเอกสาร →</span>
+</a>
+<!-- Card 6 -->
+<a class="group bg-surface-container-lowest border border-outline-variant rounded-[16px] p-6 hover:card-shadow transition-all duration-300 flex flex-col h-full hover:border-primary-container" href="#">
+<div class="flex items-start justify-between mb-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-3xl">menu_book</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-2 font-semibold">คู่มือปฏิบัติงาน</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-4 font-normal">มาตรฐานการปฏิบัติงาน (SOP) คู่มือการใช้ระบบ และแนวทางการทำงาน</p>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold group-hover:underline underline-offset-4">ดูเอกสาร →</span>
+</a>
+</div>
+</section>
+<!-- Recent Documents List -->
+<section class="bg-surface-container-lowest rounded-[16px] border border-outline-variant overflow-hidden card-shadow">
+<div class="p-6 border-b border-surface-variant flex justify-between items-center bg-surface">
+<h2 class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">history</span> เอกสารล่าสุด
+                </h2>
+<button class="font-label-sm text-label-sm text-primary-container font-medium hover:underline">ดูทั้งหมด</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest border-b border-surface-variant">
+<th class="py-3 px-6 font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider whitespace-nowrap">รหัสเอกสาร</th>
+<th class="py-3 px-6 font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider">ชื่อเอกสาร</th>
+<th class="py-3 px-6 font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider whitespace-nowrap">หมวดหมู่</th>
+<th class="py-3 px-6 font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider whitespace-nowrap">วันที่อัปเดต</th>
+<th class="py-3 px-6 font-label-sm text-label-sm font-semibold text-on-surface-variant uppercase tracking-wider text-right whitespace-nowrap">สถานะ</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y divide-surface-variant font-normal">
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer">
+<td class="py-3 px-6 text-on-surface-variant whitespace-nowrap">RAE-00124</td>
+<td class="py-3 px-6 text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-xl">description</span>
+                                แนวทางการเบิกค่าใช้จ่ายโครงการวิจัย
+                            </td>
+<td class="py-3 px-6 text-on-surface-variant whitespace-nowrap">งานคลังและพัสดุ</td>
+<td class="py-3 px-6 text-on-surface-variant whitespace-nowrap">12 ก.ค. 2569</td>
+<td class="py-3 px-6 text-right whitespace-nowrap">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-fixed text-on-primary-fixed-variant">
+                                    ประกาศใช้
+                                </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer bg-surface-container-lowest">
+<td class="py-3 px-6 text-on-surface-variant whitespace-nowrap">RAE-00118</td>
+<td class="py-3 px-6 text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-xl">picture_as_pdf</span>
+                                คู่มือการเสนอโครงการบริการวิชาการ
+                            </td>
+<td class="py-3 px-6 text-on-surface-variant whitespace-nowrap">งานบริการวิชาการ</td>
+<td class="py-3 px-6 text-on-surface-variant whitespace-nowrap">8 ก.ค. 2569</td>
+<td class="py-3 px-6 text-right whitespace-nowrap">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-fixed text-on-primary-fixed-variant">
+                                    ประกาศใช้
+                                </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer">
+<td class="py-3 px-6 text-on-surface-variant whitespace-nowrap">RAE-00096</td>
+<td class="py-3 px-6 text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-xl">description</span>
+                                แบบฟอร์มขออนุมัติดำเนินโครงการวิจัย
+                            </td>
+<td class="py-3 px-6 text-on-surface-variant whitespace-nowrap">งานวิจัย</td>
+<td class="py-3 px-6 text-on-surface-variant whitespace-nowrap">3 ก.ค. 2569</td>
+<td class="py-3 px-6 text-right whitespace-nowrap">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-fixed text-on-primary-fixed-variant">
+                                    ประกาศใช้
+                                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Governance Strip -->
+<section class="bg-surface border border-outline-variant rounded-[16px] py-8 px-6 text-center">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-6">เอกสารที่เชื่อถือได้ จากแหล่งข้อมูลเดียว</h3>
+<div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+<div class="flex flex-col items-center gap-2 max-w-[200px]">
+<div class="w-14 h-14 rounded-full bg-surface-container-low border border-outline-variant flex items-center justify-center text-primary-container mb-2">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">มีผู้รับผิดชอบเอกสาร</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">ระบุเจ้าของชัดเจน</span>
+</div>
+<div class="flex flex-col items-center gap-2 max-w-[200px]">
+<div class="w-14 h-14 rounded-full bg-surface-container-low border border-outline-variant flex items-center justify-center text-primary-container mb-2">
+<span class="material-symbols-outlined text-2xl">manage_history</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">มีประวัติเวอร์ชัน</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">ตรวจสอบย้อนหลังได้</span>
+</div>
+<div class="flex flex-col items-center gap-2 max-w-[200px]">
+<div class="w-14 h-14 rounded-full bg-surface-container-low border border-outline-variant flex items-center justify-center text-primary-container mb-2">
+<span class="material-symbols-outlined text-2xl">account_tree</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">มีมาตรฐานการจัดหมวดหมู่</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">ค้นหาง่าย เป็นระบบ</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Compact White Support Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant mt-8 w-full py-6">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto gap-4">
+<div class="flex items-center gap-4">
+<span class="font-body-md text-on-surface font-medium">ต้องการความช่วยเหลือเกี่ยวกับเอกสาร?</span>
+<div class="flex gap-2">
+<button class="px-4 py-2 bg-surface-container-low border border-outline-variant rounded-md font-label-sm text-on-surface hover:bg-surface-container-highest transition-colors">ติดต่อผู้ดูแลระบบ</button>
+<button class="px-4 py-2 bg-surface-container-low border border-outline-variant rounded-md font-label-sm text-on-surface hover:bg-surface-container-highest transition-colors">คู่มือการใช้งาน</button>
+</div>
+</div>
+<span class="font-label-sm text-on-surface-variant font-normal text-center md:text-right">สำนักวิจัยและส่งเสริมวิชาการการเกษตร มหาวิทยาลัยแม่โจ้</span>
+</div>
+</footer>
+</body></html>

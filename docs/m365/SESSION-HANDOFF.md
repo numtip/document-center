@@ -5,6 +5,8 @@
 **Last Commit:** `4b3c1cb` — EA-5D: Solution deployment proof  
 **Next UX Direction:** Design RAE Document Center landing page in Google Stitch, then translate into SharePoint Modern Web Parts
 
+**UX Track Status (updated 2026-07-15):** Stitch V2 design complete and frozen. Visual baseline registered. SharePoint Modern Web Part mapping produced.
+
 ---
 
 ## 1. Current Architecture State
@@ -225,6 +227,17 @@ The account used for all provisioning: `prinya@office365.mju.ac.th` / `researchm
 | File | Purpose |
 |------|---------|
 | `admin/README.md` | Dedicated-site admin package (fallback) |
+|
+| ### 7.4 Design Artifacts (New)
+|
+| File | Purpose |
+||------|---------|
+|| `docs/design/rae-document-center/RAE_DOCUMENT_CENTER_VISUAL_BASELINE.md` | Visual Baseline V2 — FROZEN Stitch design registration |
+|| `docs/design/rae-document-center/stitch-v2/RAE_DOCUMENT_CENTER_STITCH_V2.zip` | Frozen ZIP source artifact |
+|| `docs/design/rae-document-center/stitch-v2/DESIGN.md` | Stitch design system specification |
+|| `docs/design/rae-document-center/stitch-v2/screen.png` | Visual screenshot |
+|| `docs/design/rae-document-center/stitch-v2/code.html` | Design reference (NOT production code) |
+|| `docs/m365/rae-document-center-webpart-mapping.md` | SharePoint Modern Web Part mapping specification |
 
 ---
 
