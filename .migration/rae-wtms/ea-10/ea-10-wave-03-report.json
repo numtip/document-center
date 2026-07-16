@@ -1,0 +1,120 @@
+{
+  "wave": 3,
+  "timestamp": "2026-07-16T03:22:40Z",
+  "expected": 100,
+  "UPLOAD_SUCCESS": 100,
+  "REGISTRY_SUCCESS": 100,
+  "FAILED": 0,
+  "batch_metrics": {
+    "EA10-W03-B01": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W03-B02": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W03-B03": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W03-B04": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W03-B05": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W03-B06": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W03-B07": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W03-B08": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W03-B09": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W03-B10": {
+      "expected": 10,
+      "upload_ok": 10
+    }
+  },
+  "gate_pass": true,
+  "performance": {
+    "avg_sec_per_doc": 3.4,
+    "median_sec": 2.8,
+    "max_sec": 19.8
+  },
+  "spot_qa": [
+    {
+      "DocumentID": "RAE-00461",
+      "TargetLibrary": "Research",
+      "SizeTier": "medium",
+      "url_ok": true,
+      "bad_path": false
+    },
+    {
+      "DocumentID": "RAE-00451",
+      "TargetLibrary": "Research",
+      "SizeTier": "small",
+      "url_ok": true,
+      "bad_path": false
+    },
+    {
+      "DocumentID": "RAE-00515",
+      "TargetLibrary": "Research",
+      "SizeTier": "medium",
+      "url_ok": true,
+      "bad_path": false
+    },
+    {
+      "DocumentID": "RAE-00496",
+      "TargetLibrary": "Research",
+      "SizeTier": "large",
+      "url_ok": true,
+      "bad_path": false
+    },
+    {
+      "DocumentID": "RAE-00424",
+      "TargetLibrary": "Research",
+      "SizeTier": "xlarge",
+      "url_ok": true,
+      "bad_path": false
+    }
+  ],
+  "search": [
+    {
+      "query": "",
+      "doc_id": "RAE-00461",
+      "kind": "thai_title",
+      "classification": "NOT_FOUND"
+    },
+    {
+      "query": "RAE-00461.pdf",
+      "doc_id": "RAE-00461",
+      "kind": "filename",
+      "classification": "FOUND"
+    }
+  ],
+  "registry_sync": {},
+  "library_counts": {
+    "Administration": 9,
+    "FinanceProcurement": 20,
+    "Research": 334,
+    "AcademicServices": 43,
+    "PlanningPolicy": 10,
+    "SOPManuals": 15
+  },
+  "registry_dup_check": {
+    "total": 431,
+    "duplicates": []
+  }
+}

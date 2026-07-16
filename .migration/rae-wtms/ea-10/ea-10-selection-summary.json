@@ -1,0 +1,26 @@
+{
+  "selected_total": 496,
+  "waves": {
+    "1": 100,
+    "2": 100,
+    "3": 100,
+    "4": 100,
+    "5": 96
+  },
+  "by_library": {
+    "Research": 496
+  },
+  "by_tier": {
+    "xlarge": 11,
+    "large": 43,
+    "medium": 329,
+    "small": 113
+  },
+  "by_extension": {
+    ".pdf": 323,
+    ".docx": 89,
+    ".doc": 80,
+    ".xlsx": 3,
+    ".jpg": 1
+  }
+}

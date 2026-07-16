@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-07-16T03:53:48Z",
+  "repository_head": "90ebc9a390112f57e3669669395d77f0f79ffe67",
+  "manifest_row_count": 772,
+  "manifest_ready_count": 627,
+  "prior_success_count": 627,
+  "already_complete_count": 594,
+  "library_only_count": 0,
+  "registry_only_count": 33,
+  "not_migrated_count": 0,
+  "conflict_count": 0,
+  "blocked_count": 0,
+  "remaining_eligible_count": 0,
+  "library_item_counts": {
+    "Administration": 9,
+    "FinanceProcurement": 20,
+    "Research": 497,
+    "AcademicServices": 43,
+    "PlanningPolicy": 10,
+    "SOPManuals": 15
+  },
+  "library_total_unique_ids": 594,
+  "registry_row_count": 627,
+  "registry_unique_ids": 627,
+  "registry_duplicate_document_ids": [],
+  "registry_duplicate_count": 0,
+  "broken_storage_url_count": 0,
+  "authentication_state": "authenticated",
+  "status_breakdown": {
+    "ALREADY_COMPLETE": 594,
+    "REGISTRY_ONLY": 33
+  }
+}

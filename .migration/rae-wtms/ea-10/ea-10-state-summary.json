@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-07-16T04:05:17Z",
+  "ea10_ok": 496,
+  "ea10_fail": 0,
+  "total_corpus_ok": 627,
+  "registry_count": 627,
+  "sharepoint_count": 627,
+  "duplicate_count": 0,
+  "broken_url_count": 0,
+  "retry_count": 0,
+  "blocked_count": 0,
+  "avg_sec_per_doc": 4.3,
+  "median_sec_per_doc": 2.9,
+  "elapsed_upload_sec": 2128.1,
+  "verdict": "EA10_COMPLETE_READY_FOR_EA11"
+}

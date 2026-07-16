@@ -1,0 +1,97 @@
+{
+  "wave": 5,
+  "timestamp": "2026-07-16T03:46:14Z",
+  "expected": 96,
+  "UPLOAD_SUCCESS": 96,
+  "REGISTRY_SUCCESS": 96,
+  "FAILED": 0,
+  "batch_metrics": {
+    "EA10-W05-B01": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W05-B02": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W05-B03": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W05-B04": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W05-B05": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W05-B06": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W05-B07": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W05-B08": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W05-B09": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W05-B10": {
+      "expected": 6,
+      "upload_ok": 6
+    }
+  },
+  "gate_pass": true,
+  "performance": {
+    "avg_sec_per_doc": 5.4,
+    "median_sec": 2.8,
+    "max_sec": 85.1
+  },
+  "spot_qa": [
+    {
+      "DocumentID": "RAE-00713",
+      "TargetLibrary": "Research",
+      "SizeTier": "medium",
+      "url_ok": true,
+      "bad_path": false
+    },
+    {
+      "DocumentID": "RAE-00637",
+      "TargetLibrary": "Research",
+      "SizeTier": "small",
+      "url_ok": true,
+      "bad_path": false
+    },
+    {
+      "DocumentID": "RAE-00703",
+      "TargetLibrary": "Research",
+      "SizeTier": "medium",
+      "url_ok": true,
+      "bad_path": false
+    }
+  ],
+  "search": [
+    {
+      "skipped": "fast_mode"
+    }
+  ],
+  "registry_sync": {},
+  "library_counts": {
+    "Administration": 9,
+    "FinanceProcurement": 20,
+    "Research": 497,
+    "AcademicServices": 43,
+    "PlanningPolicy": 10,
+    "SOPManuals": 15
+  },
+  "registry_dup_check": {
+    "total": 500,
+    "duplicates": []
+  }
+}

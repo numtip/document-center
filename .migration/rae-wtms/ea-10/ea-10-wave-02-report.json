@@ -1,0 +1,113 @@
+{
+  "wave": 2,
+  "timestamp": "2026-07-16T03:11:15Z",
+  "expected": 100,
+  "UPLOAD_SUCCESS": 100,
+  "REGISTRY_SUCCESS": 100,
+  "FAILED": 0,
+  "batch_metrics": {
+    "EA10-W02-B01": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W02-B02": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W02-B03": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W02-B04": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W02-B05": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W02-B06": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W02-B07": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W02-B08": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W02-B09": {
+      "expected": 10,
+      "upload_ok": 10
+    },
+    "EA10-W02-B10": {
+      "expected": 10,
+      "upload_ok": 10
+    }
+  },
+  "gate_pass": true,
+  "performance": {
+    "avg_sec_per_doc": 3.6,
+    "median_sec": 3.0,
+    "max_sec": 12.5
+  },
+  "spot_qa": [
+    {
+      "DocumentID": "RAE-00364",
+      "TargetLibrary": "Research",
+      "SizeTier": "medium",
+      "url_ok": true,
+      "bad_path": false
+    },
+    {
+      "DocumentID": "RAE-00403",
+      "TargetLibrary": "Research",
+      "SizeTier": "small",
+      "url_ok": true,
+      "bad_path": false
+    },
+    {
+      "DocumentID": "RAE-00393",
+      "TargetLibrary": "Research",
+      "SizeTier": "medium",
+      "url_ok": true,
+      "bad_path": false
+    },
+    {
+      "DocumentID": "RAE-00316",
+      "TargetLibrary": "Research",
+      "SizeTier": "large",
+      "url_ok": true,
+      "bad_path": false
+    }
+  ],
+  "search": [
+    {
+      "query": "",
+      "doc_id": "RAE-00364",
+      "kind": "thai_title",
+      "classification": "NOT_FOUND"
+    },
+    {
+      "query": "RAE-00364.doc",
+      "doc_id": "RAE-00364",
+      "kind": "filename",
+      "classification": "FOUND"
+    }
+  ],
+  "registry_sync": {},
+  "library_counts": {
+    "Administration": 9,
+    "FinanceProcurement": 20,
+    "Research": 234,
+    "AcademicServices": 43,
+    "PlanningPolicy": 10,
+    "SOPManuals": 15
+  },
+  "registry_dup_check": {
+    "total": 331,
+    "duplicates": []
+  }
+}
