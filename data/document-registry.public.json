@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-16T08:41:07Z",
+  "generatedAt": "2026-07-16T09:15:37Z",
   "source": "RAE Document Registry (SharePoint) - Live Export",
   "preview_mode": false,
-  "recordCount": 24,
+  "recordCount": 124,
   "documents": [
     {
       "DocumentID": "RAE-00001",
@@ -23,6 +23,16 @@
       "Visibility": "public",
       "UpdatedDate": "2026-07-15T07:39:20Z",
       "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00009.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00012",
+      "Title": "ยกเลิกลา2",
+      "Category": "Administration",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:50:40Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00012.pdf",
       "DownloadMode": "AUTHENTICATED_SHAREPOINT"
     },
     {
@@ -76,6 +86,16 @@
       "DownloadMode": "AUTHENTICATED_SHAREPOINT"
     },
     {
+      "DocumentID": "RAE-00058",
+      "Title": "PDF",
+      "Category": "FinanceProcurement",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:51:47Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00058.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
       "DocumentID": "RAE-00063",
       "Title": "PDF",
       "Category": "FinanceProcurement",
@@ -83,6 +103,26 @@
       "Visibility": "public",
       "UpdatedDate": "2026-07-15T07:58:28Z",
       "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00063.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00064",
+      "Title": "WORD",
+      "Category": "FinanceProcurement",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:51:07Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00064.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00079",
+      "Title": "PDF",
+      "Category": "PlanningPolicy",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:52:57Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00079.pdf",
       "DownloadMode": "AUTHENTICATED_SHAREPOINT"
     },
     {
@@ -146,6 +186,16 @@
       "DownloadMode": "AUTHENTICATED_SHAREPOINT"
     },
     {
+      "DocumentID": "RAE-00137",
+      "Title": "RAE-00137.pdf",
+      "Category": "SOPManuals",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:56:09Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00137.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
       "DocumentID": "RAE-00140",
       "Title": "RAE-00140.pdf",
       "Category": "SOPManuals",
@@ -153,6 +203,16 @@
       "Visibility": "public",
       "UpdatedDate": "2026-07-15T08:55:17Z",
       "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00140.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00141",
+      "Title": "RAE-00141.pdf",
+      "Category": "SOPManuals",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:56:20Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00141.pdf",
       "DownloadMode": "AUTHENTICATED_SHAREPOINT"
     },
     {
@@ -176,6 +236,16 @@
       "DownloadMode": "AUTHENTICATED_SHAREPOINT"
     },
     {
+      "DocumentID": "RAE-00147",
+      "Title": "แบบฟอร์มรายงานผลการดำเนินงาน",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:56:24Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00147.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
       "DocumentID": "RAE-00149",
       "Title": "ดาวน์โหลด",
       "Category": "AcademicServices",
@@ -196,6 +266,16 @@
       "DownloadMode": "AUTHENTICATED_SHAREPOINT"
     },
     {
+      "DocumentID": "RAE-00153",
+      "Title": "ดาวน์โหลด",
+      "Category": "AcademicServices",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:54:43Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00153.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
       "DocumentID": "RAE-00154",
       "Title": "ดาวน์โหลด",
       "Category": "AcademicServices",
@@ -203,6 +283,66 @@
       "Visibility": "public",
       "UpdatedDate": "2026-07-15T08:53:53Z",
       "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00154.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00170",
+      "Title": "RAE-00170.docx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:55:29Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00170.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00177",
+      "Title": "RAE-00177.pptx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:57:03Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00177.pptx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00184",
+      "Title": "RAE-00184.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:45:35Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00184.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00187",
+      "Title": "RAE-00187.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T09:01:15Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00187.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00188",
+      "Title": "RAE-00188.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:45:41Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00188.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00191",
+      "Title": "RAE-00191.docx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:45:46Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00191.docx",
       "DownloadMode": "AUTHENTICATED_SHAREPOINT"
     },
     {
@@ -216,6 +356,336 @@
       "DownloadMode": "AUTHENTICATED_SHAREPOINT"
     },
     {
+      "DocumentID": "RAE-00201",
+      "Title": "RAE-00201.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:53:20Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00201.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00203",
+      "Title": "RAE-00203.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:47:10Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00203.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00223",
+      "Title": "RAE-00223.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:48:02Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00223.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00226",
+      "Title": "RAE-00226.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:48:05Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00226.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00230",
+      "Title": "RAE-00230.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:48:12Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00230.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00232",
+      "Title": "RAE-00232.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:48:33Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00232.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00236",
+      "Title": "RAE-00236.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:48:38Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00236.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00246",
+      "Title": "RAE-00246.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:49:25Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00246.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00248",
+      "Title": "RAE-00248.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:49:28Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00248.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00254",
+      "Title": "RAE-00254.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:55:29Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00254.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00264",
+      "Title": "RAE-00264.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:49:43Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00264.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00278",
+      "Title": "RAE-00278.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:50:20Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00278.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00280",
+      "Title": "RAE-00280.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:50:23Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00280.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00291",
+      "Title": "RAE-00291.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:51:46Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00291.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00298",
+      "Title": "RAE-00298.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:52:18Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00298.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00299",
+      "Title": "RAE-00299.docx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:52:26Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00299.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00305",
+      "Title": "RAE-00305.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:06:16Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00305.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00307",
+      "Title": "RAE-00307.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:59:15Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00307.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00308",
+      "Title": "RAE-00308.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:59:18Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00308.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00312",
+      "Title": "RAE-00312.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T02:59:30Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00312.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00327",
+      "Title": "RAE-00327.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:01:14Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00327.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00329",
+      "Title": "RAE-00329.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:01:41Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00329.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00333",
+      "Title": "RAE-00333.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:01:52Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00333.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00336",
+      "Title": "RAE-00336.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:02:00Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00336.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00337",
+      "Title": "RAE-00337.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:02:14Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00337.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00345",
+      "Title": "RAE-00345.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:02:31Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00345.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00349",
+      "Title": "RAE-00349.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:02:40Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00349.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00374",
+      "Title": "RAE-00374.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:04:20Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00374.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00397",
+      "Title": "RAE-00397.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:05:30Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00397.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00400",
+      "Title": "RAE-00400.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:05:48Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00400.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00401",
+      "Title": "RAE-00401.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:05:52Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00401.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00405",
+      "Title": "RAE-00405.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:07:20Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00405.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00406",
+      "Title": "RAE-00406.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:06:00Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00406.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
       "DocumentID": "RAE-00409",
       "Title": "RAE-00409.doc",
       "Category": "Research",
@@ -223,6 +693,186 @@
       "Visibility": "public",
       "UpdatedDate": "2026-07-15T07:58:59Z",
       "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00409.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00411",
+      "Title": "RAE-00411.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:06:10Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00411.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00413",
+      "Title": "RAE-00413.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:07:23Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00413.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00416",
+      "Title": "RAE-00416.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:12:15Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00416.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00433",
+      "Title": "RAE-00433.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:13:16Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00433.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00437",
+      "Title": "RAE-00437.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:13:21Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00437.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00461",
+      "Title": "RAE-00461.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:14:57Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00461.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00462",
+      "Title": "RAE-00462.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:14:59Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00462.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00463",
+      "Title": "RAE-00463.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:15:02Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00463.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00465",
+      "Title": "RAE-00465.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:15:07Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00465.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00466",
+      "Title": "RAE-00466.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:15:10Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00466.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00468",
+      "Title": "RAE-00468.docx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:18:41Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00468.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00469",
+      "Title": "RAE-00469.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:15:26Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00469.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00470",
+      "Title": "RAE-00470.docx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:18:44Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00470.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00485",
+      "Title": "RAE-00485.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:15:49Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00485.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00498",
+      "Title": "RAE-00498.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T09:02:39Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00498.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00505",
+      "Title": "RAE-00505.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:17:03Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00505.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00509",
+      "Title": "RAE-00509.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:17:15Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00509.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00510",
+      "Title": "RAE-00510.docx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:19:20Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00510.docx",
       "DownloadMode": "AUTHENTICATED_SHAREPOINT"
     },
     {
@@ -236,6 +886,206 @@
       "DownloadMode": "AUTHENTICATED_SHAREPOINT"
     },
     {
+      "DocumentID": "RAE-00524",
+      "Title": "RAE-00524.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:27:55Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00524.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00529",
+      "Title": "RAE-00529.docx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:28:04Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00529.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00533",
+      "Title": "RAE-00533.docx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:28:10Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00533.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00538",
+      "Title": "RAE-00538.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:23:36Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00538.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00544",
+      "Title": "RAE-00544.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:24:09Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00544.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00550",
+      "Title": "RAE-00550.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:24:25Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00550.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00559",
+      "Title": "RAE-00559.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:25:45Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00559.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00563",
+      "Title": "RAE-00563.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:25:57Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00563.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00574",
+      "Title": "RAE-00574.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:26:05Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00574.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00576",
+      "Title": "RAE-00576.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T09:00:48Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00576.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00581",
+      "Title": "RAE-00581.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:23:59Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00581.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00582",
+      "Title": "RAE-00582.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:26:13Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00582.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00591",
+      "Title": "RAE-00591.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:26:31Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00591.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00603",
+      "Title": "RAE-00603.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:26:58Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00603.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00605",
+      "Title": "RAE-00605.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:27:00Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00605.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00607",
+      "Title": "RAE-00607.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:27:03Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00607.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00632",
+      "Title": "RAE-00632.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:29:11Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00632.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00635",
+      "Title": "RAE-00635.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:41:56Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00635.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00640",
+      "Title": "RAE-00640.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:35:43Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00640.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00659",
+      "Title": "RAE-00659.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:02:47Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/SOPManuals/RAE-00659.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
       "DocumentID": "RAE-00662",
       "Title": "RAE-00662.docx",
       "Category": "Research",
@@ -243,6 +1093,156 @@
       "Visibility": "public",
       "UpdatedDate": "2026-07-15T07:39:20Z",
       "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/SOPManuals/RAE-00662.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00666",
+      "Title": "RAE-00666.docx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:57:28Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/SOPManuals/RAE-00666.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00669",
+      "Title": "RAE-00669.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:35:35Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00669.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00672",
+      "Title": "RAE-00672.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:42:13Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00672.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00676",
+      "Title": "RAE-00676.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:39:01Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00676.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00684",
+      "Title": "RAE-00684.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:59:51Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00684.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00695",
+      "Title": "RAE-00695.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:39:32Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00695.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00704",
+      "Title": "RAE-00704.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:39:47Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00704.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00705",
+      "Title": "RAE-00705.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:39:50Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00705.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00707",
+      "Title": "RAE-00707.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:40:05Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00707.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00739",
+      "Title": "RAE-00739.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:41:16Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00739.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00758",
+      "Title": "RAE-00758.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:38:46Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00758.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00761",
+      "Title": "RAE-00761.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:42:42Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00761.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00762",
+      "Title": "RAE-00762.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:59:10Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00762.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00764",
+      "Title": "RAE-00764.pdf",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-16T03:41:40Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00764.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00766",
+      "Title": "RAE-00766.docx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-14T17:00:00Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00766.docx",
       "DownloadMode": "AUTHENTICATED_SHAREPOINT"
     }
   ]

@@ -1,24 +1,24 @@
 {
-  "timestamp": "2026-07-16T08:41:07Z",
+  "timestamp": "2026-07-16T09:15:37Z",
   "pipeline": "pxp3-export-live-registry",
   "schema_version": "1.0.0",
   "phases": {
     "auth": {
-      "elapsed_sec": 10.73
+      "elapsed_sec": 14.73
     },
     "scan": {
-      "elapsed_sec": 0.68,
+      "elapsed_sec": 0.74,
       "rows": 627
     },
     "mapping": {
       "elapsed_sec": 0.0,
-      "eligible": 24,
-      "excluded": 0,
-      "batch_skipped": 603
+      "eligible": 124,
+      "excluded": 503,
+      "batch_skipped": 0
     },
     "generate": {
       "elapsed_sec": 0.0,
-      "sha256": "973f58d78a7a648f734826ef05376f1bce09c04e08d51f663d921a5abbb04552"
+      "sha256": "3afc8ec7124c34a203998159bd5e19893ff249af7a404e8511f2c347b6c0070c"
     },
     "privacy": {
       "elapsed_sec": 0.0,
@@ -26,3682 +26,3555 @@
       "findings": []
     }
   },
-  "total_elapsed_sec": 11.41,
+  "total_elapsed_sec": 15.47,
   "live_registry": {
     "site": "https://maejo365.sharepoint.com/sites/msteams_54adc4",
     "list": "RAE Document Registry",
     "total_records": 627
   },
   "export": {
-    "eligible": 24,
-    "excluded": 0,
-    "batch_skipped": 603,
-    "sha256": "973f58d78a7a648f734826ef05376f1bce09c04e08d51f663d921a5abbb04552"
+    "eligible": 124,
+    "excluded": 503,
+    "batch_skipped": 0,
+    "sha256": "3afc8ec7124c34a203998159bd5e19893ff249af7a404e8511f2c347b6c0070c"
   },
   "exclusion_breakdown": {
-    "batch_skipped": 603
+    "excluded_visibility": 503
   },
   "category_breakdown": {
-    "AcademicServices": 4,
-    "Research": 4,
-    "Administration": 4,
-    "PlanningPolicy": 4,
-    "FinanceProcurement": 4,
-    "SOPManuals": 4
+    "AcademicServices": 5,
+    "Research": 97,
+    "Administration": 5,
+    "PlanningPolicy": 5,
+    "FinanceProcurement": 6,
+    "SOPManuals": 6
   },
   "download_mode_breakdown": {
-    "AUTHENTICATED_SHAREPOINT": 24
+    "AUTHENTICATED_SHAREPOINT": 124
   },
-  "excluded_records": [],
-  "batch_skipped_records": [
+  "excluded_records": [
     {
-      "internal_id": 36,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00002",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 36,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 35,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00003",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 35,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 37,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00004",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 37,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 32,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00005",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 32,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 10,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00011",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 10,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 34,
-      "document_id": "RAE-00012",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 47,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00043",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 47,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 50,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00044",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 50,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 44,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00045",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 44,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 38,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00048",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 38,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 41,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00049",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 41,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 46,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00051",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 46,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 45,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00052",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 45,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 43,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00053",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 43,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 51,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00054",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 51,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 49,
-      "document_id": "RAE-00058",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 40,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00059",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 40,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 39,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00060",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 39,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 52,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00061",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 52,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 42,
-      "document_id": "RAE-00064",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 48,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00068",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 48,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 54,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00078",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 54,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 56,
-      "document_id": "RAE-00079",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 58,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00081",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 58,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 55,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00090",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 55,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 57,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00091",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 57,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 59,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00093",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 59,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 87,
-      "document_id": "RAE-00137",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 97,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00138",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 97,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 95,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00139",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 95,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 90,
-      "document_id": "RAE-00141",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 79,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00143",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 79,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 25,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00144",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 25,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 73,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00145",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 73,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 91,
-      "document_id": "RAE-00147",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 72,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00148",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 72,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 77,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00150",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 77,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 66,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00151",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 66,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 67,
-      "document_id": "RAE-00153",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 70,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00155",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 70,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 71,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00156",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 71,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 81,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00157",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 81,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 64,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00162",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 64,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 69,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00163",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 69,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 65,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00164",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 65,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 68,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00165",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 68,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 61,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00166",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 61,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 75,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00167",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 75,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 60,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00168",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 60,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 23,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00169",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 23,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 78,
-      "document_id": "RAE-00170",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 80,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00171",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 80,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 76,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00172",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 76,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 26,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00173",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 26,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 92,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00174",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 92,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 88,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00175",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 88,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 85,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00176",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 85,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 94,
-      "document_id": "RAE-00177",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 83,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00178",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 83,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 89,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00179",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 89,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 93,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00180",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 93,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 96,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00181",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 96,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 137,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00182",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 137,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 138,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00183",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 138,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 139,
-      "document_id": "RAE-00184",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 140,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00185",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 140,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 126,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00186",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 126,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 123,
-      "document_id": "RAE-00187",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 141,
-      "document_id": "RAE-00188",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 142,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00189",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 142,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 136,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00190",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 136,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 143,
-      "document_id": "RAE-00191",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 147,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00192",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 147,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 206,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00193",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 206,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 148,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00194",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 148,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 149,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00196",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 149,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 207,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00197",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 207,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 150,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00198",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 150,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 208,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00199",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 208,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 22,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00200",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 22,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 209,
-      "document_id": "RAE-00201",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 151,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00202",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 151,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 152,
-      "document_id": "RAE-00203",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 153,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00204",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 153,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 156,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00205",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 156,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 128,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00206",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 128,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 134,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00207",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 134,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 117,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00208",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 117,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 135,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00209",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 135,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 146,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00210",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 146,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 155,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00211",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 155,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 144,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00212",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 144,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 120,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00213",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 120,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 157,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00214",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 157,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 132,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00215",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 132,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 125,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00216",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 125,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 164,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00217",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 164,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 210,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00218",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 210,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 158,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00219",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 158,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 165,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00220",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 165,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 159,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00221",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 159,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 211,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00222",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 211,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 160,
-      "document_id": "RAE-00223",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 174,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00224",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 174,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 175,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00225",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 175,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 161,
-      "document_id": "RAE-00226",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 162,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00227",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 162,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 184,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00228",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 184,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 118,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00229",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 118,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 163,
-      "document_id": "RAE-00230",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 166,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00231",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 166,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 167,
-      "document_id": "RAE-00232",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 212,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00233",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 212,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 213,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00234",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 213,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 168,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00235",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 168,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 169,
-      "document_id": "RAE-00236",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 170,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00237",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 170,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 185,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00238",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 185,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 171,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00240",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 171,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 216,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00241",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 216,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 194,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00242",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 194,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 172,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00243",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 172,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 173,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00244",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 173,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 195,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00245",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 195,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 176,
-      "document_id": "RAE-00246",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 204,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00247",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 204,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 177,
-      "document_id": "RAE-00248",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 205,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00249",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 205,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 214,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00250",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 214,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 215,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00251",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 215,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 178,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00252",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 178,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 111,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00253",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 111,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 224,
-      "document_id": "RAE-00254",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 225,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00255",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 225,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 179,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00256",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 179,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 180,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00257",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 180,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 226,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00258",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 226,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 145,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00259",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 145,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 181,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00260",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 181,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 227,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00261",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 227,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 154,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00263",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 154,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 182,
-      "document_id": "RAE-00264",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 217,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00265",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 217,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 183,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00266",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 183,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 218,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00267",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 218,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 186,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00268",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 186,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 219,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00269",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 219,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 187,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00272",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 187,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 220,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00273",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 220,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 188,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00274",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 188,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 221,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00275",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 221,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 189,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00276",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 189,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 222,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00277",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 222,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 190,
-      "document_id": "RAE-00278",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 223,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00279",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 223,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 191,
-      "document_id": "RAE-00280",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 228,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00281",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 228,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 192,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00282",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 192,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 229,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00283",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 229,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 193,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00284",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 193,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 230,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00285",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 230,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 196,
-      "document_id": "RAE-00291",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 197,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00292",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 197,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 231,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00293",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 231,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 198,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00294",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 198,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 232,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00295",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 232,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 199,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00296",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 199,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 233,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00297",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 233,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 200,
-      "document_id": "RAE-00298",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 201,
-      "document_id": "RAE-00299",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 202,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00300",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 202,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 203,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00301",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 203,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 115,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00302",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 115,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 129,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00303",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 129,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 236,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00304",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 236,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 323,
-      "document_id": "RAE-00305",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 237,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00306",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 237,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 238,
-      "document_id": "RAE-00307",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 239,
-      "document_id": "RAE-00308",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 240,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00309",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 240,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 241,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00310",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 241,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 242,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00311",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 242,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 243,
-      "document_id": "RAE-00312",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 246,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00313",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 246,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 247,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00314",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 247,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 324,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00315",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 324,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 234,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00316",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 234,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 248,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00317",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 248,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 249,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00318",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 249,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 112,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00321",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 112,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 235,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00322",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 235,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 250,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00324",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 250,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 251,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00325",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 251,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 252,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00326",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 252,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 253,
-      "document_id": "RAE-00327",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 255,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00328",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 255,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 256,
-      "document_id": "RAE-00329",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 257,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00330",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 257,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 258,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00331",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 258,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 259,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00332",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 259,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 260,
-      "document_id": "RAE-00333",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 261,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00334",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 261,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 262,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00335",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 262,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 263,
-      "document_id": "RAE-00336",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 264,
-      "document_id": "RAE-00337",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 265,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00338",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 265,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 266,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00339",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 266,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 267,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00340",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 267,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 244,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00342",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 244,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 268,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00343",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 268,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 269,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00344",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 269,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 270,
-      "document_id": "RAE-00345",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 271,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00346",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 271,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 272,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00348",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 272,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 273,
-      "document_id": "RAE-00349",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 274,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00350",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 274,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 275,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00351",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 275,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 276,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00352",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 276,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 277,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00353",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 277,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 278,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00354",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 278,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 325,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00355",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 325,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 279,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00356",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 279,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 280,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00357",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 280,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 281,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00358",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 281,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 282,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00359",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 282,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 326,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00360",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 326,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 283,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00361",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 283,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 284,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00362",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 284,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 285,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00363",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 285,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 286,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00364",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 286,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 287,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00365",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 287,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 288,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00367",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 288,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 327,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00368",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 327,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 289,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00369",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 289,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 290,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00370",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 290,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 291,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00371",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 291,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 292,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00372",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 292,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 293,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00373",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 293,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 294,
-      "document_id": "RAE-00374",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 295,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00375",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 295,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 296,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00376",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 296,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 297,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00377",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 297,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 328,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00378",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 328,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 298,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00379",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 298,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 299,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00380",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 299,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 329,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00382",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 329,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 245,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00384",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 245,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 300,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00385",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 300,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 301,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00386",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 301,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 302,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00387",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 302,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 303,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00388",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 303,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 304,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00389",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 304,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 305,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00390",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 305,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 306,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00391",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 306,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 307,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00392",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 307,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 308,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00393",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 308,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 309,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00394",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 309,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 310,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00395",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 310,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 311,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00396",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 311,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 312,
-      "document_id": "RAE-00397",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 313,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00398",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 313,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 330,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00399",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 330,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 314,
-      "document_id": "RAE-00400",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 315,
-      "document_id": "RAE-00401",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 316,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00402",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 316,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 331,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00403",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 331,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 317,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00404",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 317,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 332,
-      "document_id": "RAE-00405",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 318,
-      "document_id": "RAE-00406",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 319,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00407",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 319,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 320,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00408",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 320,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 254,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00410",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 254,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 321,
-      "document_id": "RAE-00411",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 322,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00412",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 322,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 333,
-      "document_id": "RAE-00413",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 336,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00414",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 336,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 406,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00415",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 406,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 337,
-      "document_id": "RAE-00416",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 407,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00417",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 407,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 338,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00419",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 338,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 339,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00420",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 339,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 340,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00421",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 340,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 341,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00422",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 341,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 342,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00423",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 342,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 334,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00424",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 334,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 343,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00425",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 343,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 408,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00426",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 408,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 346,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00427",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 346,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 409,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00428",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 409,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 347,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00429",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 347,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 410,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00430",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 410,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 348,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00431",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 348,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 411,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00432",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 411,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 349,
-      "document_id": "RAE-00433",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 412,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00434",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 412,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 350,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00435",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 350,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 413,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00436",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 413,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 351,
-      "document_id": "RAE-00437",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 352,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00438",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 352,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 353,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00440",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 353,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 414,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00441",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 414,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 356,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00442",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 356,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 415,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00443",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 415,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 357,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00444",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 357,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 416,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00445",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 416,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 358,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00446",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 358,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 417,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00447",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 417,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 359,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00448",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 359,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 418,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00449",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 418,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 360,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00450",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 360,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 419,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00451",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 419,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 361,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00452",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 361,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 420,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00453",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 420,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 113,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00454",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 113,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 362,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00455",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 362,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 363,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00456",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 363,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 364,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00457",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 364,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 365,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00458",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 365,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 366,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00459",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 366,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 367,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00460",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 367,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 368,
-      "document_id": "RAE-00461",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 369,
-      "document_id": "RAE-00462",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 370,
-      "document_id": "RAE-00463",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 371,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00464",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 371,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 372,
-      "document_id": "RAE-00465",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 373,
-      "document_id": "RAE-00466",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 374,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00467",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 374,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 421,
-      "document_id": "RAE-00468",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 375,
-      "document_id": "RAE-00469",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 422,
-      "document_id": "RAE-00470",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 376,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00471",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 376,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 423,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00472",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 423,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 377,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00473",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 377,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 378,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00474",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 378,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 379,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00475",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 379,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 424,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00476",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 424,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 380,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00477",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 380,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 335,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00478",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 335,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 425,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00479",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 425,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 426,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00480",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 426,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 381,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00481",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 381,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 427,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00482",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 427,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 382,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00483",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 382,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 428,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00484",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 428,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 383,
-      "document_id": "RAE-00485",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 429,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00486",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 429,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 384,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00487",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 384,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 385,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00488",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 385,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 386,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00489",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 386,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 387,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00490",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 387,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 124,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00491",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 124,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 119,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00492",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 119,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 344,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00493",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 344,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 388,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00494",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 388,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 389,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00495",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 389,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 345,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00496",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 345,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 354,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00497",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 354,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 127,
-      "document_id": "RAE-00498",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 390,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00499",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 390,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 391,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00500",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 391,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 392,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00501",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 392,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 430,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00502",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 430,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 393,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00503",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 393,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 394,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00504",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 394,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 395,
-      "document_id": "RAE-00505",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 396,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00506",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 396,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 397,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00507",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 397,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 398,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00508",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 398,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 399,
-      "document_id": "RAE-00509",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 431,
-      "document_id": "RAE-00510",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 400,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00511",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 400,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 432,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00512",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 432,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 401,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00513",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 401,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 433,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00514",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 433,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 402,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00515",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 402,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 403,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00517",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 403,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 404,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00518",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 404,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 355,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00519",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 355,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 405,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00520",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 405,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 503,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00521",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 503,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 436,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00522",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 436,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 504,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00523",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 504,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 505,
-      "document_id": "RAE-00524",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 506,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00525",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 506,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 437,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00526",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 437,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 507,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00527",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 507,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 438,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00528",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 438,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 508,
-      "document_id": "RAE-00529",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 439,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00530",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 439,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 509,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00531",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 509,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 440,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00532",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 440,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 510,
-      "document_id": "RAE-00533",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 441,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00534",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 441,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 511,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00535",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 511,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 442,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00536",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 442,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 512,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00537",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 512,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 443,
-      "document_id": "RAE-00538",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 446,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00539",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 446,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 434,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00540",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 434,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 435,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00541",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 435,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 447,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00542",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 447,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 513,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00543",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 513,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 448,
-      "document_id": "RAE-00544",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 449,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00545",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 449,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 514,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00546",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 514,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 450,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00547",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 450,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 515,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00548",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 515,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 451,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00549",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 451,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 452,
-      "document_id": "RAE-00550",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 453,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00551",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 453,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 456,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00552",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 456,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 457,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00553",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 457,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 458,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00554",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 458,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 459,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00555",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 459,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 460,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00556",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 460,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 461,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00557",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 461,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 462,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00558",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 462,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 463,
-      "document_id": "RAE-00559",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 464,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00560",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 464,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 465,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00561",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 465,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 466,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00562",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 466,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 467,
-      "document_id": "RAE-00563",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 516,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00564",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 516,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 16,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00566",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 16,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 18,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00568",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 18,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 517,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00569",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 517,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 468,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00570",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 468,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 518,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00571",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 518,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 469,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00572",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 469,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 470,
-      "document_id": "RAE-00574",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 121,
-      "document_id": "RAE-00576",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 471,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00577",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 471,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 444,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00579",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 444,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 472,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00580",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 472,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 445,
-      "document_id": "RAE-00581",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 473,
-      "document_id": "RAE-00582",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 454,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00584",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 454,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 474,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00585",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 474,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 519,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00586",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 519,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 475,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00587",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 475,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 476,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00588",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 476,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 477,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00589",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 477,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 478,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00590",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 478,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 479,
-      "document_id": "RAE-00591",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 480,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00593",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 480,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 481,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00595",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 481,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 482,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00596",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 482,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 483,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00597",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 483,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 484,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00598",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 484,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 485,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00600",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 485,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 455,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00601",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 455,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 486,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00602",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 486,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 487,
-      "document_id": "RAE-00603",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 520,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00604",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 520,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 488,
-      "document_id": "RAE-00605",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 521,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00606",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 521,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 489,
-      "document_id": "RAE-00607",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 490,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00608",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 490,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 491,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00609",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 491,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 492,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00610",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 492,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 493,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00611",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 493,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 522,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00612",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 522,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 494,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00613",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 494,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 495,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00614",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 495,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 496,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00615",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 496,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 497,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00616",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 497,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 498,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00617",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 498,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 499,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00618",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 499,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 523,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00619",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 523,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 524,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00620",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 524,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 525,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00621",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 525,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 526,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00622",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 526,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 500,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00623",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 500,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 501,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00624",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 501,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 527,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00625",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 527,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 21,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00626",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 21,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 502,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00627",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 502,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 528,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00628",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 528,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 529,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00629",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 529,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 530,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00630",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 530,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 531,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00631",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 531,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 532,
-      "document_id": "RAE-00632",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 533,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00633",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 533,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 609,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00634",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 609,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 610,
-      "document_id": "RAE-00635",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 537,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00636",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 537,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 611,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00637",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 611,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 538,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00638",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 538,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 612,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00639",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 612,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 539,
-      "document_id": "RAE-00640",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 540,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00641",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 540,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 541,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00642",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 541,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 613,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00643",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 613,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 542,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00644",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 542,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 614,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00645",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 614,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 543,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00646",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 543,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 615,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00647",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 615,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 547,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00648",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 547,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 548,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00649",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 548,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 549,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00650",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 549,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 550,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00651",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 550,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 122,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00652",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 122,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 101,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00653",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 101,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 100,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00654",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 100,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 99,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00655",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 99,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 102,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00656",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 102,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 106,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00657",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 106,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 105,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00658",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 105,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 30,
-      "document_id": "RAE-00659",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 104,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00660",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 104,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 103,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00661",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 103,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 31,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00663",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 31,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 29,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00664",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 29,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 107,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00665",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 107,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 98,
-      "document_id": "RAE-00666",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 108,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00667",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 108,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 551,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00668",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 551,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 536,
-      "document_id": "RAE-00669",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 552,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00671",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 552,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 616,
-      "document_id": "RAE-00672",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 553,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00673",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 553,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 556,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00674",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 556,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 557,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00675",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 557,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 558,
-      "document_id": "RAE-00676",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 559,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00677",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 559,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 560,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00678",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 560,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 617,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00679",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 617,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 561,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00680",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 561,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 618,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00681",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 618,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 562,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00682",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 562,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 619,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00683",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 619,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 116,
-      "document_id": "RAE-00684",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 534,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00685",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 534,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 133,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00686",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 133,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 110,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00687",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 110,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 546,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00688",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 546,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 555,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00689",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 555,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 130,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00690",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 130,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 563,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00691",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 563,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 566,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00692",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 566,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 620,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00693",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 620,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 621,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00694",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 621,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 567,
-      "document_id": "RAE-00695",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 568,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00696",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 568,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 622,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00697",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 622,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 564,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00699",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 564,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 569,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00700",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 569,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 623,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00701",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 623,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 570,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00702",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 570,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 571,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00703",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 571,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 572,
-      "document_id": "RAE-00704",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 573,
-      "document_id": "RAE-00705",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 624,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00706",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 624,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 576,
-      "document_id": "RAE-00707",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 577,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00709",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 577,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 578,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00711",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 578,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 579,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00713",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 579,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 625,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00714",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 625,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 580,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00715",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 580,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 581,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00717",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 581,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 582,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00718",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 582,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 583,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00719",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 583,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 565,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00720",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 565,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 574,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00721",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 574,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 585,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00722",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 585,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 575,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00723",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 575,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 586,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00724",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 586,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 587,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00725",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 587,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 588,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00726",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 588,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 589,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00727",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 589,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 584,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00729",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 584,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 590,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00730",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 590,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 591,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00731",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 591,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 592,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00732",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 592,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 593,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00733",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 593,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 594,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00735",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 594,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 595,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00737",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 595,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 596,
-      "document_id": "RAE-00739",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 597,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00741",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 597,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 598,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00743",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 598,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 599,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00745",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 599,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 600,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00747",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 600,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 601,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00749",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 601,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 131,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00752",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 131,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 535,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00753",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 535,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 544,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00754",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 544,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 109,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00755",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 109,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 545,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00756",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 545,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 114,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00757",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 114,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 554,
-      "document_id": "RAE-00758",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 602,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00760",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 602,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 626,
-      "document_id": "RAE-00761",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 17,
-      "document_id": "RAE-00762",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 603,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00763",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 603,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 604,
-      "document_id": "RAE-00764",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 605,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00765",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 605,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 33,
-      "document_id": "RAE-00766",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
-    },
-    {
-      "internal_id": 606,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00767",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 606,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 627,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00768",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 627,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 607,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00769",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 607,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 628,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00770",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 628,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 608,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00771",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 608,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     },
     {
-      "internal_id": 629,
+      "reason": "excluded_visibility",
       "document_id": "RAE-00772",
-      "reason": "batch_skipped",
-      "detail": "DocumentID not in the --doc-ids filter set."
+      "internal_id": 629,
+      "value": "internal",
+      "detail": "Visibility 'internal' is not in allowed set: {'public'}"
     }
   ],
-  "batch_mode": {
-    "enabled": true,
-    "target_ids": [
-      "RAE-00001",
-      "RAE-00009",
-      "RAE-00014",
-      "RAE-00046",
-      "RAE-00047",
-      "RAE-00050",
-      "RAE-00057",
-      "RAE-00063",
-      "RAE-00080",
-      "RAE-00117",
-      "RAE-00118",
-      "RAE-00119",
-      "RAE-00135",
-      "RAE-00136",
-      "RAE-00140",
-      "RAE-00142",
-      "RAE-00146",
-      "RAE-00149",
-      "RAE-00152",
-      "RAE-00154",
-      "RAE-00195",
-      "RAE-00409",
-      "RAE-00516",
-      "RAE-00662"
-    ],
-    "matched": 24
-  },
-  "verdict": "PRIVACY_OK;RECONCILIATION_OK;BATCH_MODE:24_TARGETED"
+  "batch_skipped_records": null,
+  "verdict": "PRIVACY_OK;RECONCILIATION_OK"
 }

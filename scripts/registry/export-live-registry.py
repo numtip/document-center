@@ -178,6 +178,11 @@ def parse_args() -> argparse.Namespace:
         help="Comma-separated list of DocumentIDs to process (batch mode). "
              "When set, only these IDs are exported; all others are skipped."
     )
+    parser.add_argument(
+        "--skip-writes",
+        action="store_true",
+        help="Skip writing output files (useful for verification or dry-run previews)."
+    )
     return parser.parse_args()
 
 
@@ -400,7 +405,7 @@ GATE_ORDER = [
 ]
 
 
-def run_export(doc_ids_filter: set = None, mock_rows: list = None) -> dict:
+def run_export(doc_ids_filter: set = None, mock_rows: list = None, skip_writes_param: bool = False) -> dict:
     """
     Main export pipeline.
 
@@ -429,7 +434,7 @@ def run_export(doc_ids_filter: set = None, mock_rows: list = None) -> dict:
     phases = {}
 
     using_mock = mock_rows is not None
-    skip_writes = using_mock
+    skip_writes = using_mock or skip_writes_param
 
     if using_mock:
         # Test path — skip authentication and scanning
@@ -799,11 +804,14 @@ def generate_summary_md(audit: dict, path: str):
 if __name__ == "__main__":
     args = parse_args()
     doc_ids_filter = None
+    skip_writes = args.skip_writes
     if args.doc_ids:
         doc_ids_filter = {did.strip() for did in args.doc_ids.split(",") if did.strip()}
         print(f"[PXP-3] Batch mode: targeting {len(doc_ids_filter)} DocumentID(s)", flush=True)
+    if skip_writes:
+        print(f"[PXP-3] Skip-writes mode: output files will NOT be written", flush=True)
 
-    audit = run_export(doc_ids_filter=doc_ids_filter)
+    audit = run_export(doc_ids_filter=doc_ids_filter, skip_writes_param=skip_writes)
     if audit.get("error"):
         print(f"\n[PXP-3] ERROR: {audit['error']}", file=sys.stderr)
         sys.exit(1)

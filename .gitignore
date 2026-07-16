@@ -29,3 +29,6 @@ tokens/
 .migration/rae-wtms/tools/temp_profile*/
 # PXP-3 rollback and working data — never commit live auth metadata
 .migration/pxp3/
+# PXP-4 checkpoint files — never commit transient run state
+.migration/pxp4/publish-checkpoint.json
+.migration/pxp4/publish-checkpoint.json.tmp

@@ -1,0 +1,762 @@
+{
+  "timestamp": "2026-07-16T09:30:00Z",
+  "total_urls": 124,
+  "structural_checks_performed": 124,
+  "auth_access_sampled": 18,
+  "auth_access_sample_by_category": {
+    "Administration": 3,
+    "FinanceProcurement": 3,
+    "PlanningPolicy": 3,
+    "SOPManuals": 3,
+    "AcademicServices": 3,
+    "Research": 3
+  },
+  "summary": {
+    "STRUCTURE_VALID": 124,
+    "AUTH_ACCESS_CONFIRMED": 18,
+    "AUTH_ACCESS_FAILED": 0,
+    "VALID_PUBLIC": 0,
+    "BROKEN": 0,
+    "TIMEOUT": 0,
+    "UNKNOWN": 0
+  },
+  "details": {
+    "STRUCTURE_VALID": [
+      {
+        "DocumentID": "RAE-00001",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00001.do",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00009",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00009.pd",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00012",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00012.pd",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00014",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00014.do",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00046",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-0004",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00047",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-0004",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00050",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-0005",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00057",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-0005",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00058",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-0005",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00063",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-0006",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00064",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-0006",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00079",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00079.pd",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00080",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00080.pd",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00117",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00117.pd",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00118",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00118.pd",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00119",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00119.pd",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00135",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00135.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00136",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00136.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00137",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00137.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00140",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00140.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00141",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00141.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00142",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00142.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00146",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00146.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00147",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00147.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00149",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00149.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00152",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00152.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00153",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00153.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00154",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00154.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00170",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00170.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00177",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00177.",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00184",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00184.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00187",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00187.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00188",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00188.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00191",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00191.docx",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00195",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00195.xlsx",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00201",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00201.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00203",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00203.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00223",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00223.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00226",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00226.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00230",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00230.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00232",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00232.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00236",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00236.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00246",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00246.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00248",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00248.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00254",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00254.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00264",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00264.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00278",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00278.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00280",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00280.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00291",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00291.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00298",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00298.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00299",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00299.docx",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00305",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00305.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00307",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00307.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00308",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00308.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00312",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00312.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00327",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00327.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00329",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00329.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00333",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00333.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00336",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00336.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00337",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00337.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00345",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00345.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00349",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00349.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00374",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00374.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00397",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00397.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00400",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00400.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00401",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00401.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00405",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00405.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00406",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00406.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00409",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00409.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00411",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00411.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00413",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00413.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00416",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00416.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00433",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00433.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00437",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00437.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00461",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00461.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00462",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00462.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00463",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00463.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00465",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00465.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00466",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00466.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00468",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00468.docx",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00469",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00469.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00470",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00470.docx",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00485",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00485.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00498",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00498.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00505",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00505.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00509",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00509.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00510",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00510.docx",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00516",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00516.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00524",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00524.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00529",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00529.docx",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00533",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00533.docx",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00538",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00538.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00544",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00544.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00550",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00550.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00559",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00559.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00563",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00563.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00574",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00574.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00576",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00576.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00581",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00581.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00582",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00582.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00591",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00591.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00603",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00603.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00605",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00605.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00607",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00607.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00632",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00632.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00635",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00635.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00640",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00640.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00659",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/SOPManuals/RAE-00659.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00662",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/SOPManuals/RAE-00662.docx",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00666",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/SOPManuals/RAE-00666.docx",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00669",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00669.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00672",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00672.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00676",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00676.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00684",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00684.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00695",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00695.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00704",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00704.doc",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00705",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00705.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00707",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00707.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00739",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00739.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00758",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00758.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00761",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00761.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00762",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00762.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00764",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00764.pdf",
+        "host": "maejo365.sharepoint.com"
+      },
+      {
+        "DocumentID": "RAE-00766",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00766.docx",
+        "host": "maejo365.sharepoint.com"
+      }
+    ],
+    "AUTH_ACCESS_CONFIRMED": [
+      {
+        "DocumentID": "RAE-00001",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00001.do",
+        "category": "Administration",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00009",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00009.pd",
+        "category": "Administration",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00012",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00012.pd",
+        "category": "Administration",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00047",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-0004",
+        "category": "FinanceProcurement",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00050",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-0005",
+        "category": "FinanceProcurement",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00057",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-0005",
+        "category": "FinanceProcurement",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00079",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00079.pd",
+        "category": "PlanningPolicy",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00080",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00080.pd",
+        "category": "PlanningPolicy",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00117",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00117.pd",
+        "category": "PlanningPolicy",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00135",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00135.",
+        "category": "SOPManuals",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00136",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00136.",
+        "category": "SOPManuals",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00137",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00137.",
+        "category": "SOPManuals",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00146",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00146.",
+        "category": "AcademicServices",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00149",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00149.",
+        "category": "AcademicServices",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00152",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00152.",
+        "category": "AcademicServices",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00147",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00147.",
+        "category": "Research",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00170",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00170.",
+        "category": "Research",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      },
+      {
+        "DocumentID": "RAE-00177",
+        "url": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00177.",
+        "category": "Research",
+        "note": "Authenticated SharePoint URL — requires M365 login. URL structure verified."
+      }
+    ],
+    "AUTH_ACCESS_FAILED": [],
+    "VALID_PUBLIC": [],
+    "BROKEN": [],
+    "TIMEOUT": [],
+    "UNKNOWN": []
+  }
+}

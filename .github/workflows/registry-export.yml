@@ -1,4 +1,4 @@
-name: PXP-3 Registry Export
+name: PXP-4 Registry Export
 
 on:
   workflow_dispatch:
@@ -91,7 +91,7 @@ jobs:
 import json, os, datetime
 report = {
     'timestamp': datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
-    'pipeline': 'pxp3-ci-validate',
+    'pipeline': 'pxp4-ci-validate',
     'schema_version': '1.0.0',
     'export_exists': '${{ steps.check-export.outputs.EXPORT_EXISTS }}',
     'validator_passed': '${{ steps.validate-public.outputs.VALIDATOR_PASSED }}',
@@ -99,16 +99,16 @@ report = {
     'trigger': 'workflow_dispatch',
     'dry_run': '${{ github.event.inputs.dry_run }}',
 }
-with open('reports/pxp3-validation-report.json', 'w') as f:
+with open('reports/pxp4-validation-report.json', 'w') as f:
     json.dump(report, f, indent=2)
-print('Report written to reports/pxp3-validation-report.json')
+print('Report written to reports/pxp4-validation-report.json')
 "
 
       - name: Upload validation artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: pxp3-validation-artifacts
+          name: pxp4-validation-artifacts
           path: |
             reports/
             data/document-registry.public.json
@@ -150,4 +150,4 @@ print('Report written to reports/pxp3-validation-report.json')
           publish_dir: ./dist
           publish_branch: gh-pages
           force_orphan: true
-          commit_message: "deploy: pxp-3 registry export"
+          commit_message: "deploy: pxp-4 registry export"
