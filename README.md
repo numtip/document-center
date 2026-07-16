@@ -4,7 +4,7 @@
 
 This repository is the **mandatory architectural reference** for all RAE digital platforms. It preserves the completed Document Center v1.0 production implementation and defines the standards, governance, and patterns that future projects must follow.
 
-> **Production is frozen at v1.0.0.** SharePoint holds 627 documents. This repository holds architecture, metadata standards, and tooling — not document binaries.
+> **Enterprise Canonical Repository — FROZEN (v1.0.2).** Production frozen at v1.0.0 (627 SharePoint documents). Repository mode: **READ-MOSTLY**. All future RAE systems must consume this repository instead of redefining architecture.
 
 ---
 
@@ -17,7 +17,7 @@ This repository is the **mandatory architectural reference** for all RAE digital
 | **Governance hub** | Change control, reference standards, dependent project registry |
 | **Operational toolkit** | Validation scripts, migration evidence, runbooks |
 
-Start here: [Canonical Repository Charter](docs/canonical/CANONICAL_REPOSITORY_CHARTER.md)
+Start here: [Canonical Repository Charter](docs/canonical/CANONICAL_REPOSITORY_CHARTER.md) · [Enterprise Certificate](docs/governance/CANONICAL_REPOSITORY_CERTIFICATE.md)
 
 ---
 
@@ -56,7 +56,8 @@ Requires Maejo365 authentication. See [EA-11A Production URL](docs/m365/ea-11a-p
 
 ```text
 docs/
-├── canonical/          ← Governance, standards, change control (start here)
+├── canonical/          ← Standards, change control, charter
+├── governance/         ← Enterprise governance (roadmap, lifecycle, certificate)
 ├── adr/                ← Architecture Decision Records (ADR-001–009)
 ├── release/            ← v1.0 production freeze package
 ├── m365/               ← M365 phase reports & contracts
@@ -77,12 +78,13 @@ Full map: [Repository Map](docs/canonical/REPOSITORY_MAP.md) · Index: [Project 
 
 | Item | Value |
 |------|-------|
-| Version | **1.0.1** |
+| Version | **1.0.2** |
+| Repository mode | **READ-MOSTLY** (enterprise governance frozen) |
 | Production freeze | `document-center-v1.0.0` |
-| Canonical elevation | `document-center-v1.0.1` |
+| Enterprise governance | `document-center-v1.0.2` |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) |
 
-Release package: [docs/release/](docs/release/)
+Release package: [docs/release/](docs/release/) · Enterprise governance: [docs/governance/](docs/governance/)
 
 ---
 
@@ -99,7 +101,7 @@ Future RAE platforms must reference this repository before implementation:
 | AI Knowledge Platform | Registry export, DocumentID index |
 | AI Assistants | Metadata, ADRs, export JSON |
 
-Details: [Dependent Projects](docs/canonical/DEPENDENT_PROJECTS.md)
+Details: [Dependent Projects](docs/canonical/DEPENDENT_PROJECTS.md) · [Consumer Guide](docs/governance/CONSUMER_IMPLEMENTATION_GUIDE.md) · [Platform Roadmap](docs/governance/RAE_ENTERPRISE_PLATFORM_ROADMAP.md)
 
 ---
 
@@ -122,11 +124,14 @@ Registry sync (M365): see [Operation Runbook v1.0](docs/release/OPERATION_RUNBOO
 
 ## Contribution Rules
 
+Repository is in **READ-MOSTLY mode**. See [Repository Operation Policy](docs/governance/REPOSITORY_OPERATION_POLICY.md).
+
 1. Read [Change Control Policy](docs/canonical/CHANGE_CONTROL_POLICY.md) before architectural changes
 2. Submit an ADR for any deviation from [Reference Standards](docs/canonical/REFERENCE_STANDARDS.md)
 3. Do not commit secrets, browser profiles, or document binaries
 4. Do not modify production SharePoint or Registry without approved impact analysis
 5. Compare against [Architecture Baseline v1.0](docs/release/ARCHITECTURE_BASELINE_v1.0.md)
+6. New projects must use [Project Bootstrap Template](docs/governance/PROJECT_BOOTSTRAP_TEMPLATE.md)
 
 ---
 
@@ -135,10 +140,13 @@ Registry sync (M365): see [Operation Runbook v1.0](docs/release/OPERATION_RUNBOO
 | Document | Path |
 |----------|------|
 | Charter | [docs/canonical/CANONICAL_REPOSITORY_CHARTER.md](docs/canonical/CANONICAL_REPOSITORY_CHARTER.md) |
+| Enterprise Certificate | [docs/governance/CANONICAL_REPOSITORY_CERTIFICATE.md](docs/governance/CANONICAL_REPOSITORY_CERTIFICATE.md) |
+| Architecture Principles | [docs/governance/ARCHITECTURE_PRINCIPLES.md](docs/governance/ARCHITECTURE_PRINCIPLES.md) |
+| Consumer Guide | [docs/governance/CONSUMER_IMPLEMENTATION_GUIDE.md](docs/governance/CONSUMER_IMPLEMENTATION_GUIDE.md) |
 | Reference Standards | [docs/canonical/REFERENCE_STANDARDS.md](docs/canonical/REFERENCE_STANDARDS.md) |
 | Architecture Baseline | [docs/release/ARCHITECTURE_BASELINE_v1.0.md](docs/release/ARCHITECTURE_BASELINE_v1.0.md) |
 | ADR Index | [docs/adr/README.md](docs/adr/README.md) |
-| Project Memory | [docs/canonical/PROJECT_MEMORY_FREEZE_v1.md](docs/canonical/PROJECT_MEMORY_FREEZE_v1.md) |
+| System of Records | [docs/governance/SYSTEM_OF_RECORDS.md](docs/governance/SYSTEM_OF_RECORDS.md) |
 | Operation Runbook | [docs/release/OPERATION_RUNBOOK_v1.0.md](docs/release/OPERATION_RUNBOOK_v1.0.md) |
 
 ---

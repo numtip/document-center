@@ -145,6 +145,23 @@ Full index: [docs/adr/README.md](../adr/README.md)
 
 ---
 
+## Governance
+
+| Document | Path |
+|----------|------|
+| Enterprise Platform Roadmap | [docs/governance/RAE_ENTERPRISE_PLATFORM_ROADMAP.md](docs/governance/RAE_ENTERPRISE_PLATFORM_ROADMAP.md) |
+| Enterprise Dependency Graph | [docs/governance/ENTERPRISE_DEPENDENCY_GRAPH.md](docs/governance/ENTERPRISE_DEPENDENCY_GRAPH.md) |
+| Canonical Certificate | [docs/governance/CANONICAL_REPOSITORY_CERTIFICATE.md](docs/governance/CANONICAL_REPOSITORY_CERTIFICATE.md) |
+| Consumer Implementation Guide | [docs/governance/CONSUMER_IMPLEMENTATION_GUIDE.md](docs/governance/CONSUMER_IMPLEMENTATION_GUIDE.md) |
+| Architecture Lifecycle | [docs/governance/ARCHITECTURE_LIFECYCLE.md](docs/governance/ARCHITECTURE_LIFECYCLE.md) |
+| Repository Operation Policy | [docs/governance/REPOSITORY_OPERATION_POLICY.md](docs/governance/REPOSITORY_OPERATION_POLICY.md) |
+| Project Bootstrap Template | [docs/governance/PROJECT_BOOTSTRAP_TEMPLATE.md](docs/governance/PROJECT_BOOTSTRAP_TEMPLATE.md) |
+| System of Records | [docs/governance/SYSTEM_OF_RECORDS.md](docs/governance/SYSTEM_OF_RECORDS.md) |
+| Architecture Principles | [docs/governance/ARCHITECTURE_PRINCIPLES.md](docs/governance/ARCHITECTURE_PRINCIPLES.md) |
+| Legacy: Convergence Model | [docs/governance/REPOSITORY_CONVERGENCE_MODEL.md](docs/governance/REPOSITORY_CONVERGENCE_MODEL.md) |
+
+---
+
 ## Future Work
 
 | Document | Path |

@@ -5,6 +5,26 @@ All notable changes to the RAE Document Center project are documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] - 2026-07-16
+
+### Added
+
+- Enterprise governance package under `docs/governance/`
+- RAE Enterprise Platform Roadmap and dependency graph
+- Canonical Repository Certificate
+- Consumer Implementation Guide (Research, Learning, Green Office, Next.js, AI)
+- Architecture Lifecycle (v1.x–v4.x roadmap)
+- Repository Operation Policy (READ-MOSTLY mode)
+- Project Bootstrap Template for new RAE projects
+- System of Records declaration
+- Architecture Principles (7 normative principles)
+
+### Changed
+
+- README updated for enterprise governance freeze (v1.0.2)
+- Repository enters READ-MOSTLY mode
+- No production implementation, SharePoint, Registry, or ADR changes
+
 ## [1.0.1] - 2026-07-16
 
 ### Added
@@ -62,5 +82,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Migration phases EA-3 through EA-11 are documented in `docs/m365/ea-*-*.md`.
 
+[1.0.2]: https://github.com/numtip/document-center/releases/tag/document-center-v1.0.2
 [1.0.1]: https://github.com/numtip/document-center/releases/tag/document-center-v1.0.1
 [1.0.0]: https://github.com/numtip/document-center/releases/tag/document-center-v1.0.0
