@@ -1,16 +1,19 @@
-name: PXP-2 Registry Export
+name: PXP-3 Registry Export
 
 on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Validate without committing'
+        description: 'Validate without deploying — set "false" to enable deploy after approval'
         required: true
         default: 'true'
         type: choice
         options:
           - 'true'
           - 'false'
+
+# Only workflow_dispatch — no schedule trigger (browser auth not available in CI).
+# Full unattended export requires an Entra ID service principal (future enhancement).
 
 permissions:
   contents: write
@@ -23,9 +26,12 @@ env:
   NODE_VERSION: '20'
 
 jobs:
-  export:
+  validate:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    outputs:
+      export_exists: ${{ steps.check-export.outputs.EXPORT_EXISTS }}
+      validator_passed: ${{ steps.validate-public.outputs.VALIDATOR_PASSED }}
 
     steps:
       - name: Checkout
@@ -40,66 +46,108 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build canonical portal
-        run: npm run build
-
-      - name: Validate pages
-        run: npm run validate:pages
-
-      - name: Verify public export exists
+      - name: Check public export exists
+        id: check-export
         run: |
           if [ -f data/document-registry.public.json ]; then
-            echo "EXPORT_EXISTS=true" >> $GITHUB_ENV
+            echo "EXPORT_EXISTS=true" >> "$GITHUB_OUTPUT"
           else
-            echo "EXPORT_EXISTS=false" >> $GITHUB_ENV
+            echo "EXPORT_EXISTS=false" >> "$GITHUB_OUTPUT"
+            echo "No data/document-registry.public.json found — skipping export-specific checks"
           fi
 
-      - name: Validate public export schema
-        if: env.EXPORT_EXISTS == 'true'
-        run: npx tsx scripts/validate-document-registry.ts data/document-registry.public.json preview/data/taxonomy.sample.json || echo "SCHEMA_VALIDATION=warning" >> $GITHUB_ENV
-
-      - name: Validate no forbidden records
-        if: env.EXPORT_EXISTS == 'true'
+      - name: Validate public export (schema + contract)
+        id: validate-public
+        if: steps.check-export.outputs.EXPORT_EXISTS == 'true'
         run: |
-          python -c "
-import json
-with open('data/document-registry.public.json') as f:
-    data = json.load(f)
-for doc in data.get('documents', []):
-    if doc.get('visibility', '').lower() != 'public':
-        print(f'FAIL: {doc.get(\"DocumentID\",\"?\")} has visibility={doc.get(\"visibility\")}')
-        exit(1)
-    if doc.get('status', '').lower() not in ('approved', 'published', 'current'):
-        print(f'FAIL: {doc.get(\"DocumentID\",\"?\")} has status={doc.get(\"status\")}')
-        exit(1)
-print('All records pass eligibility validation')
-"
+          if npm run validate:public-registry; then
+            echo "VALIDATOR_PASSED=true" >> "$GITHUB_OUTPUT"
+            echo "Public export validation: PASSED"
+          else
+            echo "VALIDATOR_PASSED=false" >> "$GITHUB_OUTPUT"
+            echo "Public export validation: FAILED"
+          fi
 
       - name: Verify checksum
-        if: env.EXPORT_EXISTS == 'true'
+        if: steps.check-export.outputs.EXPORT_EXISTS == 'true'
         run: |
           if [ -f data/document-registry.public.sha256 ]; then
             cd data && sha256sum -c document-registry.public.sha256
           fi
 
-      - name: Upload audit artifacts
+      - name: Build canonical portal
+        if: steps.check-export.outputs.EXPORT_EXISTS == 'true'
+        run: npm run build
+
+      - name: Validate pages
+        if: steps.check-export.outputs.EXPORT_EXISTS == 'true'
+        run: npm run validate:pages
+
+      - name: Generate validation report
+        if: always()
+        run: |
+          mkdir -p reports
+          python -c "
+import json, os, datetime
+report = {
+    'timestamp': datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
+    'pipeline': 'pxp3-ci-validate',
+    'schema_version': '1.0.0',
+    'export_exists': '${{ steps.check-export.outputs.EXPORT_EXISTS }}',
+    'validator_passed': '${{ steps.validate-public.outputs.VALIDATOR_PASSED }}',
+    'workflow': 'registry-export.yml',
+    'trigger': 'workflow_dispatch',
+    'dry_run': '${{ github.event.inputs.dry_run }}',
+}
+with open('reports/pxp3-validation-report.json', 'w') as f:
+    json.dump(report, f, indent=2)
+print('Report written to reports/pxp3-validation-report.json')
+"
+
+      - name: Upload validation artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: pxp2-export-audit
+          name: pxp3-validation-artifacts
           path: |
-            reports/pxp2-export-audit.json
-            reports/pxp2-export-summary.md
+            reports/
             data/document-registry.public.json
             data/document-registry.public.sha256
           retention-days: 30
 
-      - name: Deploy
-        if: github.event.inputs.dry_run == 'false' && env.EXPORT_EXISTS == 'true'
+  deploy:
+    needs: [validate]
+    if: >
+      github.event.inputs.dry_run == 'false' &&
+      needs.validate.outputs.export_exists == 'true' &&
+      needs.validate.outputs.validator_passed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: production
+      url: https://maejo365.github.io/document-center/
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
           force_orphan: true
-          commit_message: "deploy: pxp-2 registry export"
+          commit_message: "deploy: pxp-3 registry export"

@@ -1,0 +1,280 @@
+{
+  "total_selected": 24,
+  "by_category": {
+    "Administration": 4,
+    "FinanceProcurement": 4,
+    "PlanningPolicy": 4,
+    "AcademicServices": 4,
+    "Research": 4,
+    "SOPManuals": 4
+  },
+  "classification_counts": {
+    "PUBLISH": 24
+  },
+  "candidates": [
+    {
+      "DocumentID": "RAE-00009",
+      "Title": "กิจป่วย2",
+      "Category_live": "บริหารจัดการ",
+      "Category_contract": "Administration",
+      "ListItemId": 3,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00009.pdf",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00046",
+      "Title": "WORD",
+      "Category_live": "บริหารจัดการ",
+      "Category_contract": "Administration",
+      "ListItemId": 4,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00046.docx",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00014",
+      "Title": "ลาศึกษาต่อ",
+      "Category_live": "งานบริหารและธุรการ",
+      "Category_contract": "Administration",
+      "ListItemId": 8,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00014.doc",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00001",
+      "Title": "แบบฟอร์มขออนุญาตเข้าร่วมอบรม ปี2569",
+      "Category_live": "งานบริหารและธุรการ",
+      "Category_contract": "Administration",
+      "ListItemId": 9,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00001.doc",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00050",
+      "Title": "WORD",
+      "Category_live": "งานคลังและพัสดุ",
+      "Category_contract": "FinanceProcurement",
+      "ListItemId": 11,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00050.docx",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00047",
+      "Title": "WORD",
+      "Category_live": "งานคลังและพัสดุ",
+      "Category_contract": "FinanceProcurement",
+      "ListItemId": 12,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00047.docx",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00063",
+      "Title": "PDF",
+      "Category_live": "งานคลังและพัสดุ",
+      "Category_contract": "FinanceProcurement",
+      "ListItemId": 13,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00063.pdf",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00057",
+      "Title": "PDF",
+      "Category_live": "งานคลังและพัสดุ",
+      "Category_contract": "FinanceProcurement",
+      "ListItemId": 19,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00057.pdf",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00119",
+      "Title": "ปีการศึกษา 2561",
+      "Category_live": "งานนโยบาย แผนและประกันคุณภาพ",
+      "Category_contract": "PlanningPolicy",
+      "ListItemId": 6,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00119.pdf",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00118",
+      "Title": "PDF",
+      "Category_live": "งานนโยบาย แผนและประกันคุณภาพ",
+      "Category_contract": "PlanningPolicy",
+      "ListItemId": 27,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00118.pdf",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00117",
+      "Title": "PDF",
+      "Category_live": "งานนโยบาย แผนและประกันคุณภาพ",
+      "Category_contract": "PlanningPolicy",
+      "ListItemId": 28,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00117.pdf",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00080",
+      "Title": "PDF",
+      "Category_live": "งานนโยบาย แผนและประกันคุณภาพ",
+      "Category_contract": "PlanningPolicy",
+      "ListItemId": 53,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00080.pdf",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00146",
+      "Title": "แบบฟอร์มที่ 2 (ป.2568)",
+      "Category_live": "งานบริการวิชาการ",
+      "Category_contract": "AcademicServices",
+      "ListItemId": 1,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00146.xlsx",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00149",
+      "Title": "ดาวน์โหลด",
+      "Category_live": "แบบฟอร์มงานบริการวิชาการ",
+      "Category_contract": "AcademicServices",
+      "ListItemId": 24,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00149.xlsx",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00154",
+      "Title": "ดาวน์โหลด",
+      "Category_live": "แบบฟอร์มงานบริการวิชาการ",
+      "Category_contract": "AcademicServices",
+      "ListItemId": 62,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00154.docx",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00152",
+      "Title": "ดาวน์โหลด",
+      "Category_live": "แบบฟอร์มงานบริการวิชาการ",
+      "Category_contract": "AcademicServices",
+      "ListItemId": 63,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00152.docx",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00195",
+      "Title": "RAE-00195.xlsx",
+      "Category_live": "งานวิจัย",
+      "Category_contract": "Research",
+      "ListItemId": 2,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00195.xlsx",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00662",
+      "Title": "RAE-00662.docx",
+      "Category_live": "งานวิจัย",
+      "Category_contract": "Research",
+      "ListItemId": 5,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/SOPManuals/RAE-00662.docx",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00409",
+      "Title": "RAE-00409.doc",
+      "Category_live": "งานวิจัย/แบบฟอร์มงานวิจัย",
+      "Category_contract": "Research",
+      "ListItemId": 14,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00409.doc",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00516",
+      "Title": "RAE-00516.doc",
+      "Category_live": "งานวิจัย/ประกาศงานวิจัย",
+      "Category_contract": "Research",
+      "ListItemId": 15,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00516.doc",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00140",
+      "Title": "RAE-00140.pdf",
+      "Category_live": "คู่มือ",
+      "Category_contract": "SOPManuals",
+      "ListItemId": 74,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00140.pdf",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00135",
+      "Title": "แนวปฏิบัติ2568",
+      "Category_live": "คู่มือ",
+      "Category_contract": "SOPManuals",
+      "ListItemId": 82,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00135.pdf",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00142",
+      "Title": "RAE-00142.pdf",
+      "Category_live": "คู่มือ",
+      "Category_contract": "SOPManuals",
+      "ListItemId": 84,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00142.pdf",
+      "Classification": "PUBLISH"
+    },
+    {
+      "DocumentID": "RAE-00136",
+      "Title": "คู่มือการเขียนรายงานผล2566",
+      "Category_live": "คู่มือ",
+      "Category_contract": "SOPManuals",
+      "ListItemId": 86,
+      "Status": "draft",
+      "Visibility": "internal",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00136.pdf",
+      "Classification": "PUBLISH"
+    }
+  ]
+}

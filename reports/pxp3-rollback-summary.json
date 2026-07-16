@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-07-16T08:30:00Z",
+  "phase": "PXP-3",
+  "rollback_command": "python scripts/registry/restore-pilot-rollback.py",
+  "pilot_count": 24,
+  "rollback_file": ".migration/pxp3/rollback-live-registry.json",
+  "notes": "Full rollback data in .migration/pxp3/rollback-live-registry.json (gitignored). Restore script: scripts/registry/restore-pilot-rollback.py"
+}

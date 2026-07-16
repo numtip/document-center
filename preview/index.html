@@ -6,6 +6,11 @@
     <title>RAE Document Center — Preview</title>
     <link rel="icon" href="../assets/logorae.png" type="image/png" />
     <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .banner-live { background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.25); }
+      .auth-download { display: flex; flex-direction: column; gap: 0.25rem; }
+      .auth-note { font-size: 0.75rem; color: var(--gold-500); opacity: 0.9; }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -15,8 +20,8 @@
         <p class="eyebrow">สำนักวิจัยและส่งเสริมวิชาการการเกษตร · Maejo University</p>
         <h1>RAE Document Center</h1>
         <p class="subtitle">ศูนย์เอกสาร — ตัวอย่างการแสดงผล (Preview / Demo)</p>
-        <div class="banner banner-demo" role="status">
-          GitHub Pages preview only — sample public records · no real files or OneDrive links
+        <div id="data-source-status" class="banner banner-demo" role="status">
+          กำลังแสดงข้อมูลตัวอย่าง (Demo) — ไม่ใช่ข้อมูลจริง
         </div>
         </div>
       </div>
@@ -41,7 +46,7 @@
       <section class="categories" id="categories" aria-label="หมวดเอกสาร"></section>
 
       <section class="documents">
-        <h2>เอกสารสาธารณะ (ตัวอย่าง)</h2>
+        <h2 id="documents-heading">เอกสารสาธารณะ (ตัวอย่าง)</h2>
         <div id="document-list" class="document-grid"></div>
         <p id="empty-state" class="empty hidden">ไม่พบเอกสารที่ตรงกับการค้นหา</p>
       </section>

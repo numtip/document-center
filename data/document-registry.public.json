@@ -1,8 +1,249 @@
 {
   "schemaVersion": "1.0.0",
-  "generatedAt": "2026-07-16T08:19:26Z",
+  "generatedAt": "2026-07-16T08:41:07Z",
   "source": "RAE Document Registry (SharePoint) - Live Export",
   "preview_mode": false,
-  "recordCount": 0,
-  "documents": []
+  "recordCount": 24,
+  "documents": [
+    {
+      "DocumentID": "RAE-00001",
+      "Title": "แบบฟอร์มขออนุญาตเข้าร่วมอบรม ปี2569",
+      "Category": "Administration",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:57:42Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00001.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00009",
+      "Title": "กิจป่วย2",
+      "Category": "Administration",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:39:20Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00009.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00014",
+      "Title": "ลาศึกษาต่อ",
+      "Category": "Administration",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:57:39Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00014.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00046",
+      "Title": "WORD",
+      "Category": "Administration",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:39:20Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00046.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00047",
+      "Title": "WORD",
+      "Category": "FinanceProcurement",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:58:24Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00047.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00050",
+      "Title": "WORD",
+      "Category": "FinanceProcurement",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:57:49Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00050.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00057",
+      "Title": "PDF",
+      "Category": "FinanceProcurement",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:00:19Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00057.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00063",
+      "Title": "PDF",
+      "Category": "FinanceProcurement",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:58:28Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00063.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00080",
+      "Title": "PDF",
+      "Category": "PlanningPolicy",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:52:16Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00080.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00117",
+      "Title": "PDF",
+      "Category": "PlanningPolicy",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:02:42Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00117.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00118",
+      "Title": "PDF",
+      "Category": "PlanningPolicy",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:02:34Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00118.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00119",
+      "Title": "ปีการศึกษา 2561",
+      "Category": "PlanningPolicy",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:48:37Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/PlanningPolicy/RAE-00119.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00135",
+      "Title": "แนวปฏิบัติ2568",
+      "Category": "SOPManuals",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:55:41Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00135.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00136",
+      "Title": "คู่มือการเขียนรายงานผล2566",
+      "Category": "SOPManuals",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:56:06Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00136.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00140",
+      "Title": "RAE-00140.pdf",
+      "Category": "SOPManuals",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:55:17Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00140.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00142",
+      "Title": "RAE-00142.pdf",
+      "Category": "SOPManuals",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:55:59Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00142.pdf",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00146",
+      "Title": "แบบฟอร์มที่ 2 (ป.2568)",
+      "Category": "AcademicServices",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:39:20Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00146.xlsx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00149",
+      "Title": "ดาวน์โหลด",
+      "Category": "AcademicServices",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:01:54Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00149.xlsx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00152",
+      "Title": "ดาวน์โหลด",
+      "Category": "AcademicServices",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:53:56Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00152.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00154",
+      "Title": "ดาวน์โหลด",
+      "Category": "AcademicServices",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T08:53:53Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00154.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00195",
+      "Title": "RAE-00195.xlsx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:39:20Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00195.xlsx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00409",
+      "Title": "RAE-00409.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:58:59Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00409.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00516",
+      "Title": "RAE-00516.doc",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:59:04Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00516.doc",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    },
+    {
+      "DocumentID": "RAE-00662",
+      "Title": "RAE-00662.docx",
+      "Category": "Research",
+      "Status": "current",
+      "Visibility": "public",
+      "UpdatedDate": "2026-07-15T07:39:20Z",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/SOPManuals/RAE-00662.docx",
+      "DownloadMode": "AUTHENTICATED_SHAREPOINT"
+    }
+  ]
 }

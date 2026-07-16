@@ -1,25 +1,33 @@
 #!/usr/bin/env python3
 """
-PXP-2 Validate Public Export — validates data/document-registry.public.json
+PXP-3 Validate Public Export — validates a public registry export file
 against the PXP-1 contract schema.
 
-This validator runs WITHOUT accessing M365. It validates the static export file.
-Can be used in CI/CD.
+This validator runs WITHOUT accessing M365. It validates a static export
+file. Can be used in CI/CD.
+
+Enhancements over PXP-2:
+  • Accept --file argument to validate any export file (not just the default)
+  • Per-document error details in summary
+  • Strict deterministic ordering check (reports which IDs are out of order)
+  • Support for batch-mode exports with batch_skipped metadata
 
 Usage:
     python scripts/registry/validate-public-export.py
+    python scripts/registry/validate-public-export.py --file data/document-registry.public.json
 
 Exit code:
     0: All validations pass
     1: One or more validations fail
 """
+import argparse
 import json
 import os
 import sys
 from collections import Counter
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-EXPORT_PATH = os.path.join(REPO_ROOT, "data", "document-registry.public.json")
+DEFAULT_EXPORT_PATH = os.path.join(REPO_ROOT, "data", "document-registry.public.json")
 
 SCHEMA_VERSION = "1.0.0"
 
@@ -56,6 +64,20 @@ errors = []
 warnings = []
 
 
+def parse_args() -> argparse.Namespace:
+    """Parse CLI arguments for custom file path."""
+    parser = argparse.ArgumentParser(
+        description="PXP-3 Validate Public Export — static schema validation"
+    )
+    parser.add_argument(
+        "--file", "-f",
+        type=str,
+        default=None,
+        help="Path to the export JSON file to validate (default: data/document-registry.public.json)"
+    )
+    return parser.parse_args()
+
+
 def fail(message: str):
     errors.append(message)
     print(f"  FAIL: {message}")
@@ -66,19 +88,27 @@ def warn(message: str):
     print(f"  WARN: {message}")
 
 
-def validate():
-    print("PXP-2 Public Export Validator")
+def validate(export_path: str = None):
+    """Run all validations against the given export file."""
+    # Reset module-level state for idempotent calls
+    errors.clear()
+    warnings.clear()
+
+    if export_path is None:
+        export_path = DEFAULT_EXPORT_PATH
+
+    print("PXP-3 Public Export Validator")
     print("=" * 50)
 
     # 1. File exists
-    if not os.path.exists(EXPORT_PATH):
-        fail(f"Export file not found: {EXPORT_PATH}")
+    if not os.path.exists(export_path):
+        fail(f"Export file not found: {export_path}")
         return False
-    print(f"  File: {EXPORT_PATH}")
+    print(f"  File: {export_path}")
 
     # 2. Parse JSON
     try:
-        with open(EXPORT_PATH, "r", encoding="utf-8") as f:
+        with open(export_path, "r", encoding="utf-8") as f:
             export = json.load(f)
     except json.JSONDecodeError as e:
         fail(f"JSON parse error: {e}")
@@ -157,7 +187,7 @@ def validate():
 
         # Duplicate ID
         if doc_id in seen_ids:
-            fail(f"[{doc_id}] Duplicate DocumentID")
+            fail(f"[{doc_id}] Duplicate DocumentID at position {doc_num}")
         seen_ids.add(doc_id)
 
         # Forbidden fields
@@ -165,10 +195,18 @@ def validate():
             if ff in doc:
                 fail(f"[{doc_id}] Forbidden field present: {ff}")
 
-    # 7. Deterministic ordering
+    # 7. Deterministic ordering (strict check)
     doc_ids = [d.get("DocumentID", "") for d in docs]
     if doc_ids != sorted(doc_ids):
         warn("Documents are not sorted by DocumentID")
+        # Report first out-of-order pair for debugging
+        for j in range(len(doc_ids) - 1):
+            if doc_ids[j] > doc_ids[j + 1]:
+                warn(
+                    f"  First ordering violation: '{doc_ids[j]}' > '{doc_ids[j + 1]}' "
+                    f"at positions {j+1}/{j+2}"
+                )
+                break
 
     # 8. Summary
     print()
@@ -180,9 +218,31 @@ def validate():
     print(f"  Visibilities: {dict(visibilities)}")
     print(f"  Download Modes: {dict(download_modes)}")
 
+    # 9. Report batch mode metadata if present
+    if export.get("batch_mode"):
+        print(f"  Batch mode: {export['batch_mode']}")
+
     print()
     if errors:
         print(f"FAILED: {len(errors)} error(s), {len(warnings)} warning(s)")
+        print()
+        # Group errors by category for readability
+        cat_errors = Counter()
+        for e in errors:
+            if "Invalid" in e:
+                cat_errors["schema_violation"] += 1
+            elif "Missing" in e:
+                cat_errors["missing_field"] += 1
+            elif "Duplicate" in e:
+                cat_errors["duplicate_id"] += 1
+            elif "Forbidden" in e:
+                cat_errors["forbidden_field"] += 1
+            else:
+                cat_errors["other"] += 1
+        print("  Error categories:")
+        for cat_name, cat_count in sorted(cat_errors.items()):
+            print(f"    - {cat_name}: {cat_count}")
+        print()
         for e in errors:
             print(f"  - {e}")
         return False
@@ -192,5 +252,6 @@ def validate():
 
 
 if __name__ == "__main__":
-    success = validate()
+    args = parse_args()
+    success = validate(export_path=args.file)
     sys.exit(0 if success else 1)

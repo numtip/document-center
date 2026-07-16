@@ -27,3 +27,5 @@ tokens/
 # Playwright M365 auth profiles — never commit cookies/tokens
 .browser-profile/
 .migration/rae-wtms/tools/temp_profile*/
+# PXP-3 rollback and working data — never commit live auth metadata
+.migration/pxp3/

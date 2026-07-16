@@ -1,10 +1,15 @@
-# PXP-2 Export Summary
+# PXP-3 Export Summary
 
-**Generated**: 2026-07-16T08:19:26Z
-**Pipeline**: pxp2-export-live-registry
+**Generated**: 2026-07-16T08:41:07Z
+**Pipeline**: pxp3-export-live-registry
 **Schema Version**: 1.0.0
-**Total Time**: 10.69s
-**Verdict**: PASS
+**Total Time**: 11.41s
+**Verdict**: PRIVACY_OK;RECONCILIATION_OK;BATCH_MODE:24_TARGETED
+
+## Batch Mode
+
+**Target IDs**: RAE-00001, RAE-00009, RAE-00014, RAE-00046, RAE-00047, RAE-00050, RAE-00057, RAE-00063, RAE-00080, RAE-00117, RAE-00118, RAE-00119, RAE-00135, RAE-00136, RAE-00140, RAE-00142, RAE-00146, RAE-00149, RAE-00152, RAE-00154, RAE-00195, RAE-00409, RAE-00516, RAE-00662
+**Matched in Registry**: 24
 
 ## Live Registry
 
@@ -18,103 +23,84 @@
 
 | Metric | Value |
 |--------|-------|
-| Eligible (exported) | 0 |
-| Excluded | 627 |
-| SHA-256 | `6b96797dd7211895937d26274f9e3d5868a378e781d95d16e883a8a16c7dc810` |
+| Eligible (exported) | 24 |
+| Excluded | 0 |
+| Batch-skipped | 603 |
+| SHA-256 | `973f58d78a7a648f734826ef05376f1bce09c04e08d51f663d921a5abbb04552` |
 
 ## Reconciliation
 
-Live total (627) = Eligible (0) + Excluded (627)
+Live total (627) = Eligible (24) + Excluded (0) + Batch-skipped (603)
+✓ Reconciliation check PASSED: 627 == 627
 
 ## Exclusion Breakdown
 
 | Reason | Count |
 |--------|-------|
-| excluded_visibility | 627 |
+| batch_skipped | 603 |
 
 ## Category Breakdown
 
-No eligible records to categorize.
+| Category | Count |
+|----------|-------|
+| AcademicServices | 4 |
+| Administration | 4 |
+| FinanceProcurement | 4 |
+| PlanningPolicy | 4 |
+| Research | 4 |
+| SOPManuals | 4 |
 
 ## Download Mode Breakdown
 
-No eligible records to classify.
+| Mode | Count |
+|------|-------|
+| AUTHENTICATED_SHAREPOINT | 24 |
 
 ## Phases
 
 | Phase | Elapsed (s) |
 |-------|-------------|
-| auth | 10.0 |
+| auth | 10.73 |
 | generate | 0.0 |
 | mapping | 0.0 |
 | privacy | 0.0 |
-| scan | 0.69 |
+| scan | 0.68 |
 
-## Excluded Records (627)
+## Batch-Skipped Records (603)
 
-| DocumentID | Reason | Value |
-|------------|--------|-------|
-| RAE-00001 | excluded_visibility | internal |
-| RAE-00002 | excluded_visibility | internal |
-| RAE-00003 | excluded_visibility | internal |
-| RAE-00004 | excluded_visibility | internal |
-| RAE-00005 | excluded_visibility | internal |
-| RAE-00009 | excluded_visibility | internal |
-| RAE-00011 | excluded_visibility | internal |
-| RAE-00012 | excluded_visibility | internal |
-| RAE-00014 | excluded_visibility | internal |
-| RAE-00043 | excluded_visibility | internal |
-| RAE-00044 | excluded_visibility | internal |
-| RAE-00045 | excluded_visibility | internal |
-| RAE-00046 | excluded_visibility | internal |
-| RAE-00047 | excluded_visibility | internal |
-| RAE-00048 | excluded_visibility | internal |
-| RAE-00049 | excluded_visibility | internal |
-| RAE-00050 | excluded_visibility | internal |
-| RAE-00051 | excluded_visibility | internal |
-| RAE-00052 | excluded_visibility | internal |
-| RAE-00053 | excluded_visibility | internal |
-| RAE-00054 | excluded_visibility | internal |
-| RAE-00057 | excluded_visibility | internal |
-| RAE-00058 | excluded_visibility | internal |
-| RAE-00059 | excluded_visibility | internal |
-| RAE-00060 | excluded_visibility | internal |
-| RAE-00061 | excluded_visibility | internal |
-| RAE-00063 | excluded_visibility | internal |
-| RAE-00064 | excluded_visibility | internal |
-| RAE-00068 | excluded_visibility | internal |
-| RAE-00078 | excluded_visibility | internal |
-| RAE-00079 | excluded_visibility | internal |
-| RAE-00080 | excluded_visibility | internal |
-| RAE-00081 | excluded_visibility | internal |
-| RAE-00090 | excluded_visibility | internal |
-| RAE-00091 | excluded_visibility | internal |
-| RAE-00093 | excluded_visibility | internal |
-| RAE-00117 | excluded_visibility | internal |
-| RAE-00118 | excluded_visibility | internal |
-| RAE-00119 | excluded_visibility | internal |
-| RAE-00135 | excluded_visibility | internal |
-| RAE-00136 | excluded_visibility | internal |
-| RAE-00137 | excluded_visibility | internal |
-| RAE-00138 | excluded_visibility | internal |
-| RAE-00139 | excluded_visibility | internal |
-| RAE-00140 | excluded_visibility | internal |
-| RAE-00141 | excluded_visibility | internal |
-| RAE-00142 | excluded_visibility | internal |
-| RAE-00143 | excluded_visibility | internal |
-| RAE-00144 | excluded_visibility | internal |
-| RAE-00145 | excluded_visibility | internal |
-| RAE-00146 | excluded_visibility | internal |
-| RAE-00147 | excluded_visibility | internal |
-| RAE-00148 | excluded_visibility | internal |
-| RAE-00149 | excluded_visibility | internal |
-| RAE-00150 | excluded_visibility | internal |
-| RAE-00151 | excluded_visibility | internal |
-| RAE-00152 | excluded_visibility | internal |
-| RAE-00153 | excluded_visibility | internal |
-| RAE-00154 | excluded_visibility | internal |
-| RAE-00155 | excluded_visibility | internal |
-| ... and 567 more | | |
+| DocumentID | Reason |
+|------------|--------|
+| RAE-00002 | batch_skipped |
+| RAE-00003 | batch_skipped |
+| RAE-00004 | batch_skipped |
+| RAE-00005 | batch_skipped |
+| RAE-00011 | batch_skipped |
+| RAE-00012 | batch_skipped |
+| RAE-00043 | batch_skipped |
+| RAE-00044 | batch_skipped |
+| RAE-00045 | batch_skipped |
+| RAE-00048 | batch_skipped |
+| RAE-00049 | batch_skipped |
+| RAE-00051 | batch_skipped |
+| RAE-00052 | batch_skipped |
+| RAE-00053 | batch_skipped |
+| RAE-00054 | batch_skipped |
+| RAE-00058 | batch_skipped |
+| RAE-00059 | batch_skipped |
+| RAE-00060 | batch_skipped |
+| RAE-00061 | batch_skipped |
+| RAE-00064 | batch_skipped |
+| RAE-00068 | batch_skipped |
+| RAE-00078 | batch_skipped |
+| RAE-00079 | batch_skipped |
+| RAE-00081 | batch_skipped |
+| RAE-00090 | batch_skipped |
+| RAE-00091 | batch_skipped |
+| RAE-00093 | batch_skipped |
+| RAE-00137 | batch_skipped |
+| RAE-00138 | batch_skipped |
+| RAE-00139 | batch_skipped |
+| ... and 573 more | |
 
 ---
-*Report generated by PXP-2 export pipeline*
+*Report generated by PXP-3 export pipeline*
