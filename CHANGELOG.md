@@ -5,6 +5,23 @@ All notable changes to the RAE Document Center project are documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.3] - 2026-07-16
+
+### Added
+
+- Canonical GitHub Pages portal at site root
+- Routes: `/`, `/preview/`, `/architecture/`, `/standards/`, `/adr/`, `/roadmap/`, `/release/`, `/operations/`, `404.html`
+- Bilingual canonical landing page (Thai/English)
+- `scripts/validate-pages.ts` for route and labelling validation
+- EA-15 activation plan and report
+
+### Changed
+
+- GitHub Pages root: canonical repository portal (replaces 3-record demo at root)
+- UI demo preserved at `/preview/` with preview banner
+- Workflow validates pages before deploy
+- No production, SharePoint, Registry, or ADR changes
+
 ## [1.0.2] - 2026-07-16
 
 ### Added
@@ -82,6 +99,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Migration phases EA-3 through EA-11 are documented in `docs/m365/ea-*-*.md`.
 
+[1.0.3]: https://github.com/numtip/document-center/releases/tag/document-center-v1.0.3
 [1.0.2]: https://github.com/numtip/document-center/releases/tag/document-center-v1.0.2
 [1.0.1]: https://github.com/numtip/document-center/releases/tag/document-center-v1.0.1
 [1.0.0]: https://github.com/numtip/document-center/releases/tag/document-center-v1.0.0

@@ -4,7 +4,7 @@
 
 This repository is the **mandatory architectural reference** for all RAE digital platforms. It preserves the completed Document Center v1.0 production implementation and defines the standards, governance, and patterns that future projects must follow.
 
-> **Enterprise Canonical Repository — FROZEN (v1.0.2).** Production frozen at v1.0.0 (627 SharePoint documents). Repository mode: **READ-MOSTLY**. All future RAE systems must consume this repository instead of redefining architecture.
+> **Enterprise Canonical Repository — FROZEN (v1.0.3).** Production frozen at v1.0.0 (627 SharePoint documents). Repository mode: **READ-MOSTLY**. All future RAE systems must consume this repository instead of redefining architecture.
 
 ---
 
@@ -48,7 +48,8 @@ Requires Maejo365 authentication. See [EA-11A Production URL](docs/m365/ea-11a-p
 | Environment | URL | Records |
 |-------------|-----|--------:|
 | **Production** | SharePoint Document Center (above) | 627 |
-| **Preview** | https://numtip.github.io/document-center/ | 3 (demo) |
+| **Canonical portal** | https://numtip.github.io/document-center/ | Governance overview |
+| **UI Preview** | https://numtip.github.io/document-center/preview/ | 3 (demo) |
 
 ---
 
@@ -65,8 +66,9 @@ docs/
 ├── architecture/       ← Architecture audits
 └── design/             ← UI blueprints
 
-scripts/                ← Validation & preview build (TypeScript)
-preview/                ← GitHub Pages static preview (demo only)
+scripts/                ← Validation & Pages build (TypeScript)
+site/                   ← Canonical portal source (GitHub Pages root)
+preview/                ← UI demo source (deployed to /preview/)
 .migration/rae-wtms/    ← Migration evidence & M365 automation tools
 ```
 
@@ -78,10 +80,13 @@ Full map: [Repository Map](docs/canonical/REPOSITORY_MAP.md) · Index: [Project 
 
 | Item | Value |
 |------|-------|
-| Version | **1.0.2** |
+| Version | **1.0.3** |
 | Repository mode | **READ-MOSTLY** (enterprise governance frozen) |
+| GitHub Pages | **Canonical portal** — [numtip.github.io/document-center/](https://numtip.github.io/document-center/) |
+| UI Preview | `/preview/` — 3 demo records only |
 | Production freeze | `document-center-v1.0.0` |
 | Enterprise governance | `document-center-v1.0.2` |
+| Pages activation | `document-center-v1.0.3` |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) |
 
 Release package: [docs/release/](docs/release/) · Enterprise governance: [docs/governance/](docs/governance/)
@@ -105,18 +110,39 @@ Details: [Dependent Projects](docs/canonical/DEPENDENT_PROJECTS.md) · [Consumer
 
 ---
 
-## Scripts
+## GitHub Pages — Canonical Portal
+
+> **GitHub Pages** is the **canonical repository portal** — architecture, governance, and documentation overview. It is **not** the production document portal.
+
+| Route | Purpose |
+|-------|---------|
+| [Root](https://numtip.github.io/document-center/) | Canonical Repository landing |
+| [/preview/](https://numtip.github.io/document-center/preview/) | UI demo — 3 mock records only |
+
+Production documents (627 records) require SharePoint authentication. See [Production URL](#production-url) above.
+
+### Enable GitHub Pages (one-time, repo admin)
+
+The workflow publishes the built site to the **`gh-pages`** branch:
+
+1. Open **https://github.com/numtip/document-center/settings/pages**
+2. **Source:** Deploy from branch · **`gh-pages`** · `/ (root)`
+3. Re-run workflow if needed: **Actions → Deploy GitHub Pages Canonical Portal**
+
+### Local build
 
 ```bash
 rtk npm install
-rtk npm run validate:all
 rtk npm run build
+rtk npm run validate:pages
+rtk npm run validate:all
 ```
 
 | Command | Description |
 |---------|-------------|
+| `npm run build` | Build canonical portal + preview into `dist/` |
+| `npm run validate:pages` | Validate routes and preview labelling |
 | `npm run validate:all` | Validate migration matrix + registry schema |
-| `npm run build` | Build GitHub Pages preview into `dist/` |
 
 Registry sync (M365): see [Operation Runbook v1.0](docs/release/OPERATION_RUNBOOK_v1.0.md)
 
