@@ -2,7 +2,7 @@
   "name": "rae-document-center",
   "version": "1.0.0",
   "private": true,
-  "description": "RAE Document Center — metadata registry and validation scripts",
+  "description": "RAE Enterprise Canonical Repository — architecture, metadata standards, and M365 integration patterns",
   "scripts": {
     "validate:matrix": "tsx scripts/validate-document-migration-matrix.ts docs/document-center/migration-matrix.v2.csv",
     "validate:registry": "tsx scripts/validate-document-registry.ts docs/document-center/document-registry.draft.json docs/document-center/taxonomy.json",
