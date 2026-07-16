@@ -59,17 +59,26 @@ a:hover { text-decoration: underline; }
 
 .brand:hover { text-decoration: none; opacity: 0.95; }
 
-.brand-mark {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: var(--gold);
-  color: var(--primary-dark);
-  display: grid;
-  place-items: center;
-  font-weight: 800;
-  font-size: 0.85rem;
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
   flex-shrink: 0;
+  background: var(--white);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.hero-logo {
+  display: block;
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .brand-text strong {

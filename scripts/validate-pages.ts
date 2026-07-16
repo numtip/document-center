@@ -44,8 +44,8 @@ if (!root.includes(VERSION)) {
   console.error(`FAIL: root missing version ${VERSION}`);
   errors++;
 }
-if (root.includes("document-grid")) {
-  console.error("FAIL: root still contains demo grid");
+if (!root.includes("logorae.png")) {
+  console.error("FAIL: root missing logo");
   errors++;
 }
 
@@ -54,6 +54,11 @@ const preview = JSON.parse(
 );
 if (!preview.preview_mode || preview.documents.length !== 3) {
   console.error("FAIL: preview data invalid");
+  errors++;
+}
+
+if (!existsSync(resolve(DIST, "assets/logorae.png"))) {
+  console.error("FAIL: missing assets/logorae.png");
   errors++;
 }
 

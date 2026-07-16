@@ -20,6 +20,7 @@ const PREVIEW = resolve(ROOT, "preview");
 const DIST = resolve(ROOT, "dist");
 const VERSION = readFileSync(resolve(ROOT, "VERSION"), "utf8").trim();
 const GITHUB = "https://github.com/numtip/document-center/blob/main";
+const LOGO = resolve(ROOT, "docs/logorae.png");
 const PRODUCTION_URL =
   "https://maejo365.sharepoint.com/sites/msteams_54adc4/SitePages/RAE-Document-Center.aspx";
 
@@ -53,13 +54,14 @@ function shell(prefix: string, active: string, body: string, title: string): str
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="RAE Enterprise Canonical Repository — Maejo University" />
   <title>${title}</title>
+  <link rel="icon" href="${p}assets/logorae.png" type="image/png" />
   <link rel="stylesheet" href="${p}assets/canonical.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="${p}">
-        <span class="brand-mark" aria-hidden="true">RAE</span>
+        <img class="brand-logo" src="${p}assets/logorae.png" width="48" height="48" alt="ตราสำนักวิจัยและส่งเสริมวิชาการการเกษตร มหาวิทยาลัยแม่โจ้" />
         <span class="brand-text"><strong>RAE Canonical Repository</strong><span>Maejo University · v${VERSION}</span></span>
       </a>
       <button class="nav-toggle" type="button" aria-label="เปิดเมนู">☰</button>
@@ -123,6 +125,7 @@ function buildPages(): void {
     `
   <section class="hero">
     <div class="container reveal">
+      <img class="hero-logo" src="./assets/logorae.png" width="88" height="88" alt="" aria-hidden="true" />
       <p class="hero-eyebrow">มหาวิทยาลัยแม่โจ้ · สำนักวิจัยและส่งเสริมวิชาการการเกษตร</p>
       <h1>RAE Enterprise Canonical Repository</h1>
       <p class="hero-sub">คลังสถาปัตยกรรมมาตรฐานองค์กร สำนักวิจัยและส่งเสริมวิชาการการเกษตร</p>
@@ -487,6 +490,8 @@ function buildPages(): void {
 
 function copyAssets(): void {
   cpSync(resolve(SITE, "assets"), resolve(DIST, "assets"), { recursive: true });
+  if (!existsSync(LOGO)) throw new Error("Missing logo: docs/logorae.png");
+  cpSync(LOGO, resolve(DIST, "assets/logorae.png"));
 }
 
 function copyPreview(): void {
@@ -524,6 +529,7 @@ function validateDist(): void {
     "404.html",
     "assets/canonical.css",
     "assets/canonical.js",
+    "assets/logorae.png",
     "architecture/index.html",
     "standards/index.html",
     "adr/index.html",

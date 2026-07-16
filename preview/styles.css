@@ -34,6 +34,31 @@ body {
   padding: 2.5rem 0 2rem;
 }
 
+.header-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.site-logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: var(--white);
+  border-radius: 50%;
+  padding: 3px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 520px) {
+  .header-brand {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 .eyebrow {
   margin: 0 0 0.5rem;
   opacity: 0.85;
