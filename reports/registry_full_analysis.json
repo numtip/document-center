@@ -1,0 +1,102 @@
+{
+  "total": 627,
+  "category_values": {
+    "งานวิจัย/ประกาศงานวิจัย": 160,
+    "งานวิจัย/แบบฟอร์มงานวิจัย": 85,
+    "งานวิจัย/รายงานผลงานวิจัย": 64,
+    "งานวิจัย/ระเบียบการบริหารงานวิจัย": 53,
+    "งานวิจัย/ทุนวิจัย": 46,
+    "งานวิจัย/วิจัยสถาบัน": 36,
+    "research": 33,
+    "งานวิจัย/มาตรฐานการวิจัย": 26,
+    "แบบฟอร์มแหล่งทุนภายนอก": 20,
+    "งานคลังและพัสดุ": 19,
+    "งานวิจัย/คู่มือการวิจัย": 14,
+    "งานนโยบาย แผนและประกันคุณภาพ": 10,
+    "แบบฟอร์มงานบริการวิชาการ": 10,
+    "งานบริหารและธุรการ": 8,
+    "คู่มือ": 8,
+    "งานวิจัย/ระบบสารสนเทศงานวิจัย": 8,
+    "งานวิจัย/คลินิกวิจัย": 6,
+    "งานวิจัย/การประเมินผลงานวิจัย": 6,
+    "แบบฟอร์มศูนย์ความเป็นเลิศ": 4,
+    "งานวิจัย/การจัดการความรู้": 3,
+    "งานวิจัย": 2,
+    "บริหารจัดการ": 2,
+    "งานบริการวิชาการ": 1,
+    "งานวิจัย/ฐานข้อมูลงานวิจัย": 1,
+    "งานวิจัย/ทรัพย์สินทางปัญญา": 1,
+    "งานวิจัย/แผนงานวิจัย": 1
+  },
+  "category1_values": {
+    "": 627
+  },
+  "public_visibility_values": {
+    "": 627
+  },
+  "document_status_values": {
+    "": 627
+  },
+  "records_with_storage_url": 627,
+  "records_without_storage_url": 0,
+  "public_visibility_public_count": 0,
+  "document_status_current_count": 0,
+  "eligible_pv_or_ds": 0,
+  "samples": [
+    {
+      "DocumentID": "RAE-00146",
+      "Title": "แบบฟอร์มที่ 2 (ป.2568)",
+      "Category": "งานบริการวิชาการ",
+      "Category1": "",
+      "Status": "draft",
+      "Visibility": "internal",
+      "PublicVisibility": "",
+      "DocumentStatus": "",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/AcademicServices/RAE-00146.xlsx"
+    },
+    {
+      "DocumentID": "RAE-00195",
+      "Title": "RAE-00195.xlsx",
+      "Category": "งานวิจัย",
+      "Category1": "",
+      "Status": "draft",
+      "Visibility": "internal",
+      "PublicVisibility": "",
+      "DocumentStatus": "",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Research/RAE-00195.xlsx"
+    },
+    {
+      "DocumentID": "RAE-00009",
+      "Title": "กิจป่วย2",
+      "Category": "บริหารจัดการ",
+      "Category1": "",
+      "Status": "draft",
+      "Visibility": "internal",
+      "PublicVisibility": "",
+      "DocumentStatus": "",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/Administration/RAE-00009.pdf"
+    },
+    {
+      "DocumentID": "RAE-00046",
+      "Title": "WORD",
+      "Category": "บริหารจัดการ",
+      "Category1": "",
+      "Status": "draft",
+      "Visibility": "internal",
+      "PublicVisibility": "",
+      "DocumentStatus": "",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/FinanceProcurement/RAE-00046.docx"
+    },
+    {
+      "DocumentID": "RAE-00662",
+      "Title": "RAE-00662.docx",
+      "Category": "งานวิจัย",
+      "Category1": "",
+      "Status": "draft",
+      "Visibility": "internal",
+      "PublicVisibility": "",
+      "DocumentStatus": "",
+      "StorageURL": "https://maejo365.sharepoint.com/sites/msteams_54adc4/SOPManuals/RAE-00662.docx"
+    }
+  ]
+}

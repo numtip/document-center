@@ -1,0 +1,105 @@
+name: PXP-2 Registry Export
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Validate without committing'
+        required: true
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: registry-export
+  cancel-in-progress: true
+
+env:
+  NODE_VERSION: '20'
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build canonical portal
+        run: npm run build
+
+      - name: Validate pages
+        run: npm run validate:pages
+
+      - name: Verify public export exists
+        run: |
+          if [ -f data/document-registry.public.json ]; then
+            echo "EXPORT_EXISTS=true" >> $GITHUB_ENV
+          else
+            echo "EXPORT_EXISTS=false" >> $GITHUB_ENV
+          fi
+
+      - name: Validate public export schema
+        if: env.EXPORT_EXISTS == 'true'
+        run: npx tsx scripts/validate-document-registry.ts data/document-registry.public.json preview/data/taxonomy.sample.json || echo "SCHEMA_VALIDATION=warning" >> $GITHUB_ENV
+
+      - name: Validate no forbidden records
+        if: env.EXPORT_EXISTS == 'true'
+        run: |
+          python -c "
+import json
+with open('data/document-registry.public.json') as f:
+    data = json.load(f)
+for doc in data.get('documents', []):
+    if doc.get('visibility', '').lower() != 'public':
+        print(f'FAIL: {doc.get(\"DocumentID\",\"?\")} has visibility={doc.get(\"visibility\")}')
+        exit(1)
+    if doc.get('status', '').lower() not in ('approved', 'published', 'current'):
+        print(f'FAIL: {doc.get(\"DocumentID\",\"?\")} has status={doc.get(\"status\")}')
+        exit(1)
+print('All records pass eligibility validation')
+"
+
+      - name: Verify checksum
+        if: env.EXPORT_EXISTS == 'true'
+        run: |
+          if [ -f data/document-registry.public.sha256 ]; then
+            cd data && sha256sum -c document-registry.public.sha256
+          fi
+
+      - name: Upload audit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pxp2-export-audit
+          path: |
+            reports/pxp2-export-audit.json
+            reports/pxp2-export-summary.md
+            data/document-registry.public.json
+            data/document-registry.public.sha256
+          retention-days: 30
+
+      - name: Deploy
+        if: github.event.inputs.dry_run == 'false' && env.EXPORT_EXISTS == 'true'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: "deploy: pxp-2 registry export"

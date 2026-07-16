@@ -24,3 +24,6 @@ tokens/
 !.migration/rae-wtms/metadata/
 !.migration/rae-wtms/tools/
 !.migration/rae-wtms/reports/
+# Playwright M365 auth profiles — never commit cookies/tokens
+.browser-profile/
+.migration/rae-wtms/tools/temp_profile*/

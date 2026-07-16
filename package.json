@@ -11,7 +11,9 @@
     "validate:all": "npm run validate:matrix && npm run validate:registry",
     "validate:pages": "tsx scripts/validate-pages.ts",
     "build": "tsx scripts/build-preview.ts",
-    "lint": "npm run validate:pages"
+    "lint": "npm run validate:pages",
+    "export:registry": "python scripts/registry/export-live-registry.py",
+    "validate:public-registry": "python scripts/registry/validate-public-export.py"
   },
   "devDependencies": {
     "tsx": "^4.0.0",

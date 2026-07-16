@@ -1,0 +1,185 @@
+[
+  {
+    "Title": "Document ID",
+    "InternalName": "Document_x0020_ID",
+    "TypeAsString": "Text",
+    "Choices": [],
+    "StaticName": "Document_x0020_ID"
+  },
+  {
+    "Title": "Category",
+    "InternalName": "Category",
+    "TypeAsString": "Choice",
+    "Choices": {
+      "__metadata": {
+        "type": "Collection(Edm.String)"
+      },
+      "results": [
+        "admin",
+        "finance-procurement",
+        "policy-planning",
+        "academic-service",
+        "research",
+        "manuals"
+      ]
+    },
+    "StaticName": "Category"
+  },
+  {
+    "Title": "Status",
+    "InternalName": "Status",
+    "TypeAsString": "Choice",
+    "Choices": {
+      "__metadata": {
+        "type": "Collection(Edm.String)"
+      },
+      "results": [
+        "draft",
+        "review",
+        "approved",
+        "published",
+        "current",
+        "obsolete",
+        "archived"
+      ]
+    },
+    "StaticName": "Status"
+  },
+  {
+    "Title": "Visibility",
+    "InternalName": "Visibility",
+    "TypeAsString": "Choice",
+    "Choices": {
+      "__metadata": {
+        "type": "Collection(Edm.String)"
+      },
+      "results": [
+        "public",
+        "internal",
+        "restricted",
+        "private"
+      ]
+    },
+    "StaticName": "Visibility"
+  },
+  {
+    "Title": "Updated Date",
+    "InternalName": "Updated_x0020_Date",
+    "TypeAsString": "DateTime",
+    "Choices": [],
+    "StaticName": "Updated_x0020_Date"
+  },
+  {
+    "Title": "Storage URL",
+    "InternalName": "Storage_x0020_URL",
+    "TypeAsString": "URL",
+    "Choices": [],
+    "StaticName": "Storage_x0020_URL"
+  },
+  {
+    "Title": "Related Documents",
+    "InternalName": "Related_x0020_Documents",
+    "TypeAsString": "Text",
+    "Choices": [],
+    "StaticName": "Related_x0020_Documents"
+  },
+  {
+    "Title": "Category",
+    "InternalName": "Category1",
+    "TypeAsString": "Text",
+    "Choices": [],
+    "StaticName": "Category1"
+  },
+  {
+    "Title": "DocumentID",
+    "InternalName": "DocumentID",
+    "TypeAsString": "Text",
+    "Choices": [],
+    "StaticName": "DocumentID"
+  },
+  {
+    "Title": "DocumentStatus",
+    "InternalName": "DocumentStatus",
+    "TypeAsString": "Choice",
+    "Choices": {
+      "__metadata": {
+        "type": "Collection(Edm.String)"
+      },
+      "results": [
+        "LegacyImported",
+        "Current",
+        "Obsolete",
+        "Archived",
+        "Draft",
+        "MetadataOnly"
+      ]
+    },
+    "StaticName": "DocumentStatus"
+  },
+  {
+    "Title": "MigrationStatus",
+    "InternalName": "MigrationStatus",
+    "TypeAsString": "Choice",
+    "Choices": {
+      "__metadata": {
+        "type": "Collection(Edm.String)"
+      },
+      "results": [
+        "Ready",
+        "Duplicate (linked)",
+        "Metadata Only",
+        "Pending Review"
+      ]
+    },
+    "StaticName": "MigrationStatus"
+  },
+  {
+    "Title": "PublicVisibility",
+    "InternalName": "PublicVisibility",
+    "TypeAsString": "Choice",
+    "Choices": {
+      "__metadata": {
+        "type": "Collection(Edm.String)"
+      },
+      "results": [
+        "PendingReview",
+        "Public",
+        "Internal",
+        "Restricted"
+      ]
+    },
+    "StaticName": "PublicVisibility"
+  },
+  {
+    "Title": "Approval Status",
+    "InternalName": "_ModerationStatus",
+    "TypeAsString": "ModStat",
+    "Choices": {
+      "__metadata": {
+        "type": "Collection(Edm.String)"
+      },
+      "results": [
+        "0;#Approved",
+        "1;#Rejected",
+        "2;#Pending",
+        "3;#Draft",
+        "4;#Scheduled"
+      ]
+    },
+    "StaticName": "_ModerationStatus"
+  },
+  {
+    "Title": "Document Parent Identifier",
+    "InternalName": "ParentUniqueId",
+    "TypeAsString": "Lookup",
+    "Choices": [],
+    "StaticName": "ParentUniqueId"
+  },
+  {
+    "Title": "VirusStatus",
+    "InternalName": "_VirusStatus",
+    "TypeAsString": "Lookup",
+    "Choices": [],
+    "StaticName": "_VirusStatus"
+  }
+]
