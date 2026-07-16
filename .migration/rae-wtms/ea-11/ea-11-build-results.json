@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-07-16T05:01:17Z",
+  "lint": {
+    "exit_code": 0,
+    "pass": true,
+    "tail": "> echo 'No linter configured yet'\n'No linter configured yet'"
+  },
+  "build": {
+    "exit_code": 0,
+    "pass": true,
+    "tail": "> tsx scripts/build-preview.ts\nPREVIEW_VALIDATE: OK \u2014 3 public sample records\nPREVIEW_BUILD: OK \u2014 output in dist/"
+  },
+  "validate_all": {
+    "exit_code": 0,
+    "pass": true,
+    "tail": "ment-registry.ts docs/document-center/document-registry.draft.json docs/document-center/taxonomy.json\n\ud83d\udd0d Validating registry: G:\\ProjectAI\\document-center\\docs\\document-center\\document-registry.draft.json\n   Taxonomy: G:\\ProjectAI\\document-center\\docs\\document-center\\taxonomy.json\n\ud83d\udcca SUMMARY:\n   Total documents: 40\n   Owners TBD: 40\n   Pending OneDrive: 40\n   By status:\n     current: 40\n   By migrationStatus:\n     needs-owner: 40\n   By category:\n     admin: 40\n\u2705 Validation PASSED \u2014 no errors found"
+  },
+  "dist_exists": true
+}

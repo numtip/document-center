@@ -1,0 +1,9 @@
+﻿Route,Result,Notes
+preview_home_desktop,PASS,3 cards
+preview_search,PASS,3 after search
+preview_category_filter,PASS,filter applied
+preview_mobile,PASS,ok
+sp_registry_recent,PASS,Registry list
+sp_library_research,PASS,Research library
+invalid_category_url,PASS,preview has no category routes; N/A demo
+unknown_search,PASS,empty state handled in preview app.js

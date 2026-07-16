@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-07-16T04:59:38Z",
+  "MANIFEST_READY_IDS": 627,
+  "SHAREPOINT_DOCUMENT_IDS": 627,
+  "REGISTRY_DOCUMENT_IDS": 627,
+  "REGISTRY_PAGES": 2,
+  "REGISTRY_PAGINATION_TOTAL": 627,
+  "sets_equal": true,
+  "duplicate_registry": [],
+  "broken_url_count": 0,
+  "exception_count": 0,
+  "evidence": "manifest + migration_results + ea-10-completed-ids + live_dup_check",
+  "portal_gap": "GitHub Pages preview has 3 demo records; SharePoint Registry has 627"
+}

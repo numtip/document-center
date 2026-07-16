@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-07-16T05:02:10Z",
+  "manifest_count": 627,
+  "sharepoint_count": 627,
+  "registry_count": 627,
+  "portal_public_count": 3,
+  "duplicate_count": 0,
+  "broken_url_count": 0,
+  "public_access_pass": 0,
+  "public_access_total": 59,
+  "search_pass_rate_pct": 84.8,
+  "portal_route_pass": 8,
+  "portal_route_total": 8,
+  "build_pass": true,
+  "repairs_performed": 1,
+  "p0": 0,
+  "p1": 1,
+  "p2": 2,
+  "p3": 2,
+  "governance": "DEFERRED_GOVERNANCE",
+  "verdict": "EA11_COMPLETE_READY_FOR_PRODUCTION_HARDENING"
+}

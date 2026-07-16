@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-07-16T04:10:46Z",
+  "repository_branch": "main",
+  "repository_head": "a787f30b1eb7f5e33eb5250b2ca1a862839bb2b6",
+  "ea10_commit": "a787f30b1eb7f5e33eb5250b2ca1a862839bb2b6",
+  "manifest_ready_count": 627,
+  "expected_sharepoint_count": 627,
+  "expected_registry_count": 627,
+  "portal_preview_url": "https://numtip.github.io/document-center/",
+  "portal_preview_mode": "demo_sample_3_records",
+  "sharepoint_site": "https://maejo365.sharepoint.com/sites/msteams_54adc4",
+  "governance": "DEFERRED_GOVERNANCE"
+}
