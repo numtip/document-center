@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RAE Enterprise Canonical Repository — Maejo University" />
+  <title>RAE Enterprise Canonical Repository</title>
+  <link rel="icon" href="./assets/logorae.png" type="image/png" />
+  <link rel="stylesheet" href="./assets/canonical.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">
+        <img class="brand-logo" src="./assets/logorae.png" width="48" height="48" alt="ตราสำนักวิจัยและส่งเสริมวิชาการการเกษตร มหาวิทยาลัยแม่โจ้" />
+        <span class="brand-text"><strong>RAE Canonical Repository</strong><span>Maejo University · v1.0.3</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="เปิดเมนู">☰</button>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="./" data-nav="home">หน้าแรก</a></li>
+          <li><a href="./architecture/" data-nav="architecture">สถาปัตยกรรม</a></li>
+          <li><a href="./standards/" data-nav="standards">มาตรฐาน</a></li>
+          <li><a href="./adr/" data-nav="adr">ADR</a></li>
+          <li><a href="./roadmap/" data-nav="roadmap">Roadmap</a></li>
+          <li><a href="./release/" data-nav="release">Release</a></li>
+          <li><a href="./operations/" data-nav="operations">Operations</a></li>
+          <li><a href="./preview/" data-nav="preview">UI Preview</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="container reveal">
+      <img class="hero-logo" src="./assets/logorae.png" width="88" height="88" alt="" aria-hidden="true" />
+      <p class="hero-eyebrow">มหาวิทยาลัยแม่โจ้ · สำนักวิจัยและส่งเสริมวิชาการการเกษตร</p>
+      <h1>RAE Enterprise Canonical Repository</h1>
+      <p class="hero-sub">คลังสถาปัตยกรรมมาตรฐานองค์กร สำนักวิจัยและส่งเสริมวิชาการการเกษตร</p>
+      <p class="hero-en">Mandatory architectural reference for all RAE digital platforms · Canonical v1.0.3</p>
+      <div class="hero-badges">
+        <span class="badge badge-gold">PRODUCTION BASELINE FROZEN</span>
+        <span class="badge badge-outline">CANONICAL REPOSITORY</span>
+        <span class="badge badge-outline">READ-MOSTLY</span>
+        <span class="badge badge-outline">ENTERPRISE-READY</span>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://maejo365.sharepoint.com/sites/msteams_54adc4/SitePages/RAE-Document-Center.aspx" target="_blank" rel="noopener noreferrer">เปิด Production Document Center</a>
+        <a class="btn btn-secondary" href="./architecture/">สำรวจสถาปัตยกรรม</a>
+        <a class="btn btn-secondary" href="./standards/">มาตรฐาน Canonical</a>
+        <a class="btn btn-secondary" href="./adr/">Browse ADRs</a>
+        <a class="btn btn-secondary" href="./preview/">UI Preview</a>
+        <a class="btn btn-secondary" href="https://github.com/numtip/document-center" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+      </div>
+      <p class="note-inline">⚠️ การเข้า Production Document Center อาจต้องใช้ Microsoft 365 organizational sign-in · GitHub Pages ไม่ใช่ production document portal</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card"><strong>627</strong><span>Production files</span></div>
+        <div class="stat-card"><strong>627</strong><span>Registry records</span></div>
+        <div class="stat-card"><strong>0</strong><span>Duplicate DocumentIDs</span></div>
+        <div class="stat-card"><strong>0</strong><span>Broken Storage URLs</span></div>
+        <div class="stat-card"><strong>9</strong><span>Accepted ADRs</span></div>
+        <div class="stat-card"><strong>1.0.3</strong><span>Canonical release</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>บทบาทของระบบ</h2>
+      <p class="section-lead">แยกบทบาท Production, Canonical Reference และ UI Demonstration อย่างชัดเจน</p>
+      <div class="role-grid">
+        <article class="role-card">
+          <h3>🏛️ Production System</h3>
+          <p>SharePoint Document Center — 627 เอกสารจริง ต้อง authenticate ผ่าน Maejo365</p>
+        </article>
+        <article class="role-card">
+          <h3>📚 Canonical Reference</h3>
+          <p>GitHub repository + GitHub Pages — สถาปัตยกรรม มาตรฐาน ADR และ governance</p>
+        </article>
+        <article class="role-card">
+          <h3>🎨 UI Demonstration</h3>
+          <p><a href="./preview/">/preview/</a> — 3 mock records · preview_mode: true · ไม่ใช่ข้อมูล production</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>สถาปัตยกรรม</h2>
+      <p class="section-lead">Architecture flow — เอกสารจริงอยู่ใน SharePoint · Registry เป็น discovery layer</p>
+      <div class="flow-diagram">
+        <div class="flow-row">
+          <span class="flow-node">Legacy WTMS</span><span class="flow-arrow">→</span>
+          <span class="flow-node">Migration</span><span class="flow-arrow">→</span>
+          <span class="flow-node highlight">Microsoft 365</span><span class="flow-arrow">→</span>
+          <span class="flow-node highlight">SharePoint Libraries</span>
+        </div>
+        <div class="flow-row">
+          <span class="flow-node highlight">RAE Document Registry</span><span class="flow-arrow">→</span>
+          <span class="flow-node">Experience Layers</span><span class="flow-arrow">→</span>
+          <span class="flow-node">Future AI Services</span>
+        </div>
+        <div class="sor-grid">
+          <div class="sor-item"><strong>Documents</strong> → SharePoint</div>
+          <div class="sor-item"><strong>Metadata</strong> → RAE Document Registry</div>
+          <div class="sor-item"><strong>Governance</strong> → Microsoft 365</div>
+          <div class="sor-item"><strong>Source code</strong> → GitHub</div>
+          <div class="sor-item"><strong>Public experience</strong> → Next.js (future)</div>
+          <div class="sor-item"><strong>AI services</strong> → Governed sources only</div>
+        </div>
+      </div>
+      <p style="margin-top:1rem"><a href="./architecture/">ดูรายละเอียดสถาปัตยกรรม →</a></p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>หลักการสถาปัตยกรรม</h2>
+      <p class="section-lead">Architecture Principles — จากเอกสาร governance ที่ได้รับการยอมรับ</p>
+      <div class="principles-grid">
+        <div class="principle"><strong>Build Less. Govern More.</strong><span>ใช้ foundation ที่มี governance แทนการสร้างระบบซ้ำ</span></div>
+        <div class="principle"><strong>Metadata First</strong><span>Metadata ที่ upload time + Registry sync</span></div>
+        <div class="principle"><strong>M365 is Source of Truth</strong><span>SharePoint เก็บไฟล์ · Git เก็บมาตรฐาน</span></div>
+        <div class="principle"><strong>Website is Presentation Layer</strong><span>Portal แสดง metadata · ไม่เก็บ master files</span></div>
+        <div class="principle"><strong>Static-first Public Experience</strong><span>Export JSON สำหรับ public portal</span></div>
+        <div class="principle"><strong>AI consumes governed data only</strong><span>DocumentID เป็น join key</span></div>
+        <div class="principle"><strong>Architecture before implementation</strong><span>Bootstrap template ก่อนเริ่มโปรเจกต์</span></div>
+        <div class="principle"><strong>No duplicate sources of truth</strong><span>System of Records ชัดเจน</span></div>
+      </div>
+      <p style="margin-top:1rem"><a href="./standards/">ดูมาตรฐานทั้งหมด →</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>เอกสารอ้างอิง</h2>
+      <p class="section-lead">Documentation index — ลิงก์ไปยัง source บน GitHub</p>
+      <div class="doc-grid">
+        <div class="doc-group">
+          <h3>Canonical</h3>
+          <ul>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/canonical/CANONICAL_REPOSITORY_CHARTER.md">Canonical Repository Charter</a></li>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/canonical/REFERENCE_STANDARDS.md">Reference Standards</a></li>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/canonical/REPOSITORY_GOVERNANCE.md">Repository Governance</a></li>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/canonical/CHANGE_CONTROL_POLICY.md">Change Control Policy</a></li>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/canonical/PROJECT_MEMORY_FREEZE_v1.md">Project Memory Freeze</a></li>
+          </ul>
+        </div>
+        <div class="doc-group">
+          <h3>Governance</h3>
+          <ul>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/governance/RAE_ENTERPRISE_PLATFORM_ROADMAP.md">Enterprise Platform Roadmap</a></li>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/governance/CONSUMER_IMPLEMENTATION_GUIDE.md">Consumer Implementation Guide</a></li>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/governance/ARCHITECTURE_PRINCIPLES.md">Architecture Principles</a></li>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/governance/SYSTEM_OF_RECORDS.md">System of Records</a></li>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/governance/CANONICAL_REPOSITORY_CERTIFICATE.md">Canonical Certificate</a></li>
+          </ul>
+        </div>
+        <div class="doc-group">
+          <h3>Release v1.0</h3>
+          <ul>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/release/DOCUMENT_CENTER_v1.0_PRODUCTION_FREEZE.md">Production Freeze</a></li>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/release/ARCHITECTURE_BASELINE_v1.0.md">Architecture Baseline</a></li>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/release/PRODUCTION_ACCEPTANCE_CERTIFICATE.md">Acceptance Certificate</a></li>
+            <li><a href="https://github.com/numtip/document-center/blob/main/docs/release/OPERATION_RUNBOOK_v1.0.md">Operation Runbook</a></li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:1rem"><a href="./roadmap/">Enterprise Roadmap →</a> · <a href="./release/">Release baseline →</a></p>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>RAE Enterprise Canonical Repository</h4>
+        <p>คลังสถาปัยกรรมมาตรฐานองค์กร · v1.0.3 · READ-MOSTLY</p>
+      </div>
+      <div>
+        <h4>ลิงก์</h4>
+        <ul>
+          <li><a href="https://maejo365.sharepoint.com/sites/msteams_54adc4/SitePages/RAE-Document-Center.aspx">Production Document Center</a></li>
+          <li><a href="./preview/">UI Preview (Demo)</a></li>
+          <li><a href="https://github.com/numtip/document-center">GitHub Repository</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>หมายเหตุ</h4>
+        <p>GitHub Pages เป็น canonical reference portal — ไม่ใช่ production document portal</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© Maejo University · Office of Agricultural Research and Extension · Canonical release v1.0.3</p>
+    </div>
+  </footer>
+  <script src="./assets/canonical.js"></script>
+</body>
+</html>

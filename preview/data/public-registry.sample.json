@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0-preview",
+  "updated": "2026-06-17",
+  "source": "public-registry.sample.json — GitHub Pages demo only; mock data",
+  "preview_mode": true,
+  "documents": [
+    {
+      "id": "RAE-DC-0001",
+      "title": "คู่มือปฏิบัติงาน — การจัดเก็บเอกสาร",
+      "category": "manuals",
+      "owner": "ops-lead@example.org",
+      "file_type": "pdf",
+      "status": "current",
+      "updated_date": "2026-06-17",
+      "onedrive_path": "06-คู่มือปฏิบัติงาน/RAE-DC-0001_คู่มือปฏิบัติงาน_v1.0.pdf",
+      "storage_url": "https://example.sharepoint.com/EXAMPLE-LINK-RAE-DC-0001",
+      "tags": ["manual", "operations", "document-management"],
+      "version": "1.0",
+      "visibility": "public",
+      "note": "DEMO — example URL only; not a real OneDrive link"
+    },
+    {
+      "id": "RAE-DC-0004",
+      "title": "แบบฟอร์มเบิกพัสดุ",
+      "category": "finance-procurement",
+      "owner": "procurement@example.org",
+      "file_type": "xlsx",
+      "status": "current",
+      "updated_date": "2026-04-22",
+      "onedrive_path": "02-งานคลังและพัสดุ/RAE-DC-0004_แบบฟอร์มเบิกพัสดุ_v1.1.xlsx",
+      "storage_url": "https://example.sharepoint.com/EXAMPLE-LINK-RAE-DC-0004",
+      "tags": ["form", "procurement", "inventory"],
+      "version": "1.1",
+      "visibility": "public",
+      "note": "DEMO — example URL only"
+    },
+    {
+      "id": "RAE-DC-0005",
+      "title": "แนวทางการจัดทำรายงานวิจัย",
+      "category": "research",
+      "owner": "research-lead@example.org",
+      "file_type": "pdf",
+      "status": "current",
+      "updated_date": "2026-03-15",
+      "onedrive_path": "03-งานวิจัย/RAE-DC-0005_แนวทางรายงานวิจัย_v1.0.pdf",
+      "storage_url": "https://example.sharepoint.com/EXAMPLE-LINK-RAE-DC-0005",
+      "tags": ["research", "report", "guideline"],
+      "version": "1.0",
+      "visibility": "public",
+      "note": "DEMO — example URL only"
+    }
+  ]
+}

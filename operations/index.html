@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RAE Enterprise Canonical Repository — Maejo University" />
+  <title>Operations — RAE Canonical Repository</title>
+  <link rel="icon" href="../assets/logorae.png" type="image/png" />
+  <link rel="stylesheet" href="../assets/canonical.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../">
+        <img class="brand-logo" src="../assets/logorae.png" width="48" height="48" alt="ตราสำนักวิจัยและส่งเสริมวิชาการการเกษตร มหาวิทยาลัยแม่โจ้" />
+        <span class="brand-text"><strong>RAE Canonical Repository</strong><span>Maejo University · v1.0.3</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="เปิดเมนู">☰</button>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="../" data-nav="home">หน้าแรก</a></li>
+          <li><a href="../architecture/" data-nav="architecture">สถาปัตยกรรม</a></li>
+          <li><a href="../standards/" data-nav="standards">มาตรฐาน</a></li>
+          <li><a href="../adr/" data-nav="adr">ADR</a></li>
+          <li><a href="../roadmap/" data-nav="roadmap">Roadmap</a></li>
+          <li><a href="../release/" data-nav="release">Release</a></li>
+          <li><a href="../operations/" data-nav="operations">Operations</a></li>
+          <li><a href="../preview/" data-nav="preview">UI Preview</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="page-hero"><div class="container"><h1>Operations</h1><p>READ-MOSTLY mode · Repository operation policy</p></div></section>
+  <section class="section"><div class="container">
+    <div class="hero-badges" style="margin-bottom:1.5rem">
+      <span class="badge badge-gold" style="color:var(--primary-dark)">READ-MOSTLY</span>
+      <span class="badge badge-outline" style="border-color:var(--primary);color:var(--primary)">NO PRODUCTION CHANGES</span>
+    </div>
+    <div class="content-card"><h2>Allowed Changes</h2><ul>
+      <li>Documentation updates</li>
+      <li>New ADRs for future platforms</li>
+      <li>Bug fixes and security fixes</li>
+      <li>Runbook maintenance</li>
+    </ul></div>
+    <div class="content-card"><h2>Requires Architecture Review</h2><ul>
+      <li>Baseline amendments</li>
+      <li>New SharePoint libraries</li>
+      <li>Registry schema changes</li>
+      <li>ADR reversals</li>
+    </ul></div>
+    <div class="content-card"><h2>Operational Runbook</h2>
+    <p>Monthly QA: Registry sync, corpus reconcile 627/627/627</p>
+    <p><a href="https://github.com/numtip/document-center/blob/main/docs/release/OPERATION_RUNBOOK_v1.0.md">Operation Runbook v1.0 →</a></p>
+    <p><a href="https://github.com/numtip/document-center/blob/main/docs/governance/REPOSITORY_OPERATION_POLICY.md">Repository Operation Policy →</a></p>
+    </div>
+  </div></section>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>RAE Enterprise Canonical Repository</h4>
+        <p>คลังสถาปัยกรรมมาตรฐานองค์กร · v1.0.3 · READ-MOSTLY</p>
+      </div>
+      <div>
+        <h4>ลิงก์</h4>
+        <ul>
+          <li><a href="https://maejo365.sharepoint.com/sites/msteams_54adc4/SitePages/RAE-Document-Center.aspx">Production Document Center</a></li>
+          <li><a href="../preview/">UI Preview (Demo)</a></li>
+          <li><a href="https://github.com/numtip/document-center">GitHub Repository</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>หมายเหตุ</h4>
+        <p>GitHub Pages เป็น canonical reference portal — ไม่ใช่ production document portal</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© Maejo University · Office of Agricultural Research and Extension · Canonical release v1.0.3</p>
+    </div>
+  </footer>
+  <script src="../assets/canonical.js"></script>
+</body>
+</html>
